@@ -15,6 +15,6 @@ Have a nice day!!
 
 Jorge Sanz
 
-[@xurxosanz](http://twitter.com/xurxosanz)
-http://www.prodevelop.es
-http://jorgesanz.net
+[@xurxosanz](http://twitter.com/xurxosanz)  
+http://www.prodevelop.es  
+http://jorgesanz.net  
