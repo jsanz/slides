@@ -1,0 +1,41 @@
+/* sobrecargados */
+.deck-container li, .deck-container p{
+  font-size: 35px;
+}
+
+.deck-container .deck-status{
+  bottom: 5px;
+}
+
+
+/* Específicos */
+.deck-container .mail{
+  font-family:"Monaco","Droid Sans Mono","Courier";
+  color: #1B336B;
+}
+
+.deck-container .bigger-font{
+	font-size: x-large;
+}
+
+.deck-container .smaller-font{
+	font-size: x-small;
+}
+
+.deck-container .center{
+	text-align: center;
+}
+
+.deck-container img.banner-fondo{
+	margin-bottom: 0px;
+	display: inline;
+}
+
+.deck-container li ul{
+	margin-bottom: 0px;
+}
+
+.left-figure{
+	float: left;
+	margin: 10px;
+}
