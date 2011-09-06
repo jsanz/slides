@@ -103,20 +103,24 @@
     <li>Free software project (GPL)</li>
     <li><strong>Android</strong> and JavaME Version</li>
     <li>Current version 1.2.3</li>
+    <li>More than 50k downloads</li>
     <li><a href="http://www.gvsigmini.org" name="gvSIG mini">http://www.gvsigmini.org</a></li>
     <li><a href="https://svn.prodevelop.es/public/gvsigmini/" title="Source Code repository">https://svn.prodevelop.es/public/gvsigmini/</a></li>
     <li><a href="http://search.maven.org/#search%7Cga%7C1%7Cprodevelop" title="gvSIG mini artifacts at Maven Central">http://search.maven.org/#search%7Cga%7C1%7Cprodevelop</a></li>
-    
   </ul>
 </div>
 
 <div class="slide" id="splash">
-  <img src="gvsig_mini-imgs/mini-banner.png" alt="gvSIG splash" style="height:80%;margin-top:10px;"  />
+  <img src="gvsig_mini-imgs/mini/mini-banner.png" alt="gvSIG splash" class="phone"   />
 </div>
 
 <div class="slide" id="access-osm-tiles">
-  <img src="gvsig_mini-imgs/mini-osm.png" alt="gvSIG loading OSM Layers" style="height:80%;margin-top:10px;"  />
-  <p class="center">Access to OSM tiles</p>
+	<div class="center">
+	   <img src="gvsig_mini-imgs/mini/mini-osm.png" alt="gvSIG loading OSM Layers" class="phone"  />
+  		<img src="gvsig_mini-imgs/mini/mini-osm2.png" alt="gvSIG loading OSM Layers" class="phone"  />
+  		<p>Access to OSM tiles</p>
+	</div>
+  
 </div>
 <!--
 <div class="slide" id="mini-img-slide-3">
@@ -124,36 +128,43 @@
   <p class="center">Access to Ordnance Survey Data (with API key)</p>
 </div>
 -->
-<div class="slide" id="access-wms">
-  <img src="gvsig_mini-imgs/mini-wms.png" alt="gvSIG access WMS" style="height:80%;margin-top:10px;"  />
+<div class="slide center" id="access-wms">
+  <img src="gvsig_mini-imgs/mini/mini-wms.png" alt="gvSIG access WMS" class="phone"   />
   <p class="center">Access to WMS Servers</p>
 </div>
 
-<div class="slide" id="and-more-layers">
-  <img src="gvsig_mini-imgs/mini-layers.png" alt="gvSIG mini feature list" style="height:80%;margin-top:10px;"  />
+<div class="slide center" id="and-more-layers">
+  <img src="gvsig_mini-imgs/mini/mini-layers.png" alt="gvSIG mini feature list" class="phone"   />
   <p class="center">And <a href="https://confluence.prodevelop.es/display/GVMN/Features" title="more features">more</a>... </p>
 </div>
 
-<div class="slide" id="mini-img-slide-4">
-  <img src="gvsig_mini-imgs/mini-download.png" alt="gvSIG downloading tiles" style="height:80%;margin-top:10px;"  />
+<div class="slide center" id="mini-img-slide-4">
+  <img src="gvsig_mini-imgs/mini/mini-download.png" alt="gvSIG downloading tiles" class="phone"   />
   <p class="center">Download tiles for off-line navigation</p>
 </div>
 
-<div class="slide" id="calculate-route">
-  <img src="gvsig_mini-imgs/mini-route.png" alt="gvSIG mini routes" style="height:80%;margin-top:10px;"  />
+<div class="slide center" id="calculate-route">
+  <img src="gvsig_mini-imgs/mini/mini-route.png" alt="gvSIG mini routes" class="phone"  />
   <p class="center">Calcualte routes using OSM <a href="http://www.yournavigation.org/api/1.0/gosmore.php" title="YOURS">YOURS</a> service </p>
 </div>
 
 
-<div class="slide" id="and-more-features-1">
-  <img src="gvsig_mini-imgs/mini-features-1.png" alt="gvSIG mini feature list" style="height:80%;margin-top:10px;"  />
+<div class="slide center" id="and-more-features-1">
+  <img src="gvsig_mini-imgs/mini/mini-features-1.png" alt="gvSIG mini feature list" class="phone"  />
   <p class="center">And <a href="https://confluence.prodevelop.es/display/GVMN/Features" title="more features">more</a>... </p>
 </div>
 
-<div class="slide" id="and-more-features-2">
-  <img src="gvsig_mini-imgs/mini-features-2.png" alt="gvSIG mini feature list" style="height:80%;margin-top:10px;"  />
+<div class="slide center" id="and-more-features-2">
+  <img src="gvsig_mini-imgs/mini/mini-features-2.png" alt="gvSIG mini feature list" class="phone" />
   <p class="center">And <a href="https://confluence.prodevelop.es/display/GVMN/Features" title="more features">more</a>... </p>
 </div>
+
+
+<div class="slide center" id="mini-kml">
+  <img src="gvsig_mini-imgs/mini/kml-support-1.png" alt="gvSIG mini KML support" class="phone" />
+  <p>KML support in development (GSoC 2011) </p>
+</div>
+
 
 <div class="slide" id="nomada-banner">
    <h2>What's Nomada</h2>
@@ -185,7 +196,9 @@
 
 <div class="slide" id="nomada-diagram">
    <h2>From OSM to the phone</h2>
-   <iframe class="center" style="height:80%;margin-top:10px;width:100%;" src="gvsig_mini-imgs/nomada-diagram.svg"></iframe>  
+   <div class="center">
+   <iframe width="100%" height="650px" src="gvsig_mini-imgs/nomada-diagram.svg"></iframe>  
+   </div>
 </div>
 
 
@@ -199,6 +212,91 @@
    <li>Phone app will do iterates and searches</li>
    </ul>
 	<img class="center" src="gvsig_mini-imgs/perst-sqlite.png" alt="PERST vs SQLite" />
+</div>
+
+
+<div class="slide" id="nomada-intro">
+   <h2>Nomada maps</h2>
+   <ul>
+   	<li>Initial configuration for offline use</li>
+   	<li>Zoom on guide content</li>
+   	<li>POI management</li>
+   	<li>POI search</li>
+   	<li>Favourites</li>
+   </ul>   
+</div>
+
+<div class="slide" id="nomada-banner">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/banner.png" alt="Nomada banner" class="phone"  />
+  			<img src="gvsig_mini-imgs/nomada/map.png" alt="Nomada map" class="phone"  />
+  	</div>
+</div>
+
+<div class="slide" id="nomada-load">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/load-1.png" alt="Load pois 1" class="phone"  />
+  			<img src="gvsig_mini-imgs/nomada/load-2.png" alt="Load pois 2" class="phone"  />
+  			<p>POI layers by OSM ammenity categories</p>
+  	</div>
+</div>
+
+<div class="slide" id="nomada-pois">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/pois-1.png" alt="pois 1" class="phone"  />
+  			<img src="gvsig_mini-imgs/nomada/pois-2.png" alt="pois 2" class="phone"  />
+  			<p>POI clustering</p>
+  	</div>
+</div>
+
+<div class="slide" id="nomada-pois-2">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/pois-3.png" alt="pois 1" class="phone"  />
+  			<img src="gvsig_mini-imgs/nomada/pois-4.png" alt="pois 2" class="phone"  />
+  			<p>POI information</p>
+  	</div>
+</div>
+
+<div class="slide" id="nomada-search">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/search-1.png" alt="Search 1" class="phone"  />
+  			<img src="gvsig_mini-imgs/nomada/search-2.png" alt="Search 2" class="phone"  />
+  			<p>Search autocompletion</p>
+  	</div>
+</div>
+
+<div class="slide" id="nomada-search-2">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/search-3.png" alt="Search results" class="phone"  />
+  			<p>POI search results</p>
+  	</div>
+</div>
+
+<div class="slide" id="nomada-search-3">
+	<div class="center">
+  			<img src="gvsig_mini-imgs/nomada/search-4.png" alt="Search around" class="phone"  />
+  			<p>Search around a POI</p>
+  	</div>
+</div>
+
+<div class="slide" id="conclusions">
+	<h2>Conclusions</h2>
+	<ul>
+		<li class="slide" >Since 2009, gvSIG mini has evolved to a successful free Android map viewer</li>
+		<li class="slide" >gvSIG mini is broadly discussed by developers at lists: it's being extended and customized</li>
+		<li class="slide" >Nomada has added to gvSIG mini POI management capabilities</li>
+		<li class="slide" >PERST has been a great choice for our use case</li>
+	</ul>
+</div>
+
+<div class="slide center" id="conclusions-2">
+	
+	<div class="important">		
+  		<img src="gvsig_mini-imgs/mini/mini-banner.png" alt="gvSIG splash" class="phone"  style="height:60%;" />
+  		<img src="gvsig_mini-imgs/nomada/banner.png" alt="Nomada banner" class="phone"  style="height:60%;"  />
+		<p> <strong>Give gvSIG Mini and Nomada a try</br>
+						comments are welcomed!</strong></p>
+	</div>
 </div>
 
 

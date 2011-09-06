@@ -39,3 +39,26 @@
 	float: left;
 	margin: 10px;
 }
+
+.deck-container img.phone{
+	display:inline;
+	height:80%;
+	margin:10px 20px;
+}
+
+.deck-container div.important{
+	padding: 0 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.deck-container div.important p{
+	font-size: 40px;
+}
+
+.deck-container strong{
+	color: #c00;
+}
