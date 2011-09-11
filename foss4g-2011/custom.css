@@ -7,6 +7,10 @@
   bottom: 5px;
 }
 
+.csstransforms .deck-container h1 {
+	top: 35%;
+}
+
 
 /* Específicos */
 .deck-container .mail{
@@ -14,12 +18,12 @@
   color: #1B336B;
 }
 
-.deck-container .bigger-font{
-	font-size: x-large;
+.deck-container li.bigger-font, .deck-container p.bigger-font{
+	font-size: larger;
 }
 
-.deck-container .smaller-font{
-	font-size: x-small;
+.deck-container li.smaller-font,.deck-container p.smaller-font{
+	font-size: smaller;
 }
 
 .deck-container .center{
