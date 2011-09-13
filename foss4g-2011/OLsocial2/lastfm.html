@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+	<script src="JSON2.js"></script>
+	<script src="Script2.js"></script>
+	<script src="SmartPopup.js"></script>
+	<style>
+		h2.lfmtit{
+			font-size:small;
+			color: gray;
+			padding:0; 
+			margin: 0;
+		}
+		.lfmdesc{
+			font-size:small;
+			color: gray;
+		}
+		
+		lfmlabel{
+			font-weight:bold;
+		}
+
+		
+	</style>
+    <script type="text/javascript">
+        var map, layer0, layer1;
+        function init(){
+            map = new OpenLayers.Map( 'map' );
+            layer0 = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+                    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+                    {layers: 'basic'} );
+					
+			layer1 = new OpenLayers.Layer.Vector("ComunitatValenciana",{
+				strategies: [new OpenLayers.Strategy.BBOX({resFactor:2})],
+				styleMap: new OpenLayers.StyleMap({
+					externalGraphic: 'lastfm.png',
+					pointRadius: 8
+				}),
+				protocol: new OpenLayers.Protocol.Script2({
+					url: "http://ws.audioscrobbler.com/2.0/",
+					params: {
+						method: "geo.getevents",
+						api_key: "b25b959554ed76058ac220b7b2e0a026",
+						limit: "50",
+						format: "json"
+					},
+					callbackKey: "callback",
+					filterToParams: function(filter, params) {
+						if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+							var dist = OpenLayers.Util.distVincenty(
+								filter.value.getCenterLonLat(), 
+								{lon: filter.value.left, lat: filter.value.bottom}
+							);
+							params.lat=filter.value.getCenterLonLat().lat;
+							params.long=filter.value.getCenterLonLat().lon;
+							params.distance=Math.min(dist,1000);
+						}
+						return params;
+					},
+					format: new OpenLayers.Format.JSON2({
+						getResultArray : function(obj){ return obj.events.event},
+						getLat : function(obj) { return obj.venue.location["geo:point"]["geo:lat"] },
+						getLon : function(obj) { return obj.venue.location["geo:point"]["geo:long"] }
+					})
+				})
+			});
+			
+            map.addLayer(layer0);
+			map.addLayer(layer1);
+			var p1 = new SmartPopup('lfmPopup',layer1,map);
+            map.zoomToMaxExtent();
+        }
+
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="map" style="width:100%;height:100%"></div>
+	<div id="lfmPopup" style="visibility:hidden; display:none">
+		<h2 class="lfmtit">%title%</h2>
+		<a class="lfmlink" href="%url%"><img src="lastfm2.png"/></a><br/>
+		<span class="lfmdesc">
+			<span class="lfmlabel">Date:</span> %startDate% <br/>
+			<span class="lfmlabel">Website:</span> %website% <br/>
+			%description%
+		</span>
+	</div>
+  </body>
+</html>

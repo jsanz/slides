@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+	<script src="JSON2.js"></script>
+	<script src="Script2.js"></script>
+	<script src="SmartPopup.js"></script>
+	<style>
+		h2.lfmtit{
+			font-size:small;
+			color: gray;
+			padding:0; 
+			margin: 0 0 5px 0;
+		}
+		.ydesc{
+			font-size:small;
+			color: gray;
+			width: 150px;
+		}
+		
+		.lfmlabel{
+			font-weight:bold;
+		}
+		
+		a.ylink{
+			color: gray;
+			text-decoration: none;
+			display:block;
+		}
+
+		
+	</style>
+    <script type="text/javascript">
+        var map, layer0, layer1;
+        function init(){
+            map = new OpenLayers.Map( 'map' );
+            layer0 = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+                    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+                    {layers: 'basic'} );
+					
+			layer1 = new OpenLayers.Layer.Vector("ComunitatValenciana",{
+				strategies: [new OpenLayers.Strategy.BBOX({resFactor:2})],
+				styleMap: new OpenLayers.StyleMap({
+					externalGraphic: 'yelp.png',
+					pointRadius: 8
+				}),
+				protocol: new OpenLayers.Protocol.Script2({
+					url: "http://api.yelp.com/business_review_search",
+					params: {
+						ywsid: "s38_h6eGpQk1Ka8PjivJgw",
+						limit: "20"
+					},
+					callbackKey: "callback",
+					filterToParams: function(filter, params) {
+						if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+							params.tl_lat=filter.value.top;
+							params.tl_long=filter.value.left;
+							params.br_lat=filter.value.bottom;
+							params.br_long=filter.value.right;
+						}
+						return params;
+					},
+					format: new OpenLayers.Format.JSON2({
+						getResultArray : function(obj){ return obj.businesses},
+						getLat : function(obj) { return obj.latitude },
+						getLon : function(obj) { return obj.longitude }
+					})
+				})
+			});
+			
+            map.addLayer(layer0);
+			map.addLayer(layer1);
+			var p1 = new SmartPopup('lfmPopup',layer1,map);
+            map.zoomToMaxExtent();
+        }
+
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="map" style="width:100%;height:100%"></div>
+	<div id="lfmPopup" style="visibility:hidden; display:none">
+		<h2 class="lfmtit">%name%</h2>
+		<div style="width:300px;height:180px;margin:0;padding:0">
+			<div style="float:left;width:100px;margin-right:10px">
+				<img src="%rating_img_url%"/><br/>
+				<img class="yimg" src="%photo_url%"/><br/>
+			</div>
+			<span class="ydesc">
+				<span class="lfmlabel">Reviews:</span> %review_count% <br/>
+				<span class="lfmlabel">Phone:</span> %phone% <br/>
+				<span class="lfmlabel">Address:</span><br/>
+				%address1%<br/>
+				%address2%<br/>
+				%address3%<br/>
+				%zip% %city% <br/>
+			</span>
+			<a class="ylink" style="clear:both" href="%url%">more info on <img src="yelp2.png"/></a>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+	<script src="JSON2.js"></script>
+	<script src="Script2.js"></script>
+	<script src="SmartPopup.js"></script>
+	<style>
+		h2.fltit{
+			font-size:small;
+			color: gray;
+			padding:0; 
+			margin: 0;
+		}
+	</style>
+    <script type="text/javascript">
+        var map, layer0, layer1;
+		var style = new OpenLayers.Style({
+			pointRadius: 16,
+			externalGraphic: '${url_t}'
+		});
+        function init(){
+            map = new OpenLayers.Map( 'map' );
+			layer0= new OpenLayers.Layer.OSM( "Simple OSM Map");
+			
+			layer1 = new OpenLayers.Layer.Vector("Flickr",{
+				styleMap: new OpenLayers.StyleMap(style),
+				projection: "EPSG:4326",
+				strategies: [new OpenLayers.Strategy.BBOX({resFactor:2})],
+				protocol: new OpenLayers.Protocol.Script2({
+					url: "http://api.flickr.com/services/rest/",
+					callbackKey: "jsoncallback",
+					params:{ 
+						method: "flickr.photos.search",
+						//api_key: "dbd36888e3f31358e8baba292ce58a61",
+						api_key: "b3a77fdabcdf31ea15266ccffbb353c0",
+						format: "json",
+						extras: "geo,url_t,owner_name,url_m",
+						min_upload_date : "1157285524.213"
+					},
+					filterToParams: function(filter, params) {
+						if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+							console.log(filter);
+							console.log(params);
+							params.bbox = ""+
+								Math.max(filter.value.left,-180) + "," +
+								Math.max(filter.value.bottom,-90) + "," +
+								Math.min(filter.value.right,180) + "," +
+								Math.min(filter.value.top,90);
+						}
+						return params;
+					},
+					format: new OpenLayers.Format.JSON2({
+						getResultArray : function(obj){ return obj.photos.photo},
+						getLat : function(obj) { return obj.latitude },
+						getLon : function(obj) { return obj.longitude }
+					})
+				})
+			});
+			
+            map.addLayer(layer0);
+			map.addLayer(layer1);
+			var p1 = new SmartPopup('flickrPopup',layer1,map);
+         map.moveTo(
+                new OpenLayers.LonLat(-104.976425,39.740986).transform(
+                    new OpenLayers.Projection("EPSG:4326"),
+                    map.getProjectionObject()
+                ), 13
+           );  
+        }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="map" style="width:100%;height:100%"></div>
+	<div id="flickrPopup" style="visibility:hidden; display:none">
+		<h2 class="fltit">%title%</h2>
+		<a class="twuser" href="http://www.flickr.com/photos/%owner%/%id%">
+			<img src="http://farm%farm%.static.flickr.com/%server%/%id%_%secret%_m.jpg" class="flimg"/>
+		</a><br/>
+		by: <a class="twuser" href="http://www.flickr.com/people/%owner%">%ownername%:</a>
+	</div>
+  </body>
+</html>
