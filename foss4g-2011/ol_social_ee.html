@@ -1,0 +1,500 @@
+<!--
+        gvsig_mini.html
+        
+        Copyright 2011 Jorge Gaspar Sanz Salinas <jsanz@prodevelop.es>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+        
+        
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+   <title>OpenLayers and Social Networks (Emercency Edition)</title>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <meta name="generator" content="Bluefish 2.0.2" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	
+   <meta name="description" content="Adding support to gvSIG Mini to manage and visualize large ammounts of POIs">
+   <meta name="author" content="Jorge Gaspar Sanz Salinas" >
+   <meta name="viewport" content="width=1024, user-scalable=no">
+	
+   <!-- Core and extension CSS files -->
+   <link rel="stylesheet" href="core/deck.core.css">
+   <link rel="stylesheet" href="extensions/goto/deck.goto.css">
+   <link rel="stylesheet" href="extensions/menu/deck.menu.css">
+   <link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+   <link rel="stylesheet" href="extensions/status/deck.status.css">
+   <link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	
+   <!-- Theme CSS files (menu swaps these out) -->
+   <link rel="stylesheet" href="themes/style/swiss.css">
+   <link rel="stylesheet" id="transition-theme-link" href="themes/transition/horizontal-slide.css">
+	
+
+	
+   <script src="modernizr.custom.js"></script>
+   
+   <!-- Syntax highlighter code -->
+	<link type="text/css" rel="stylesheet" href="sh/styles/shCoreDefault.css"/> 
+  	<link type="text/css" rel="Stylesheet" href="sh/styles/shThemeEclipse.css"/>
+  	
+  	
+  <!-- Custom CSS just for this page -->
+   <link rel="stylesheet" href="custom.css"> 
+</head>
+
+<body class="deck-container">
+
+<div class="slide" id="title">
+   <h1>OpenLayers and Social Networks</h1>
+   <img class="slide" style="position:absolute;top:0%;left:0%;z-index:-100" 	src="olsocial-imgs/ee.png" height="768" alt="" />
+</div>
+
+<div class="slide" id="authors">
+   <h2>OpenLayers and Social Networks</h2> 
+  <ul>
+    <li>Jorge Sanz
+    <ul><li class="smaller-font"><a href="http://twitter.com/xurxosanz">@xurxosanz</a> · <span class="mail">jsanz [at] prodevelop [dot] es</span></li>
+    </ul>
+    </li>
+    <li>Javier Carrasco
+    <ul>
+    <li class="smaller-font"> <a href="http://twitter.com/jacarma">@jacarma</a> · <span class="mail">jcarrasco [at] prodevelop [dot] es</span></li></ul>
+    </li>
+    <li>Alberto Romeu 
+    <ul>
+    <li class="smaller-font"> <a href="http://twitter.com/alrocar">@alrocar</a> · <span class="mail">aromeu [at] prodevelop [dot] es</span></li></ul>
+    </li> 
+    <li>Vicente Sanjaime
+    <ul>
+    <li class="smaller-font"> <a href="http://twitter.com/jacarma">@visancal</a> · <span class="mail">vsanjaime [at] prodevelop [dot] es</span></li></ul>
+    </li>   
+  </ul>
+  <p class="center"><a href="http://bit.ly/foss4g11-olsocial ">http://bit.ly/foss4g11-olsocial </a></p>
+</div>
+ 
+<div class="slide" id="audience">
+   <h2>Intended audience</h2>
+ 	<ul>
+		<li class="slide">Some basic knowledge of JavaScript</li>
+		<li class="slide">Some basic knowledge of OpenLayers</li>		
+		<li class="slide">OpenLayers ninjas, you can disappear :-)
+			<div class="figure">
+			<a rel="_blank" href="http://www.flickr.com/photos/sethw/381321976/" title="Ninja by Seth W., on Flickr">
+				<img src="olsocial-imgs/ninja.jpg" height="250" alt="Ninja">
+			</a>
+			<p class="caption">Foto by <a href="http://www.flickr.com/photos/sethw/">Seth W.</a></p>
+			</div>
+		</li>	
+ 	</ul>
+</div>
+
+<div class="slide" id="cv-geoportal">
+   <h2>Valencia Tourism Geoportal</h2>
+   <a rel="_blank" href="http://en.comunitatvalenciana.com/geoportal?lon=-0.35130998611453856&lat=39.45495896874047&z=16&lang=eng&type=satellite" title="Valencia Tourism Geoportal">
+		<img src="olsocial-imgs/cv-geoportal.png" height="500" alt="Tourism Valencia Geoportal" />   
+   </a>
+</div>
+
+<div class="slide" id="cv-geoportal-2">
+   <h2>Valencia Tourism Geoportal</h2>
+ 	<ul>
+		<li>Using Google Maps API</li>
+		<li><a href="http://developer.yahoo.com/yql/">Yahoo Query Language</a></li>
+		<li class="slide">We love Open Layers
+		<div class="figure">
+		<img src="olsocial-imgs/ol-love.png" height="150" alt="Love to OL" />
+		</div>
+		</li>
+		<li class="slide">So, how to do the same?</li>
+ 	</ul>
+</div>
+
+<div class="slide" id="geolocated-services">
+   <h2>POI services</h2>
+  	<ul>
+  		<li>Many public APIs provide geographic data</li>
+  		<li>Usually as <strong>points</strong> in 
+  			<a href="http://spatialreference.org/ref/epsg/4326/" title="Spatial Reference 4326 definition">
+  				EPSG:4326</a></li>
+  		<li>Not just social networks</li>
+  		<li>Many different clients: desktop web, mobile web, custom mobile applications, ...</li>
+  	</ul>
+</div>
+
+<div class="slide" id="ol-recap">
+   <h2>OpenLayers concepts:</h2>
+   <ul>
+   	<li><strong>Format</strong>: the language of your data</li>
+   	<li><strong>Protocol</strong>: how to decide where to retrieve your data</li>
+   	<li><strong>Strategy</strong>: when and with which parameters </li>
+   </ul>
+
+   <p>More at 
+   	­«<a href="http://download.osgeo.org/osgeo/foss4g/2009/SPREP/2Thu/Parkside%20110A/1030/ol_vector_mayhem.pdf">
+   		OpenLayers Vector Mayhem</a>» by Tim Schaub (FOSS4G 2009)</p>
+</div>
+
+<div class="slide" id="how-to-solve">
+   <h2>External services on OpenLayers</h2>
+  	<ul>
+  		<li>Same origin policy: no outside AJAX calls</li>
+  		<li>JSONP
+  		<div style="font-size:23px;!important">
+<pre class="brush: js;">//JSON response for AJAX req
+{results:{a:1,b:2,c:3}
+//JSONP response at script tag
+callbackFunction({results:{a:1,b:2,c:3})</pre></div>  		
+  		</li>
+  		<li>Before OpenLayers 2.11:
+  			<ul>
+  				<li>Proxy on your server and use normal AJAX</li>
+				<li>Custom 
+					<a href="http://trac.osgeo.org/openlayers/browser/trunk/openlayers/lib/OpenLayers/Protocol.js" 
+						title="OpenLayer.Protocol class">OpenLayers.Protocol</a> 
+						with JSONP handling 
+					(i.e. with <a href="http://alotaiba.github.com/FlyJSONP/" target="FlyJSONP">FlyJSONP)</a></li>  		
+  			</ul>
+  		</li>
+  		<li>New in OpenLayers 2.11: 
+  			<a href="http://trac.osgeo.org/openlayers/browser/trunk/openlayers/lib/OpenLayers/Protocol/Script.js" 
+  				title="OpenLayers.Protocol.Script">Script</a> </li>
+  		
+  	</ul>
+</div>
+
+<!-- FLICKR -->
+
+<div class="slide" id="flickr-1">
+   <h2>Example #1: Flickr</h2>
+   <li>API key needed (free)</li>
+   <li>Improved OpenLayer.Format.FlatJSON
+  		<div style="font-size:23px;!important">
+     <pre class="brush: js;"> 
+format: new OpenLayers.Format.FlatJSON({
+	getResultArray : function(obj){ return obj.photos.photo},
+	getLat : function(obj) { return obj.latitude },
+	getLon : function(obj) { return obj.longitude }
+}</pre> </div></li>
+	<li>Patched version of <a href="http://trac.osgeo.org/openlayers/browser/trunk/openlayers/lib/OpenLayers/Protocol/Script.js" 
+  				title="OpenLayers.Protocol.Script">Script</a>  to solve an small 
+  				callback bug (<a href="http://trac.osgeo.org/openlayers/ticket/3486">reported</a>)</li>
+
+</div>
+
+<div class="slide" id="flickr-2">
+   <h2>Example #1: Flickr</h2>
+   <pre style="height:300px;" class="brush: js;"> 
+layer1 = new OpenLayers.Layer.Vector("Flickr",{
+  strategies: [new OpenLayers.Strategy.BBOX({resFactor:2})],
+  protocol: new OpenLayers.Protocol.Script2({
+    url: "http://api.flickr.com/services/rest/",
+    callbackKey: "jsoncallback",
+    params:{ 
+      format: "json", method: "flickr.photos.search",
+      api_key: "b3a77fdabcdf31ea15266ccffbb353c0",
+      extras: "geo,url_t,owner_name,url_m",
+      min_upload_date : "1157285524.213"
+    },
+    filterToParams: function(filter, params) {
+      if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+        params.bbox = ""+ Math.max(filter.value.left,-180) + "," + 
+        Math.max(filter.value.bottom,-90) + "," +
+        Math.min(filter.value.right,180) + "," + 
+        Math.min(filter.value.top,90);}
+      return params;
+    },
+    format: new OpenLayers.Format.FlatJSON({
+      getResultArray : function(obj){ return obj.photos.photo},
+      getLat : function(obj) { return obj.latitude },
+      getLon : function(obj) { return obj.longitude }
+    })
+  })
+});
+</pre> 
+</div>
+
+
+<div class="slide" id="flickr-3">
+   <h2>Example #1: Flickr</h2>
+   <img src="olsocial-imgs/flickr.png" width="974" height="559" alt="flickr demo" />
+</div>
+
+
+<!-- TWITTER -->
+
+<div class="slide" id="twitter-1">
+   <h2>Example #2: Twitter</h2>
+	<p>The <tt>filterToParams</tt> has to convert from BBOX to center & radius<p>
+   <pre style="height:300px;" class="brush: js;">
+protocol: new OpenLayers.Protocol.Script2({
+  url: "http://search.twitter.com/search.json",
+  params: { rpp: "100" },
+  callbackKey: "callback",
+  filterToParams: function(filter, params) {
+    if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+      var dist = OpenLayers.Util.distVincenty(
+        filter.value.getCenterLonLat(), 
+        {lon: filter.value.left, lat: filter.value.bottom}
+      );
+      params.geocode=filter.value.getCenterLonLat().lat +
+        "," + filter.value.getCenterLonLat().lon +
+        "," + dist + "km";
+    }
+    return params;
+  },
+  </pre>
+</div>
+
+<div class="slide" id="twitter-2">
+   <h2>Example #2: Twitter</h2>
+   <p>FlatJSON is a little bit more complicated, Twitter geodata is more ofuscated</p>
+   <pre style="height:300px;" class="brush: js;"> 
+  format: new OpenLayers.Format.FlatJSON({
+    getResultArray: function(obj){ return obj["results"]},
+    getLat: function(obj){ 
+      if (obj.geo && obj.geo.coordinates)
+        return obj.geo.coordinates[0];
+      var lat = obj.location.replace(/[^0-9\.\,]+/g,'').split(",")[0];
+      return lat;
+    },
+    getLon: function(obj){ 
+      if (obj.geo && obj.geo.coordinates)
+        return obj.geo.coordinates[1];
+      var lon = obj.location.replace(/[^0-9\.\,]+/g,'').split(",")[1];
+      return lon;
+    }
+  })
+})
+</pre> 
+</div>
+
+
+<div class="slide" id="twitter-3">
+   <h2>Example #2: Twitter</h2>
+   <img src="olsocial-imgs/twitter.png" width="950" height="596" alt="twitter demo" />
+</div>
+
+
+
+<!-- CUSTOM SOLUTON -->
+
+
+<div class="slide" id="custom-1">
+   <h2>Example #3: Tourism Geoportal</h2>
+   <pre style="height:300px;" class="brush: js;">
+protocol: new OpenLayers.Protocol.Script2({
+  url: "http://www.comunitatvalenciana.com/geo/search",
+  params: { lang: "eng", layerName: "monumentos",
+            format: "json", results: "200"},
+  callbackKey: "callback",
+  filterToParams: function(filter, params) {
+    if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+      var dist = OpenLayers.Util.distVincenty(
+        filter.value.getCenterLonLat(), 
+        {lon: filter.value.left, lat: filter.value.bottom});
+      params.lat=filter.value.getCenterLonLat().lat;
+      params.lon=filter.value.getCenterLonLat().lon;
+      params.radius=dist*1000; //in meters
+    }
+    return params;
+  },
+  format: new OpenLayers.Format.FlatJSON({
+    getResultArray : function(obj){ return obj.hotspots},
+    getLat : function(obj) { return obj.lat },
+    getLon : function(obj) { return obj.lon }
+  })
+})
+  </pre>
+</div>
+
+<div class="slide" id="custom-2">
+   <h2>Example #3: Tourism Geoportal</h2>
+   <img src="olsocial-imgs/cv.png" width="950" height="597" alt="cv portal" />
+</div>
+
+
+<!-- RECAP -->
+<div class="slide" id="recap">
+   <h2>Recap</h2>
+   
+   <p>for every API:</p>
+   <ul>
+   	<li>Protocol with requests by BBOX or center&radius</li>
+   	<li>Specific set of parameters</li>
+   	<li>Specific response to process (FlatJSON makes it easier)</li>
+   </ul>
+</div>
+
+		
+<!-- POI PROXY -->
+
+<div class="slide" id="poiproxy-1">
+   <h2>Different approximation: POIProxy</h2>
+	<ul>
+		<li>Server app by Alberto Romeu, <a href="https://github.com/alrocar/POIProxy">repo</a> at GitHub</li>
+		<li>Similar to chrsmidt's <a href="http://anymaps.appspot.com/about/" title="AnyMaps">AnyMaps</a></li>
+		<li>Deploy it on your servlet container or at GAE</li>
+		<li>Response in GeoJSON</li>
+		<li>Demo instance at <a href="http://poiproxy.mapps.es/">http://poiproxy.mapps.es/</a></li>
+	</ul>	
+	<img src="olsocial-imgs/poiproxy.png" alt="POIProxy diagram" />
+</div>
+
+
+<div class="slide" id="poiproxy-2">
+   <h2>Example #4: Gowalla from POIProxy</h2>
+   <pre style="height:300px;" class="brush: js;">
+layer1 = new OpenLayers.Layer.Vector("gowalla",{
+  projection: "EPSG:4326",
+  strategies: [new OpenLayers.Strategy.BBOX({resFactor:1})],
+  styleMap: new OpenLayers.StyleMap({
+    externalGraphic: 'gowalla.png',
+    pointRadius: 8
+  }),
+  protocol: new OpenLayers.Protocol.Script({
+    url: "http://poiproxy.mapps.es/browseByExtent",
+    callbackKey: "callback",
+    params:{ service: "gowalla"	},
+    filterToParams: function(filter, params) {
+      if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+        params.minX = Math.max(filter.value.left,-180);
+        params.minY = Math.max(filter.value.bottom,-90);
+        params.maxX = Math.min(filter.value.right,180);
+        params.maxY = Math.min(filter.value.top,90);
+      }
+      return params;
+    },
+    format: new OpenLayers.Format.GeoJSON()
+  })
+});
+  </pre>
+</div>
+
+<div class="slide" id="poiproxy-3">
+   <h2>Example #4: Gowalla from POIProxy </h2>
+   <img src="olsocial-imgs/gowalla.png" width="948" height="591" alt="gowalla demo" />
+</div>
+
+<!-- CONCLUSIONS -->
+<div class="slide" id="conclusions">
+   <h2>Some conclusions</h2>
+   <ul>
+      <li class="slide">Adding external POI services is pretty easy with Script class</li>
+      <li class="slide">With small code it can be simplified even more</li>
+      <li class="slide">POIProxy can be a good choice to facilitate the access to different POI services</li>
+      <li class="slide">There's more work to do, for example manage pagination</li>
+      <li class="slide">A more simplified and  ­&laquo;OpenLayers style&raquo; code is available at <a hre="http://gis.prodevelop.es/olsocial/">http://gis.prodevelop.es/olsocial/</a>. Check the source.</li>
+   </ul>
+</div>
+
+
+<div class="slide" id="thats-all-folks">
+  <h1>Thanks!</h1>
+ 
+  <div style="position:absolute;top:50%;right:35%;">
+  <a href="http://www.flickr.com/photos/shadybird/3835818941/" title="Hands up by Sharon G., on Flickr">
+  	<img src="imgs/thank-you-cat.jpg" style="height:225px;" alt="Hands up">
+  	</a>
+  	
+  	<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+  	<img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+  	</a>
+  </div>
+</div>
+
+
+
+<!--
+<div class="slide" id="id-slide">
+   <h2>Title</h2>
+   <p>blah blah</p>
+</div>
+-->
+
+
+<!-- Layout -->
+
+
+
+
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+
+
+
+<p class="deck-status" style="width:100%;">
+   <span style="margin-right:630px;">
+   <a href="http://www.prodevelop.es" alt="Prodevelop">
+      <img class="banner-fondo" src="imgs/prodevelop-logo-thumb.png" style="height:40px;padding-bottom:15px;margin-right:auto;"/>
+   </a>
+   </span>
+  <a href="http://2011.foss4g.org">FOSS4G 2011</a> · Denver · 
+   <span class="deck-status-current"></span>
+   /
+   <span class="deck-status-total"></span>
+</p>
+
+
+<!-- Place the following snippet at the bottom of the deck container. -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="number" name="slidenum" id="goto-slide">
+	<input type="submit" value="Go">
+</form>
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<script src="jquery.js"></script>
+<!-- Deck Core and extensions -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+
+
+<!-- Syntax highlighter stuff -->
+<script type="text/javascript" src="sh/scripts/shCore.js"></script> 
+<script type="text/javascript" src="sh/scripts/shBrushJScript.js"></script> 
+<script type="text/javascript" src="sh/scripts/shBrushXml.js"></script> 
+	
+	
+<script <script type="text/javascript">
+$(document).ready(function(){
+	$('A[rel="_blank"]').click(function(){
+	window.open($(this).attr('href'));
+	return false;
+	});
+});
+  
+SyntaxHighlighter.all();
+$.deck('.slide');
+</script>
+
+</body>
+
+</html>
