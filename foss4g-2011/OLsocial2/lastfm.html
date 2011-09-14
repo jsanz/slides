@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="http://openlayers.org/dev/OpenLayers.js"></script>
-	<script src="JSON2.js"></script>
+	<script src="FlatJSON.js"></script>
 	<script src="Script2.js"></script>
 	<script src="SmartPopup.js"></script>
 	<style>
@@ -57,7 +57,7 @@
 						}
 						return params;
 					},
-					format: new OpenLayers.Format.JSON2({
+					format: new OpenLayers.Format.FlatJSON({
 						getResultArray : function(obj){ return obj.events.event},
 						getLat : function(obj) { return obj.venue.location["geo:point"]["geo:lat"] },
 						getLon : function(obj) { return obj.venue.location["geo:point"]["geo:long"] }

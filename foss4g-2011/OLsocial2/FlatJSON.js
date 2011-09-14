@@ -23,7 +23,7 @@
  * Inherits from:
  *  - <OpenLayers.Format.JSON>
  */
-OpenLayers.Format.JSON2 = OpenLayers.Class(OpenLayers.Format, {
+OpenLayers.Format.FlatJSON = OpenLayers.Class(OpenLayers.Format, {
 
 	getResultArray: function(obj){ return obj["results"]},
     getLat: function(obj){ 
@@ -119,6 +119,6 @@ OpenLayers.Format.JSON2 = OpenLayers.Class(OpenLayers.Format, {
     },
     
 
-    CLASS_NAME: "OpenLayers.Format.JSON2" 
+    CLASS_NAME: "OpenLayers.Format.FlatJSON" 
 
 });     
