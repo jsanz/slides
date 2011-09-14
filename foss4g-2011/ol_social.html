@@ -91,6 +91,7 @@
     <li class="smaller-font"> <a href="http://twitter.com/jacarma">@visancal</a> · <span class="mail">vsanjaime [at] prodevelop [dot] es</span></li></ul>
     </li>   
   </ul>
+  <p class="center"><a href="http://bit.ly/foss4g11-olsocial ">http://bit.ly/foss4g11-olsocial </a></p>
 </div>
  
 <div class="slide" id="audience">
@@ -98,7 +99,7 @@
  	<ul>
 		<li class="slide">Some basic knowledge of JavaScript</li>
 		<li class="slide">Some basic knowledge of OpenLayers</li>		
-		<li class="slide">OpenLayers ninjas, you can dissapear :-)
+		<li class="slide">OpenLayers ninjas, you can disappear :-)
 			<div class="figure">
 			<a rel="_blank" href="http://www.flickr.com/photos/sethw/381321976/" title="Ninja by Seth W., on Flickr">
 				<img src="olsocial-imgs/ninja.jpg" height="250" alt="Ninja">
@@ -188,10 +189,10 @@ callbackFunction({results:{a:1,b:2,c:3})</pre></div>
 <div class="slide" id="flickr-1">
    <h2>Example #1: Flickr</h2>
    <li>API key needed (free)</li>
-   <li>Improved OpenLayer.Format.FlatJSON (JSON2)
+   <li>Improved OpenLayer.Format.FlatJSON
   		<div style="font-size:23px;!important">
      <pre class="brush: js;"> 
-format: new OpenLayers.Format.JSON2({
+format: new OpenLayers.Format.FlatJSON({
 	getResultArray : function(obj){ return obj.photos.photo},
 	getLat : function(obj) { return obj.latitude },
 	getLon : function(obj) { return obj.longitude }
@@ -224,7 +225,7 @@ layer1 = new OpenLayers.Layer.Vector("Flickr",{
         Math.min(filter.value.top,90);}
       return params;
     },
-    format: new OpenLayers.Format.JSON2({
+    format: new OpenLayers.Format.FlatJSON({
       getResultArray : function(obj){ return obj.photos.photo},
       getLat : function(obj) { return obj.latitude },
       getLon : function(obj) { return obj.longitude }
@@ -268,9 +269,9 @@ protocol: new OpenLayers.Protocol.Script2({
 
 <div class="slide" id="twitter-2">
    <h2>Example #2: Twitter</h2>
-   <p>JSON2 is a little bit more complicated, Twitter geodata is more ofuscated</p>
+   <p>FlatJSON is a little bit more complicated, Twitter geodata is more ofuscated</p>
    <pre style="height:300px;" class="brush: js;"> 
-  format: new OpenLayers.Format.JSON2({
+  format: new OpenLayers.Format.FlatJSON({
     getResultArray: function(obj){ return obj["results"]},
     getLat: function(obj){ 
       if (obj.geo && obj.geo.coordinates)
@@ -319,7 +320,7 @@ protocol: new OpenLayers.Protocol.Script2({
     }
     return params;
   },
-  format: new OpenLayers.Format.JSON2({
+  format: new OpenLayers.Format.FlatJSON({
     getResultArray : function(obj){ return obj.hotspots},
     getLat : function(obj) { return obj.lat },
     getLon : function(obj) { return obj.lon }
@@ -350,7 +351,7 @@ protocol: new OpenLayers.Protocol.Script2({
 <!-- POI PROXY -->
 
 <div class="slide" id="poiproxy-1">
-   <h2>Differest approximation: POIProxy</h2>
+   <h2>Different approximation: POIProxy</h2>
 	<ul>
 		<li>Server app by Alberto Romeu, <a href="https://github.com/alrocar/POIProxy">repo</a> at GitHub</li>
 		<li>Similar to chrsmidt's <a href="http://anymaps.appspot.com/about/" title="AnyMaps">AnyMaps</a></li>
@@ -358,7 +359,7 @@ protocol: new OpenLayers.Protocol.Script2({
 		<li>Response in GeoJSON</li>
 		<li>Demo instance at <a href="http://poiproxy.mapps.es/">http://poiproxy.mapps.es/</a></li>
 	</ul>	
-	<img src="https://a248.e.akamai.net/assets.github.com/img/93e473bde171d340ae09d473f1489401116e7bfd/687474703a2f2f706f6970726f78792e6d617070732e65732f706f6970726f78795f6469616772616d2e706e67" alt="" />
+	<img src="olsocial-imgs/poiproxy.png" alt="POIProxy diagram" />
 </div>
 
 
