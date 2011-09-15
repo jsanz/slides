@@ -71,12 +71,15 @@
   <ul>
     <li>Jorge Sanz
     <ul>
-    <li class="smaller-font"><a href="http://twitter.com/xurxosanz">@xurxosanz</a> · <span class="mail">jsanz [at] gvsig [dot] com</span></li>
+    <li class="smaller-font"><a href="http://twitter.com/xurxosanz">@xurxosanz</a></li>
+    <li class="smaller-font"><span class="mail">jsanz [at] gvsig [dot] com</span></li>
     </ul>
     </li>
     <li>Ignacio Brodin
     <ul>
-    <li class="smaller-font"> <a href="http://twitter.com/nachobrodin">@nachobrodin</a> · <span class="mail">ibrodin [at] prodevelop [dot] es</span></li></ul>
+    <li class="smaller-font"> <a href="http://twitter.com/nachobrodin">@nachobrodin</a> </li>
+    <li class="smaller-font"> <span class="mail">ibrodin [at] prodevelop [dot] es</span></li>
+    </ul>
     </li>
   </ul>
   
@@ -92,12 +95,14 @@
 	<h2>gvSIG Desktop</h2>
 	<ul>
 		<li><a href="http://www.gvsig.org">http://www.gvsig.org</a></li>
-		<li>Free Software Desktop GIS tool</li>
+		<li>Free Software Multiplatform Desktop GIS tool</li>
 		<li>Since 2004</li>
 		<li>Current stable release 1.11</li>
-		<li>Stabilizating 2.0</li>
+		<li>Stabilizing 1.12 and 2.0</li>
 		<li>OSGeo incubating project</li>
 		<li>Mature community</li>
+		<li><a href="http://outreach.gvsig.org/case-studies" name="case studies web site">
+			http://outreach.gvsig.org/case-studies</a></li>
 	</ul>
 </div>
 
@@ -111,6 +116,24 @@
 		<li>Many community plugins</li>
 		<li>Professional services (i.e. <a href="http://www.gvsig.com">gvSIG Assocation</a>) </li>
 	</ul>
+</div>
+
+<div class="slide"id="gvsig-desktop-postgis">
+	<h2>gvSIG Desktop and PostGIS</h2>
+	<ul>
+		<li>GeoDB: PostGIS, Oracle, MySQL, ArcSDE</li>
+		<li>Access, edit, export to postgis tables</li>		
+	</ul>
+	<img src="pgraster-imgs/add-postgis-table.png" height="400" alt="add postgis table" />
+</div>
+
+<div class="slide"id="gvsig-desktop-raster">
+	<h2>gvSIG Desktop and raster</h2>
+	<ul>
+		<li>Based on GDAL (JNI bindings)</li>
+		<li>Band management, filter, reproject, georeference, export, clip,... </li>		
+	</ul>
+	<img src="pgraster-imgs/raster.png" width="1334" height="400" alt="Raster features" />
 </div>
 
 <div class="slide" id="pg-raster">
@@ -129,24 +152,90 @@
 <div class="slide" id="pg-raster-2">
    <h2>PostGIS Raster</h2>
   <ul>
-    <li><strong>Tile</strong>: raster object in a record, is a full piece of data</li>
     <li><tt><a href="http://trac.osgeo.org/postgis/browser/trunk/raster/scripts/python/raster2pgsql.py">
     	raster2pgsql.py</a></tt> 
     	to generate SQL from file</li>
-    <li>poner imagen del pgadmin</li>
   </ul>
+  <img src="pgraster-imgs/pgadmin.png" height="400" alt="PGAdmin with raster data" />
 </div>
 
 
+<div class="slide" id="refs">
+   <h2>gvSIG Driver: references</h2>
+   <ul>	
+   	<li>Hosted at OSOR.eu <a href="http://forge.osor.eu/projects/gvsig-postgisra/">http://forge.osor.eu/projects/gvsig-postgisra/</a></li>
+   	<li>gvSIG.org web page <a href="http://www.gvsig.org/web/projects/contrib/gvsig-postgisr">http://www.gvsig.org/web/projects/contrib/gvsig-postgisr</a></li>
+   	<li>Funded by España Virtual R&D project <a href="http://www.xn--espaavirtual-dhb.org/">http://www.españavirtual.org/</a></li>
+   	<li>Developed in collaboration with Deimos Space <a href="http://www.deimos-space.com/">http://www.deimos-space.com/</a></li>
+   </ul>
+</div>
+
+<div class="slide" id="diagram">
+	<img style="margin-top:20px;" src="pgraster-imgs/diagram.png" width="781" height="650" alt="extension diagram" />
+</div>
+
+<div class="slide" id="demo">
+   <h2>Demo</h2>
+   <div class="center">
+	   <iframe width="480" height="360" src="http://www.youtube.com/embed/AeTpQHdAwmU?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+   	<p class="smaller-font"><a href="http://www.youtube.com/watch?v=AeTpQHdAwmU" title="demo video">http://www.youtube.com/watch?v=AeTpQHdAwmU</a></p>
+   </div>
+</div>
+
+<div class="slide" id="status">
+	<h2>Status</h2>
+	<ul>
+		<li>Prototype running on gvSIG 1.x</li>
+		<li>Based on GDAL 1.7.2 and PostGIS 1.5.2</li>
+	</ul>
+</div>
+
+<div class="slide" id="future-works">
+	<h2>Next steps</h2>
+	<ul>
+		<li> Upgrades:
+			<ul>
+				<li>Upgrade gvSIG support to PostGIS 2.0 and GDAL 1.8 </li>
+				<li>Upgrade the extension to gvSIG 2.0</li>	
+			</ul>
+		</li>
+		<li>More features:
+			<ul>
+				<li>Improve gvSIG UI layer loader</li>
+				<li>Load rasters into the database </li>
+				<li>Delegate analysis to database</li>			
+			</ul>		
+		</li>	
+	</ul>
+</div>
+
+<!--
+<div class="slide" id="id-slide">
+   <h2>Title</h2>
+   <p>blah blah</p>
+</div>
+-->
+
 <div class="slide" id="thats-all-folks">
-  <h2>Thanks!</h2>
+  <h2>Thanks! Questions?</h2>
  
-  <div style="position:absolute;top:30%;right:20%;">
-  <a href="http://www.flickr.com/photos/shadybird/3835818941/" title="Hands up by Sharon G., on Flickr">
-  	<img src="imgs/thank-you-cat.jpg" style="height:225px;" alt="Hands up">
-  	</a>
+  <div style="">
+  <ul>
+    <li>Jorge Sanz
+    <ul>
+    <li class="smaller-font"><a href="http://twitter.com/xurxosanz">@xurxosanz</a></li>
+    <li class="smaller-font"><span class="mail">jsanz [at] gvsig [dot] com</span></li>
+    </ul>
+    </li>
+    <li>Ignacio Brodin
+    <ul>
+    <li class="smaller-font"> <a href="http://twitter.com/nachobrodin">@nachobrodin</a> </li>
+    <li class="smaller-font"> <span class="mail">ibrodin [at] prodevelop [dot] es</span></li>
+    </ul>
+    </li>
+  </ul>
   	
-  	<p><a href="http://bit.ly/foss4g11-gvsigpg" >http://bit.ly/foss4g11-gvsigpg</a></p>
+  	<p class="center"><a href="http://bit.ly/foss4g11-gvsigpg" >http://bit.ly/foss4g11-gvsigpg</a></p>
   	
   	<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
   	<img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
@@ -164,19 +253,14 @@
   	</a>
 	
 	<a href="http://jornadas.gvsig.org/inicio/" title="7th gvSIG Conference">
-		<img style="display:inline;margin:10px;" src="pgraster-imgs/gvsig7.png" height="4 00" alt="7th gvSIG Conf" />	
+		<img style="display:inline;margin:10px;" src="pgraster-imgs/gvsig7.png" height="400" alt="7th gvSIG Conf" />	
 	</a>  
   </div>
  
 
 </div>
 
-<!--
-<div class="slide" id="id-slide">
-   <h2>Title</h2>
-   <p>blah blah</p>
-</div>
--->
+
 
 
 <!-- Layout -->

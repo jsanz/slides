@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="729.51526"
+   height="607.27014"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="Nuevo documento 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="370.54414"
+     inkscape:cy="189.13093"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.587608,-85.441193)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 622.25397,470.89954 0,-343.45186"
+       id="path4010"
+       inkscape:connector-curvature="0"
+       transform="translate(21.587608,85.441193)"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 206.16238,615.36907 0,-90.8604"
+       id="path3054"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 108.08632,189.69191 292.94424,418.99654"
+       id="path3890"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 634.88087,159.89241 334.86557,387.17673"
+       id="path3890-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="320"
+       height="234.28572"
+       x="137.02391"
+       y="290.22293" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="295.78174"
+       y="398.79547"
+       id="text2987"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2989"
+         x="295.78174"
+         y="398.79547">PostGIS Raster</tspan><tspan
+         sodipodi:role="line"
+         x="295.78174"
+         y="438.79547"
+         id="tspan2991">Extension</tspan></text>
+    <rect
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-5"
+       width="138.27695"
+       height="101.23846"
+       x="137.02391"
+       y="590.2229" />
+    <rect
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-5-4"
+       width="138.27695"
+       height="101.23846"
+       x="318.74695"
+       y="590.2229" />
+    <text
+       xml:space="preserve"
+       style="font-size:27.85752869px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="191.0094"
+       y="650.66302"
+       id="text3029"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3031"
+         x="191.0094"
+         y="650.66302">UI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:27.85752869px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="358.64725"
+       y="650.96906"
+       id="text3029-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3031-9"
+         x="358.64725"
+         y="650.96906">View</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 387.88542,589.89551 0,-66.42855"
+       id="path3054-1"
+       inkscape:connector-type="orthogonal"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-0"
+       width="182.61926"
+       height="136.30093"
+       x="22.837608"
+       y="86.691193" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="116.94567"
+       y="147.78658"
+       id="text2987-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="121.10192"
+         y="147.78658"
+         id="tspan2991-7">GeoDB </tspan><tspan
+         sodipodi:role="line"
+         x="116.94567"
+         y="187.78658"
+         id="tspan3888">Extension</tspan></text>
+    <rect
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-0-8"
+       width="182.61926"
+       height="136.30093"
+       x="558.21844"
+       y="86.691193" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="652.32654"
+       y="149.64282"
+       id="text2987-4-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="652.32654"
+         y="149.64282"
+         id="tspan2991-7-8">Raster</tspan><tspan
+         sodipodi:role="line"
+         x="652.32654"
+         y="189.64282"
+         id="tspan3888-0">Extension</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3937"
+       sodipodi:cx="578.31232"
+       sodipodi:cy="258.76752"
+       sodipodi:rx="102.53049"
+       sodipodi:ry="97.984795"
+       d="m 678.92966,239.92732 c 10.88787,53.10576 -25.33369,104.59152 -80.90312,114.99667 -55.56943,10.40515 -109.4437,-24.21053 -120.33157,-77.31628 -10.88786,-53.10575 25.3337,-104.59151 80.90312,-114.99666 54.80705,-10.2624 108.12742,23.28279 119.92932,75.45057"
+       transform="matrix(1,0,0,0.39955238,69.450587,208.07392)"
+       sodipodi:start="6.0897037"
+       sodipodi:end="12.353448"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="592.76978"
+       y="316.14108"
+       id="text3939"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3941"
+         x="592.76978"
+         y="316.14108">Raster library</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3937-3"
+       sodipodi:cx="578.31232"
+       sodipodi:cy="258.76752"
+       sodipodi:rx="102.53049"
+       sodipodi:ry="97.984795"
+       d="m 678.92966,239.92732 c 10.88787,53.10576 -25.33369,104.59152 -80.90312,114.99667 -55.56943,10.40515 -109.4437,-24.21053 -120.33157,-77.31628 -10.88786,-53.10575 25.3337,-104.59151 80.90312,-114.99666 54.80705,-10.2624 108.12742,23.28279 119.92932,75.45057"
+       transform="matrix(1,0,0,0.39955238,69.450587,324.65997)"
+       sodipodi:start="6.0897037"
+       sodipodi:end="12.353448"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="607.18384"
+       y="432.72714"
+       id="text3939-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3941-9"
+         x="607.18384"
+         y="432.72714">jgdal 0.9.3</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#d3d7cf;fill-opacity:1;stroke:#000000;stroke-width:2.5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3937-3-2"
+       sodipodi:cx="578.31232"
+       sodipodi:cy="258.76752"
+       sodipodi:rx="102.53049"
+       sodipodi:ry="97.984795"
+       d="m 678.92966,239.92732 c 10.88787,53.10576 -25.33369,104.59152 -80.90312,114.99667 -55.56943,10.40515 -109.4437,-24.21053 -120.33157,-77.31628 -10.88786,-53.10575 25.3337,-104.59151 80.90312,-114.99666 54.80705,-10.2624 108.12742,23.28279 119.92932,75.45057"
+       transform="matrix(1,0,0,0.39955238,69.450587,430.72599)"
+       sodipodi:start="6.0897037"
+       sodipodi:end="12.353448"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.95979118px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Sans;-inkscape-font-specification:Droid Sans"
+       x="573.8548"
+       y="571.28241"
+       id="text3939-5-2"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0613338,0.94221064)"><tspan
+         sodipodi:role="line"
+         id="tspan3941-9-2"
+         x="573.8548"
+         y="571.28241">gdal 1.7.2</tspan></text>
+  </g>
+</svg>
