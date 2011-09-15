@@ -1,0 +1,7 @@
+.deck-container h1,.deck-container h2,.deck-container ::selection,.deck-container a, 
+.deck-container a:hover, .deck-container a:focus, .deck-container a:active,
+.deck-container a:visited,.deck-container .deck-prev-link:hover, 
+.deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover,
+.deck-container .deck-next-link:focus {
+  color: #235220;
+}
