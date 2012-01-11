@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+	<script src="FlatJSON.js"></script>
+	<script src="Script2.js"></script>
+	<script src="SmartPopup.js"></script>
+	<style>
+		.twimg {
+			float:left;
+			margin: 0 10px 10px 0;
+			width: 48px;
+			height: 48px;
+		}
+		.twtext, .twuser {
+			font-size: small;
+			color: gray;
+			text-decoration:none;
+		}
+		.twuser{
+			font-weight:bold;
+		}
+	</style>
+    <script type="text/javascript">
+        var map, layer0, layer1;
+        function init(){
+            map = new OpenLayers.Map( 'map' );
+
+			layer0= new OpenLayers.Layer.OSM( "Simple OSM Map");
+					
+			layer1 = new OpenLayers.Layer.Vector("Twitter",{
+				projection: "EPSG:4326",
+				strategies: [new OpenLayers.Strategy.BBOX({resFactor:2})],
+				styleMap: new OpenLayers.StyleMap({
+					externalGraphic: 'twitter_fugue.png',
+					pointRadius: 8
+				}),
+				protocol: new OpenLayers.Protocol.Script2({
+					url: "http://search.twitter.com/search.json",
+					params: {
+						rpp: "100"
+					},
+					callbackKey: "callback",
+					callbackPrefix: "",
+					filterToParams: function(filter, params) {
+						if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+							var dist = OpenLayers.Util.distVincenty(
+								filter.value.getCenterLonLat(), 
+								{lon: filter.value.left, lat: filter.value.bottom}
+							);
+							params.geocode=filter.value.getCenterLonLat().lat +
+								"," + filter.value.getCenterLonLat().lon +
+								"," + dist + "km";
+						}
+						return params;
+					},
+					format: new OpenLayers.Format.FlatJSON({
+					getResultArray: function(obj){ return obj["results"]},
+				    getLat: function(obj){ 
+						if (obj.geo && obj.geo.coordinates)
+							return obj.geo.coordinates[0];
+						var lat = obj.location.replace(/[^0-9\.\,]+/g,'').split(",")[0];
+						return lat;
+					},
+					getLon: function(obj){ 
+						if (obj.geo && obj.geo.coordinates)
+							return obj.geo.coordinates[1];
+						var lon = obj.location.replace(/[^0-9\.\,]+/g,'').split(",")[1];
+						return lon;
+					}
+					})
+				})
+			});
+			
+            map.addLayer(layer0);
+			map.addLayer(layer1);
+			var p1 = new SmartPopup('twitterPopup',layer1,map);
+         map.moveTo(
+          new OpenLayers.LonLat(-104.976425,39.740986).transform(
+              new OpenLayers.Projection("EPSG:4326"),
+              map.getProjectionObject()
+          ), 13
+     		);  
+        }
+
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="map" style="width:100%;height:100%"></div>
+	<div id="twitterPopup" style="visibility:hidden; display:none">
+		<img src="%profile_image_url%" class="twimg"/>
+		<a class="twuser" href="http://twitter.com/%from_user%">%from_user%:</a>
+		<a class="twtext" href="http://twitter.com/%from_user%/status/%id_str%">%text%</a>
+	</div>
+  </body>
+</html>

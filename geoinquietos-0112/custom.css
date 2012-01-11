@@ -1,0 +1,82 @@
+/* sobrecargados */
+.deck-container li, .deck-container p{
+  font-size: 35px;
+}
+
+.deck-container .deck-status{
+  bottom: 5px;
+}
+
+.csstransforms .deck-container h1 {
+	top: 35%;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-before, .csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-previous {
+opacity: 1;
+}
+
+/* Específicos */
+.deck-container .mail{
+  font-family:"Monaco","Droid Sans Mono","Courier";
+  color: #1B336B;
+}
+
+.deck-container li.bigger-font, .deck-container p.bigger-font{
+	font-size: larger;
+}
+
+.deck-container li.smaller-font,.deck-container p.smaller-font{
+	font-size: smaller;
+}
+
+.deck-container .center{
+	text-align: center;
+}
+
+.deck-container img.banner-fondo{
+	margin-bottom: 0px;
+	display: inline;
+}
+
+.deck-container li ul{
+	margin-bottom: 0px;
+}
+
+.left-figure{
+	float: left;
+	margin: 10px;
+}
+
+.deck-container img.phone{
+	display:inline;
+	height:80%;
+	margin:10px 20px;
+}
+
+.deck-container div.important{
+	padding: 0 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.deck-container div.important p{
+	font-size: 40px;
+}
+
+.deck-container strong{
+	color: #565248;
+}
+
+.deck-container div.figure img{
+	margin: 20px auto 10px auto;
+}
+
+.deck-container div.figure p.caption{
+	text-align: center;
+	font-style: italic; 
+	font-size: 10px;
+	margin-top: 5px;
+}

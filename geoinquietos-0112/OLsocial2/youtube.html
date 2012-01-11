@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+	<script src="FlatJSON.js"></script>
+	<script src="Script2.js"></script>
+    <script type="text/javascript">
+        var map, layer0, layer1;
+		var style = new OpenLayers.Style({
+			pointRadius: 20,
+			externalGraphic: '${url_t}'
+		});
+        function init(){
+            map = new OpenLayers.Map( 'map' );
+            layer0 = new OpenLayers.Layer.WMS( "OpenLayers WMS",
+                    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+                    {layers: 'basic'} );
+					
+			layer1 = new OpenLayers.Layer.Vector("Flickr",{
+				strategies: [new OpenLayers.Strategy.BBOX({resFactor:1})],
+				styleMap: new OpenLayers.StyleMap(style),
+				protocol: new OpenLayers.Protocol.Script2({
+					url: "http://en.wikipedia.org/w/api.php",
+					callbackKey: "callback",
+					params:{ 
+						format: "json",
+						"max-results": "30",
+						format: "5"
+					},
+					filterToParams: function(filter, params) {
+						if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
+							var dist = OpenLayers.Util.distVincenty(
+								filter.value.getCenterLonLat(), 
+								{lon: filter.value.left, lat: filter.value.bottom}
+							);
+							params.location=filter.value.getCenterLonLat().lat +
+								"," + filter.value.getCenterLonLat().lon;
+							params["location-radius"]=Math.min(dist,1000) + "km";
+						}
+						return params;
+					},
+					format: new OpenLayers.Format.FlatJSON({
+						getResultArray : function(obj){ return obj.feed.entry},
+						getLat : function(obj) { return obj.latitude },
+						getLon : function(obj) { return obj.longitude }
+					})
+				})
+			});
+			
+            map.addLayer(layer0);
+			map.addLayer(layer1);
+            map.zoomToMaxExtent();
+        }
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="map" style="width:600px;height:400px"></div>
+  </body>
+</html>
