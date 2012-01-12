@@ -238,7 +238,9 @@ layer1 = new OpenLayers.Layer.Vector("Flickr",{
 
 <div class="slide" id="flickr-3">
    <h2>Example #1: Flickr</h2>
+   <a  href="OLsocial2/flickr.html" rel="_blank">
    <img src="olsocial-imgs/flickr.png" width="974" height="559" alt="flickr demo" />
+   </a>
 </div>
 
 
@@ -293,7 +295,9 @@ protocol: new OpenLayers.Protocol.Script2({
 
 <div class="slide" id="twitter-3">
    <h2>Example #2: Twitter</h2>
+   <a rel="_blank" href="OLsocial2/twitter.html">
    <img src="olsocial-imgs/twitter.png" width="950" height="596" alt="twitter demo" />
+   </a>
 </div>
 
 
@@ -331,7 +335,9 @@ protocol: new OpenLayers.Protocol.Script2({
 
 <div class="slide" id="custom-2">
    <h2>Example #3: Tourism Geoportal</h2>
+   <a rel="_blank" href="OLsocial2/comunitatvalenciana.html">
    <img src="olsocial-imgs/cv.png" width="950" height="597" alt="cv portal" />
+   </a>
 </div>
 
 
@@ -366,17 +372,17 @@ protocol: new OpenLayers.Protocol.Script2({
 <div class="slide" id="poiproxy-2">
    <h2>Example #4: Gowalla from POIProxy</h2>
    <pre style="height:300px;" class="brush: js;">
-layer1 = new OpenLayers.Layer.Vector("gowalla",{
+layer1 = new OpenLayers.Layer.Vector("foursquare",{
   projection: "EPSG:4326",
   strategies: [new OpenLayers.Strategy.BBOX({resFactor:1})],
   styleMap: new OpenLayers.StyleMap({
-    externalGraphic: 'gowalla.png',
+    externalGraphic: 'foursquare.png',
     pointRadius: 8
   }),
   protocol: new OpenLayers.Protocol.Script({
     url: "http://poiproxy.mapps.es/browseByExtent",
     callbackKey: "callback",
-    params:{ service: "gowalla"	},
+    params:{ service: "foursquare"	},
     filterToParams: function(filter, params) {
       if (filter.type === OpenLayers.Filter.Spatial.BBOX) {
         params.minX = Math.max(filter.value.left,-180);
@@ -393,8 +399,10 @@ layer1 = new OpenLayers.Layer.Vector("gowalla",{
 </div>
 
 <div class="slide" id="poiproxy-3">
-   <h2>Example #4: Gowalla from POIProxy </h2>
-   <img src="olsocial-imgs/gowalla.png" width="948" height="591" alt="gowalla demo" />
+   <h2>Example #4: Foursquare from POIProxy </h2>
+   <a rel="_blank" href="OLsocial2/poiproxy.html">
+	<img src="olsocial-imgs/foursquare.png" width="948" height="591" alt="foursquare demo" />
+   </a>
 </div>
 
 <!-- CONCLUSIONS -->
@@ -405,7 +413,8 @@ layer1 = new OpenLayers.Layer.Vector("gowalla",{
       <li class="slide">With small code it can be simplified even more</li>
       <li class="slide">POIProxy can be a good choice to facilitate the access to different POI services</li>
       <li class="slide">There's more work to do, for example manage pagination</li>
-      <li class="slide">A more simplified and  ­&laquo;OpenLayers style&raquo; code is available at <a hre="http://gis.prodevelop.es/olsocial/">http://gis.prodevelop.es/olsocial/</a>. Check the source.</li>
+      <li class="slide">A more simplified and  ­&laquo;OpenLayers style&raquo; code is available at 
+		<a rel="_blank" href="http://gis.prodevelop.es/olsocial/">http://gis.prodevelop.es/olsocial/</a>. Check the source.</li>
    </ul>
 </div>
 
@@ -488,10 +497,18 @@ $(document).ready(function(){
 	window.open($(this).attr('href'));
 	return false;
 	});
+	
+
+	$('a[href^=http]').click( function() {
+		window.open(this.href);
+		return false;
+	});
+
 });
   
 SyntaxHighlighter.all();
 $.deck('.slide');
+
 </script>
 
 </body>
