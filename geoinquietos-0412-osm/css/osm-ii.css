@@ -1,0 +1,134 @@
+@import url("../../resources/impress/css/impress.css");
+
+/* impress.js title */
+
+#title {
+    padding: 0;
+    background-image: url('../imgs/osm-logo-mini.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#title h1 {
+    font-size: 100px;
+    
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
+
+
+/*renders*/
+
+#render3 a, #render4 a, #datos7 p a{
+		text-decoration: none;
+		border: 0 none;
+    padding: 0;
+    background: none;
+    text-shadow: none;
+    border-radius: 0;
+}
+
+
+#render3 img, #render4 img{
+	width: 300px;
+	margin: 0px;
+	border: 1px solid black;
+	padding: 10px;
+	background: white;
+}
+
+#render3 img:hover, #render4 img:hover{
+		z-index: 100;
+		-webkit-transition: all 1s ease;
+		-moz-transition:    all 1s ease;	 
+		-ms-transition:     all 1s ease;	 
+		-o-transition:      all 1s ease;	 
+		transition:         all 1s ease;	 
+}
+
+#render3 img[src*="standard"]:hover,#render4 img[src*="freeline"]:hover{
+		-webkit-transform: scale(2.1) translateX(80px) translateY(68px);
+		-moz-transform:    scale(2.1) translateX(80px) translateY(68px);
+		-ms-transform:     scale(2.1) translateX(80px) translateY(68px);
+		-o-transform:      scale(2.1) translateX(80px) translateY(68px);
+		transform:         scale(2.1) translateX(80px) translateY(68px);
+}
+#render3 img[src*="cycle"]:hover,#render4 img[src*="midnight"]:hover{
+		-webkit-transform: scale(2.1) translateX(-80px) translateY(68px);
+		-moz-transform:    scale(2.1) translateX(-80px) translateY(68px);
+		-ms-transform:     scale(2.1) translateX(-80px) translateY(68px);
+		-o-transform:      scale(2.1) translateX(-80px) translateY(68px);
+		transform:         scale(2.1) translateX(-80px) translateY(68px);
+}
+#render3 img[src*="transport"]:hover,#render4 img[src*="pale"]:hover{
+		-webkit-transform: scale(2.1) translateX(80px) translateY(-68px);
+		-moz-transform:    scale(2.1) translateX(80px) translateY(-68px);
+		-ms-transform:     scale(2.1) translateX(80px) translateY(-68px);
+		-o-transform:      scale(2.1) translateX(80px) translateY(-68px);
+		transform:         scale(2.1) translateX(80px) translateY(-68px);
+}
+#render3 img[src*="mapquest"]:hover,#render4 img[src*="city"]:hover{
+		-webkit-transform: scale(2.1) translateX(-80px) translateY(-68px);
+		-moz-transform:    scale(2.1) translateX(-80px) translateY(-68px);
+		-ms-transform:     scale(2.1) translateX(-80px) translateY(-68px);
+		-o-transform:      scale(2.1) translateX(-80px) translateY(-68px);
+		transform:         scale(2.1) translateX(-80px) translateY(-68px);
+}
+
+/* api */
+
+.api p{
+	font-size: 32px;
+}
+
+#api7 li{
+	font-family: Iconsoledata,courier;
+}
+
+
+/* fin */
+
+#colofon{
+	
+	
+}
+#colofon img{
+			float:right;
+			width: 100px;
+			margin-top: 150px;
+}
+#colofon.active img{
+
+	-webkit-transform: rotate(-10deg) scale(3);
+	-moz-transform:    rotate(-10deg) scale(3);
+	-ms-transform:     rotate(-10deg) scale(3);
+	-o-transform:      rotate(-10deg) scale(3);
+	transform:         rotate(-10deg) scale(3);
+	
+	-webkit-transition-duration: 1.0s;
+	-moz-transition-duration:    1.0s;
+	-ms-transition-duration:     1.0s;
+	-o-transition-duration:      1.0s;
+	transition-duration:         1.0s;
+	
+	-webkit-transition-delay: 1.0s;
+	-moz-transition-delay:    1.0s;
+	-ms-transition-delay:     1.0s;
+	-o-transition-delay:      1.0s;
+	transition-delay:         1.0s;
+	}
+
+
+.banner{
+	position: fixed;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	background: url(logo-naranja-geoinquietos.png) no-repeat right bottom;
+	width: 200px;
+	height: 200px;
+	z-index: 100;
+}

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Introducción a OpenStreetMap I</title>
+    
+    <meta name="description"
+       content="Charla de OpenStreetMap impartida para los Geoinquietos de Valencia, primera parte" />
+    <meta name="author" content="Jorge" />
+
+    <link type="text/css" rel="stylesheet" href="css/osm-i.css"/>
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you 
+           are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or 
+           <b>Firefox</b> browser. Upcoming version 10 of Internet Explorer <i>should</i>
+           also handle it.</p>
+    </div>
+    
+    
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <h1>Introducción a OpenStreetMap</h1>
+        <h2>Primera parte</h2>
+        <div class="smaller">
+        <p><a target="_blank" href="http://valencia.geoinquietos.org">Geoinquietos Valencia</a> - Marzo 2012</p>
+        <p class="jorge"><a href="http://jorgesanz.net">Jorge Sanz</a> <a href="http://twitter.com/xurxosanz">@xurxosanz</a></p>        
+        </div>
+    </div>
+    
+    
+    <!-- ANTES DE EMPEZAR... -->
+    
+    <div id="antes" class="step" data-x="0" data-y="-1000" data-rotate-x="30">
+        <h2>Antes de empezar....</h2>
+        <ul>
+        <li><a href="http://vimeo.com/2598878" target="_blank" title="A year of edits">OSM A year of edits 2008</a></li>
+        <li><a href="http://www.youtube.com/watch?v=lpXk5W6b298" target="_blank" title="A year of edits">OSM A year of edits 2011</a></li>
+        <li><a href="http://www.youtube.com/watch?v=JpRD-i7nzbA" target="_blank" title="I need a map">I need a map</a></li>
+        </ul>        
+    </div>
+    
+    
+     <!-- QUÉ ES OSM EN UNA FRASE -->
+     <div id="def1" class="step" data-x="3600" data-y="-900" data-scale="4">
+        <h2>¿Qué es OpenStreetMap?</h2>
+    </div>
+    <div id="def2" class="step" data-x="3200" data-y="-500" data-rotate-x="5"  data-rotate-y="-30" data-scale="2">
+        <p><blockquote>Proyecto para crear un mapa colaborativo mundial</blockquote></p>
+    </div>
+    <div id="def3" class="step" data-x="2900" data-y="-200" data-scale="1">
+        <p><blockquote>La <strong>wikipedia</strong> de los mapas</blockquote></p>
+    </div>
+
+    <div id="empire1" class="step center hide" data-x="3800" data-y="-100" data-scale="1">
+    		<img src="imgs/empire-state.png" width="900" alt="Empire State" />
+    		<p>Ver</p>
+    </div>
+ 
+    <div id="empire2" class="step center hide" data-x="3800" data-y="-100" data-scale="1">
+    		<img src="imgs/empire-state-data.png" width="900" alt="Empire State" />
+    		<p>Consultar</p>
+    </div>   
+ 
+    <div id="empire3" class="step center hide" data-x="3800" data-y="-100" data-scale="1">
+    		<img src="imgs/empire-state-edit.png" width="900" alt="Empire State " />
+    		<p>Editar</p>
+    </div>   
+    
+    <!-- PERO SI YA TENEMOS GMAPS -->    
+    <div id="gmaps" class="step gmaps" data-x="2600" data-y="500" data-scale="2">
+        <h2>¿Pero no tenemos ya Google Maps?</h2>
+        <div>
+          <a href="http://www.flickr.com/photos/18789396@N00/144251305/" 
+          	title="chris' mouth is just the right size by unk's dump truck, on Flickr">
+          		<img src="http://farm1.staticflickr.com/53/144251305_38cccbc09b.jpg" 
+          			width="250" alt="chris' mouth is just the right size"></a>
+          <ul>
+            <li>API: restricciones de uso, publicidad, ...</li>            
+            <li>MapMaker: <em>&laquo;vuestro trabajo es <strong>nuestro</strong>&raquo;</em></li>
+          </ul>
+        </div>
+    </div>
+    <div id="gmaps2" class="step" data-x="2600" data-y="1200" data-rotate-x="10"  data-rotate-y="30" data-scale="1">
+        <blockquote class="its-in-3d larger">OSM es cartografía libre, </br>
+           <strong> <span class="out">libre de libertad</span></strong></blockquote>
+    </div>
+    
+    
+    <div id="gmaps3" class="step" data-x="3500" data-y="1400" data-rotate-x="10"  data-rotate-y="30" data-scale="1">
+        <img src="imgs/licencias.png" width="500" height="647" alt="Licencias" />
+    </div>
+    <!-- HISTORIA -->
+
+
+    <div id="historia" class="step slide" data-x="2200" data-y="1800"  data-scale="1">
+        <h2>Hitos</h2>
+        <ul class="discs">
+          <li><strong>2004</strong> Steve Coast vs. Ordnance Survey.</li>        
+          <li><strong>2006</strong> Fundación sin ánimo de lucro, Yahoo autoriza uso imágenes.</li>
+          <li><strong>2007</strong> Automotive Navigation Data (AND) dona Países Bajos, India y China. TIGER (Censo de EEUU).</li>
+          <li><strong>2008</strong> CloudMade. GeoBase.ca dona Canadá.</li>
+          <li><strong>2009</strong> API 0.6. 200.000 usuarios.</li>
+          <li><strong>2010</strong> SotM en Girona. Bing Maps (Microsoft) permite uso imágenes. Ordnance Survey libera sus datos.</li>
+          <li><strong>2011</strong> + 500.000 usuarios.</li>
+          <li><strong>2012</strong> Foursquare como ejemplo de <a href="http://switch2osm.org/" name="switch2osm">#switch2osm</a></li>
+          
+        </ul>
+    </div>
+
+    <!-- COMPARAMOS -->
+    
+    <div id="comp" class="step" data-x="1500" data-y="2200" data-rotate="90" data-scale="1">
+        <h2>¿Comparamos?</h2>
+    </div>
+    
+    <div id="comp11" class="step center comp" data-x="700" data-y="2200" data-rotate="90" data-scale="1">
+        <img src="imgs/comp-valencia.png" width="1024" alt="Valencia" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=-0.37712&lat=39.47272&zoom=16" 
+            target="_blank" title="Valencia">Valencia</a>
+    </div>
+
+    <div id="comp12" class="step center comp" data-x="700" data-y="3000" data-z="-400" data-rotate="90" data-rotate-x="-90" data-scale="1">
+        <img src="imgs/comp-bcn.png" width="1024"alt="Parc de la Ciutadella, Barcelona" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=2.18714&lat=41.38761&zoom=16" 
+            target="_blank" title="Parc de la Ciutadella, Barcelona">
+            Parc de la Ciutadella, Barcelona</a>
+    </div>
+
+
+    <div id="comp13" class="step center comp" data-x="700" data-y="2200" data-z="-1000" data-rotate="90" data-rotate-x="-180" data-scale="1">
+        <img src="imgs/comp-sarajevo.png" width="1024"alt="Sarajevo" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=18.3702&lat=43.84208&zoom=13" 
+            target="_blank" title="Sarajevo">
+            Sarajevo</a>
+    </div>
+
+
+    <div id="comp14" class="step center comp" data-x="700" data-y="1400" data-z="-400" data-rotate="90" data-rotate-x="-260" data-scale="1">
+        <img src="imgs/comp-kibera.png" width="1024"alt="Kibera" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=36.78774&lat=-1.31289&zoom=17" 
+            target="_blank" title="Kibera, Kenia">
+            Kibera, Kenia</a>
+    </div>
+
+
+
+    <div id="comp21" class="step center comp" data-x="-200" data-y="1400" data-z="-400" data-rotate="90" data-rotate-x="-260" data-scale="1">
+        <img src="imgs/comp-berlin.png" width="1024" alt="Berlin" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=13.4315&lat=52.52965&zoom=15" 
+            target="_blank" title="Berlin">Berlin</a>
+    </div> 
+
+
+    <div id="comp22" class="step center comp" data-x="-200" data-y="2200" data-z="-1000" data-rotate="90" data-rotate-x="-180" data-scale="1">
+        <img src="imgs/comp-gaza.png" width="1024"alt="Gaza" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=34.45144&lat=31.52017&zoom=14" 
+            target="_blank" title="Gaza">
+            Gaza</a>
+    </div> 
+
+    <div id="comp23" class="step center comp" data-x="-200" data-y="3000" data-z="-400" data-rotate="90" data-rotate-x="-90" data-scale="1">
+        <img src="imgs/comp-habana.png" width="1024"alt="La Habana Vieja" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=-82.3501&lat=23.13834&zoom=17" 
+            target="_blank" title="La Habana Vieja">
+            La Habana Vieja</a>
+    </div>
+    
+   <div id="comp24" class="step center comp" data-x="-200" data-y="2200" data-rotate="90" data-scale="1">
+        <img src="imgs/comp-haiti.png" width="1024"alt="Haití" />
+        <a href="http://tools.geofabrik.de/mc/?mt0=mapnik&mt1=googlemap&lon=-72.34045&lat=18.53782&zoom=15" 
+            target="_blank" title="Haití">
+            Haití</a>
+    </div>
+
+    
+    <!-- HOT -->
+
+    <div id="haiti" class="step center" data-x="-1000" data-y="2200" data-rotate="90" data-scale="1">
+        <p>El caso de Haití es muy especial</p>  
+        
+        <img src="imgs/video-haiti.png" width="676" height="486" alt="Vídeo Haiti" />
+        <p><a target="_blank" title="Video Haiti" href="http://vimeo.com/9182869">http://vimeo.com/9182869</a></p>
+    </div> 
+       
+    <div id="hot" class="step slide" data-x="-1000" data-y="3000" data-z="-400" data-rotate="90" data-rotate-x="-90" data-scale="1">
+        <h2>HOT</h2>
+        <p class="larger">Humanitarian OpenStreetMap Team</p>
+        <ul class="discs larger">
+          <li>Se organiza a partir del <strong>terremoto</strong> de Haití</li>    
+          <li>Se realizan trabajos de <strong>formación</strong> en zonas necesitadas</li>
+          <li>La mayor parte del trabajo es <strong>remoto</strong></li>
+          <li>Actualmente trabajando en <strong>Haití</strong>, <strong>Indonesia</strong> 
+              y <strong>Costa de Marfil</strong></li>
+        </ul>
+        
+        <p style="text-align:center;margin-top:20px;">
+        <a href="http://hot.openstreetmap.org/" target="_blank">
+        <img src="imgs/hot.jpg" height="200" alt="HOT" /></a>
+        </p>
+        
+    </div>
+    
+    
+    <!-- USOS DE OSM -->
+    <div id="usos" class="step " data-x="-1300" data-y="-2500" data-rotate="-90" data-scale="4">
+        <h2>Casos de uso</h2>
+    </div>
+    <div id="usos1" class="step " data-x="-1000" data-y="-2000" data-rotate="-90" data-scale="3"  data-rotate-x="-10">
+        <blockquote class="smaller">¿qué puedo hacer con los datos de OSM?</blockquote>
+    </div>
+    <div id="usos2" class="step " data-x="-700" data-y="-2000" data-rotate="-90" data-scale="2"  data-rotate-x="10">
+        <p>¡lo que quieras!
+        <br> <strong>se permite el uso comercial</strong> pero hay que dar <strong>atribución</strong></p>
+    </div>
+    
+    
+    <div id="usos3" class="step center"data-x="-400" data-y="-2000" data-rotate="-90">
+        <img src="imgs/biz-foursquare.png" width="800"alt="4sq" />
+        <p>Mapas para tus webs como Foursquare, Nestoria, Flickr....</p>
+    </div>
+    
+    <div id="usos4" class="step" data-x="300" data-y="-2000" data-rotate="-90">
+        <blockquote class="larger">Pero también para tus mapas en aparatos GPS, aplicaciones móviles, 
+            mapas impresos, mapas para invidentes, proyectos de rutas, 
+            analisis de fluidos... etc.</blockquote>
+    </div>
+    
+    <div  id="usos5" class="step center" data-x="1100" data-y="-2000" data-rotate="-90">
+        <p><img src="imgs/biz-cycle.png" width="700"alt="CicleStreets" /></p>
+        <p><a href="http://www.cyclestreets.net/journey/1690725/" 
+            target="_blank" title="Ruta">
+            Ruta en cyclestreets.net</a></p>
+    </div>
+    
+    <div  id="usos6" class="step center" data-x="1100" data-y="-3000" data-rotate="-90">
+        <p><img src="imgs/biz-elecciones.png" width="700"alt="Elecciones Transparentes" /></p>
+        <p><a href="http://www.eleccionestransparentes.com" 
+            target="_blank" title="Elecciones Transparentes">
+            Reporte de incidencias / Open Data</a></p>
+    </div>
+      
+    <div  id="usos7" class="step center" data-x="1900" data-y="-3000" data-rotate="-90">
+       <p> <img src="imgs/android.png" width="800"alt="Android" /></p>
+			<p>Más de <a href="https://market.android.com/search?q=openstreetmap&c=apps" 
+            target="_blank" title="Android">
+            1000 aplicaciones</a> por la búsqueda <em>OpenStreetMap</em></p>
+    </div>
+    
+    <div  id="usos8" class="step" data-x="2100" data-y="-1800" data-rotate="-90" data-scale="2">
+        <blockquote>lo más intersante es lo que todavía no se te ha ocurrido :-)</blockquote>
+        
+        <div class="center">
+						<a href="http://www.flickr.com/photos/stefan_ledwina/4679502069/" title="Benny by Stefan Ledwina, on Flickr"><img src="http://farm5.staticflickr.com/4032/4679502069_099da9a4bd.jpg" width="500" height="333" alt="Benny"></a>
+					</a>
+				</div>
+    </div>
+    
+        
+    <div  id="colofon" class="step" data-x="900" data-y="-1200" data-scale="1">
+        <p>En la segunda parte veremos los aspectos técnicos básicos de
+        	 trabajo en OSM, <strong>¡manos a la obra!</strong>
+        </p>
+        
+        <img src="imgs/success-kid.jpg" alt="Vamos!" >
+    </div>
+    
+    <!-- referencias y licencia -->
+       
+    <div id="refs" class="step slide" data-x="-2000" data-y="1600" data-scale="1">
+        <h2>Referencias</h2>
+        <ul class="smaller discs">
+          <li>OSM: <a href="http://www.osm.org" name="OSM">http://www.osm.org</a></li>    
+          <li>HOT: <a href="http://hot.openstreetmap.org/" name="HOT">http://hot.openstreetmap.org/</a></li>
+          <li>Comparador de cartografía de <a href="http://tools.geofabrik.de/mc/" name="Geofabrik map compare">Geofabrik</a></li>
+          <li><a href="http://www.google.com/mapmaker/mapfiles/s/terms_mapmaker.html" name="Map Maker">Google Map Maker</a></li>
+          <li><a href="http://code.google.com/apis/maps/terms.html" name="Licencia Google Maps API">Licencia Google Maps API</a></li>
+          <li>Casos de uso de cambio a OSM <a href="http://switch2osm.org/" name="switch2osm">http://switch2osm.org/</a></li>
+          <li>Open Database License <a href="http://opendatacommons.org/licenses/odbl/summary/" name="Resumen licencia ODbL">ODbL</a></li>
+        </ul>
+        
+        <h2>Licencia</h2>
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.es" name="cc-by-sa">
+        	<img src="imgs/cc-by-sa.png" height="100" alt="" />
+        </a>
+    </div>
+    
+    <!-- OVERVIEW -->
+    <div id="overview" class="step" data-x="0" data-y="-100" data-rotate-x="-20" data-rotate-y="-20" data-scale="9">
+    	<p>Gracias!!</p>
+    </div>
+    
+    
+    
+
+</div>
+
+<div class="banner"></div>
+
+
+<div class="hint">
+    <p>Usa la barra espaciadora o las flechas para navegar</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Toca o la derecha o la izquierda para navegar</p>";
+}
+</script>
+<script type="text/javascript" src="../resources/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../resources/impress/js/impress.js"></script>
+<script>
+$(document).ready(function(){ 
+		impress();
+});
+</script>
+</body>
+</html>
