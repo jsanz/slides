@@ -1,676 +1,850 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Introducción a OpenStreetMap II</title>
-    
-    <meta name="description"
-       content="Charla de OpenStreetMap impartida para los Geoinquietos de Valencia, segunda parte" />
-    <meta name="author" content="Jorge" />
+  <meta name="generator" content="Bluefish 2.0.3" >
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=1024">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content=
+  "Charla de OpenStreetMap impartida para los Geoinquietos de Valencia, segunda parte">
+  <meta name="author" content="Jorge" >
 
-       <!-- Syntax highlighter code -->
-	  <link type="text/css" rel="stylesheet" href="../resources/sh/styles/shCoreDefault.css"/> 
-    <link type="text/css" rel="stylesheet" href="../resources/sh/styles/shThemeEclipse.css"/>
-    
-    <link type="text/css" rel="stylesheet" href="css/osm-ii.css"/>
-    
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>Introducción a OpenStreetMap II</title>
+  <!-- Syntax highlighter code -->
+  <link type="text/css" rel="stylesheet" href=
+  "../resources/sh/styles/shCoreDefault.css">
+  <link type="text/css" rel="stylesheet" href=
+  "../resources/sh/styles/shThemeEclipse.css">
+  <link type="text/css" rel="stylesheet" href="css/osm-ii.css">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
+
 <body>
-
-<div id="impress" class="impress-not-supported">
-
+  <div id="impress" class="impress-not-supported">
     <div class="fallback-message">
-        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you 
-           are presented with a simplified version of this presentation.</p>
-        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or 
-           <b>Firefox</b> browser. Upcoming version 10 of Internet Explorer <i>should</i>
-           also handle it.</p>
+      <p>Your browser <b>doesn't support the features required</b> by
+      impress.js, so you are presented with a simplified version of this
+      presentation.</p>
+
+      <p>For the best experience please use the latest <b>Chrome</b>,
+      <b>Safari</b> or <b>Firefox</b> browser. Upcoming version 10 of Internet
+      Explorer <i>should</i> also handle it.</p>
     </div>
-    
-    
 
     <div id="title" class="step" data-x="0" data-y="0" data-scale="5">
-        <h1>Introducción a OpenStreetMap</h1>
-        <h2>Segunda parte</h2>
-        <div class="smaller">
-        <p><a target="_blank" href="http://valencia.geoinquietos.org">Geoinquietos Valencia</a> - Marzo 2012</p>
-        <p class="jorge"><a href="http://jorgesanz.net">Jorge Sanz</a> <a href="http://twitter.com/xurxosanz">@xurxosanz</a></p>        
-        </div>
-    </div>
-    
-    
-    <!-- AGENDA -->
-    
-    
-    <div id="agenda" class="step" data-x="700" data-y="1800">
-			<h2>Agenda</h2>			
-			<ul class="discs">
-			<li><strong>Flujo</strong> de trabajo básico en OSM</li>
-			<li>Tipos de <strong>datos</strong></li>
-			<li>Llamadas a la <strong>API</strong> (XAPI)</li>
-			<li><strong>JOSM</strong><ul>
-			<li>Preparar la sesión de edición</li>
-			<li>Comandos más empleados en JOSM</li>
-			<li>Filtros</li>
-			<li>Etiquetado y predefinidos</li>
-			</ul></ul>
-    </div>
-    
-    
-    <!-- PROCEDIMIENTO     -->
-    
+      <h1>Introducción a OpenStreetMap</h1>
+
+      <h2>Segunda parte</h2>
+
+      <div class="smaller">
+        <p><a target="_blank" href=
+        "http://valencia.geoinquietos.org">Geoinquietos Valencia</a> - Marzo
+        2012</p>
+
+        <p class="jorge"><a href="http://jorgesanz.net">Jorge Sanz</a> <a href=
+        "http://twitter.com/xurxosanz">@xurxosanz</a></p>
+      </div>
+    </div><!-- AGENDA -->
+
+    <div id="agenda" class="step section" data-x="700" data-y="1800">
+      <h2>Agenda</h2>
+
+      <ul class="discs">
+        <li><strong>Flujo</strong> de trabajo básico en OSM</li>
+
+        <li>Tipos de <strong>datos</strong></li>
+
+        <li>Llamadas a la <strong>API</strong> (XAPI)</li>
+
+        <li>
+          <strong>JOSM</strong>
+
+          <ul>
+            <li>Preparar la sesión de edición</li>
+
+            <li>Comandos más empleados en JOSM</li>
+
+            <li>Filtros</li>
+
+            <li>Etiquetado y predefinidos</li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- PROCEDIMIENTO     -->
+
     <div id="flujo" class="step" data-x="4500" data-y="2000" data-scale="4">
-			<h2>Flujo de trabajo</h2>
-			<ul class="discs">
-			<li></li>
-			<li></li>
-			<li></li>
-			</ul>
-    </div> 
-    
-    <div id="flujoRecolectar" class="step hide" data-x="4500" data-y="2000" data-scale="4">
-			<h2>Flujo de trabajo</h2>
-			<ul class="discs">
-			<li><strong>Recolectar</strong></li>
-			<li>Editar</li>
-			<li>Renderizar</li>
-			</ul>
+      <h2>Flujo de trabajo</h2>
+
+      <ul class="discs">
+        <li>&nbsp;</li>
+
+        <li>&nbsp;</li>
+
+        <li>&nbsp;</li>
+      </ul>
     </div>
-    
+
+    <div id="flujoRecolectar" class="step hide" data-x="4500" data-y="2000"
+    data-scale="4">
+      <h2>Flujo de trabajo</h2>
+
+      <ul class="discs">
+        <li><strong>Recolectar</strong></li>
+
+        <li>Editar</li>
+
+        <li>Renderizar</li>
+      </ul>
+    </div>
+
     <div id="rec1" class="step" data-x="2900" data-y="900">
-			<h2>Recolectar</h2>
-			<ul class="discs">
-			<li>Tomando datos directamente
-				<ul>
-					<li>GPS + libreta/cámara/grabadora/... </li>
-					<li><a target="_blank" href="http://walking-papers.org/"
-					 name="The Walking Papers">Walking Papers</a></li>
-					<li><a href="http://wiki.openstreetmap.org/wiki/ES:Mapping_parties" 
-						target="_blank" title="Mapping Parties en el wiki">
-							Mapping Parties!!</a></li>
-				</ul>
-			</li>
-			<li>Digitalizando sobre imágenes 
-			<ul><li>Bing, Yahoo, PNOA, Landsat, ...</li></ul>
-			</li>			
-			<li>...</li>
-			</ul>
+      <h2>Recolectar</h2>
+
+      <ul class="discs">
+        <li>Tomando datos directamente
+
+          <ul>
+            <li>GPS + libreta/cámara/grabadora/...</li>
+
+            <li><a target="_blank" href="http://walking-papers.org/" title=
+            "The Walking Papers">Walking Papers</a></li>
+
+            <li><a href="http://wiki.openstreetmap.org/wiki/ES:Mapping_parties"
+            target="_blank" title="Mapping Parties en el wiki">Mapping
+            Parties!!</a></li>
+          </ul>
+        </li>
+
+        <li>Digitalizando sobre imágenes
+
+          <ul>
+            <li>Bing, Yahoo, PNOA, Landsat, ...</li>
+          </ul>
+        </li>
+
+        <li>...</li>
+      </ul>
     </div>
 
     <div id="rec2" class="step center" data-x="2900" data-y="100">
-			<img class="figure" src="imgs/map-hanoi.jpg" width="900" height="453" alt="Mapping party en Hanoi" />
-			<p>Tomando datos con GPS</p>
+      <img class="figure" src="imgs/map-hanoi.jpg" width="900" height="453"
+      alt="Mapping party en Hanoi">
+
+      <p>Tomando datos con GPS</p>
     </div>
-    
+
     <div id="walking-paper" class="step center" data-x="2900" data-y="-700">
-			<a href="http://www.flickr.com/photos/kachkaev/5710460686/" title="2011-05-10 (0010) by Alexander Kachkaev, on Flickr"><img src="http://farm4.staticflickr.com/3085/5710460686_98fd5a5d9a_b.jpg" width="900" alt="2011-05-10 (0010)"></a>
-			<p>Walking Paper</p>
+      <a href="http://www.flickr.com/photos/kachkaev/5710460686/" title=
+      "2011-05-10 (0010) by Alexander Kachkaev, on Flickr"><img src=
+      "http://farm4.staticflickr.com/3085/5710460686_98fd5a5d9a_b.jpg" width=
+      "900" alt="2011-05-10 (0010)"></a>
+
+      <p>Walking Paper</p>
     </div>
-    
-        <div id="mappingparty" class="step center hide" data-x="2900" data-y="-1600">
-					<a href="http://www.flickr.com/photos/8171393@N04/3711363666/" title="Cuban Mapping Party by elpbatista, on Flickr"><img src="http://farm3.staticflickr.com/2518/3711363666_c10b8db5fe_z.jpg?zz=1" width="640" height="480" alt="Cuban Mapping Party"></a>
-					<p>¿Mapping party?</p>
-			 </div>
-    
-    <div  id="map1" class="step center hide" data-x="2900" data-y="-1600">
-<a href="http://www.flickr.com/photos/xurxosanz/3261222557/" title="Los que de verdad estuvieron by XuRxO, on Flickr"><img src="http://farm4.staticflickr.com/3325/3261222557_93ffed7695_b.jpg" width="1024" height="763" alt="Los que de verdad estuvieron"></a>
+
+    <div id="mappingparty" class="step center hide" data-x="2900" data-y=
+    "-1600">
+      <a href="http://www.flickr.com/photos/8171393@N04/3711363666/" title=
+      "Cuban Mapping Party by elpbatista, on Flickr"><img src=
+      "http://farm3.staticflickr.com/2518/3711363666_c10b8db5fe_z.jpg?zz=1"
+      width="640" height="480" alt="Cuban Mapping Party"></a>
+
+      <p>¿Mapping party?</p>
     </div>
+
+    <div id="map1" class="step center hide" data-x="2900" data-y="-1600">
+      <a href="http://www.flickr.com/photos/xurxosanz/3261222557/" title=
+      "Los que de verdad estuvieron by XuRxO, on Flickr"><img src=
+      "http://farm4.staticflickr.com/3325/3261222557_93ffed7695_b.jpg" width=
+      "1024" height="763" alt="Los que de verdad estuvieron"></a>
+    </div>
+
     <div id="map2" class="step center hide" data-x="2900" data-y="-1600">
-			<a href="http://www.flickr.com/photos/24199866@N07/2298365310/" title="Perugia Mapping Party by Niccolo Rigacci, on Flickr"><img src="http://farm4.staticflickr.com/3227/2298365310_9c65e0288b_b.jpg" width="1024" height="768" alt="Perugia Mapping Party"></a>
+      <a href="http://www.flickr.com/photos/24199866@N07/2298365310/" title=
+      "Perugia Mapping Party by Niccolo Rigacci, on Flickr"><img src=
+      "http://farm4.staticflickr.com/3227/2298365310_9c65e0288b_b.jpg" width=
+      "1024" height="768" alt="Perugia Mapping Party"></a>
     </div>
-    <div  id="map3" class="step center hide" data-x="2900" data-y="-1600">
-<a href="http://www.flickr.com/photos/23385636@N03/6937516365/" title="Recuperación satélite by Gabriel Jaime Vanegas, on Flickr"><img src="http://farm8.staticflickr.com/7036/6937516365_9e0a2e1d76_b.jpg" width="1024" height="683" alt="Recuperación satélite"></a>
+
+    <div id="map3" class="step center hide" data-x="2900" data-y="-1600">
+      <a href="http://www.flickr.com/photos/23385636@N03/6937516365/" title=
+      "Recuperación satélite by Gabriel Jaime Vanegas, on Flickr"><img src=
+      "http://farm8.staticflickr.com/7036/6937516365_9e0a2e1d76_b.jpg" width=
+      "1024" height="683" alt="Recuperación satélite"></a>
     </div>
+
     <div id="map4" class="step center hide" data-x="2900" data-y="-1600">
-<a href="http://www.flickr.com/photos/23385636@N03/6781117646/" title="Rompecabezas de Walking Papers by Gabriel Jaime Vanegas, on Flickr"><img src="http://farm8.staticflickr.com/7193/6781117646_cf46556109_b.jpg" width="1024" height="683" alt="Rompecabezas de Walking Papers"></a>
-    </div>    
+      <a href="http://www.flickr.com/photos/23385636@N03/6781117646/" title=
+      "Rompecabezas de Walking Papers by Gabriel Jaime Vanegas, on Flickr">
+      <img src="http://farm8.staticflickr.com/7193/6781117646_cf46556109_b.jpg"
+      width="1024" height="683" alt="Rompecabezas de Walking Papers"></a>
+    </div>
+
     <div id="map5" class="step center hide" data-x="2900" data-y="-1600">
-<a href="http://www.flickr.com/photos/xurxosanz/3261232019/" title="¿Cómo etiqueto una dulcería? by XuRxO, on Flickr"><img src="http://farm4.staticflickr.com/3411/3261232019_1853a6d6e1_b.jpg" width="1024" height="763" alt="¿Cómo etiqueto una dulcería?"></a>
+      <a href="http://www.flickr.com/photos/xurxosanz/3261232019/" title=
+      "¿Cómo etiqueto una dulcería? by XuRxO, on Flickr"><img src=
+      "http://farm4.staticflickr.com/3411/3261232019_1853a6d6e1_b.jpg" width=
+      "1024" height="763" alt="¿Cómo etiqueto una dulcería?"></a>
     </div>
+
     <div id="map6" class="step center hide" data-x="2900" data-y="-1600">
-			<a href="http://www.flickr.com/photos/harrywood/5043500484/" title="UCL student mapping party by Harry Wood, on Flickr"><img src="http://farm5.staticflickr.com/4089/5043500484_88bfed2d28_b.jpg" width="1024" height="768" alt="UCL student mapping party"></a>
+      <a href="http://www.flickr.com/photos/harrywood/5043500484/" title=
+      "UCL student mapping party by Harry Wood, on Flickr"><img src=
+      "http://farm5.staticflickr.com/4089/5043500484_88bfed2d28_b.jpg" width=
+      "1024" height="768" alt="UCL student mapping party"></a>
     </div>
+
     <div id="map7" class="step center hide" data-x="2900" data-y="-1600">
-<a href="http://www.flickr.com/photos/smsm1/2578354395/" title="South Bermondsey Mapping Party by smsm1, on Flickr"><img src="http://farm4.staticflickr.com/3162/2578354395_f0f3b2b029_b.jpg" width="1024" height="768" alt="South Bermondsey Mapping Party"></a>
-    </div>    
+      <a href="http://www.flickr.com/photos/smsm1/2578354395/" title=
+      "South Bermondsey Mapping Party by smsm1, on Flickr"><img src=
+      "http://farm4.staticflickr.com/3162/2578354395_f0f3b2b029_b.jpg" width=
+      "1024" height="768" alt="South Bermondsey Mapping Party"></a>
+    </div>
+
     <div id="map8" class="step center hide" data-x="2900" data-y="-1600">
-<a href="http://www.flickr.com/photos/kachkaev/6171105610/" title="2011-09-21 (1010) by Alexander Kachkaev, on Flickr"><img src="http://farm7.staticflickr.com/6165/6171105610_84bacc7d16_b.jpg" width="1024" height="678" alt="2011-09-21 (1010)"></a>
+      <a href="http://www.flickr.com/photos/kachkaev/6171105610/" title=
+      "2011-09-21 (1010) by Alexander Kachkaev, on Flickr"><img src=
+      "http://farm7.staticflickr.com/6165/6171105610_84bacc7d16_b.jpg" width=
+      "1024" height="678" alt="2011-09-21 (1010)"></a>
     </div>
+
     <div id="map9" class="step center hide" data-x="2900" data-y="-1600">
-			<a href="http://www.flickr.com/photos/realivansanchez/4984246006/" title="Glittervest! by RealIvanSanchez, on Flickr"><img src="http://farm5.staticflickr.com/4113/4984246006_9bf12f56b5_b.jpg" width="1024" height="768" alt="Glittervest!"></a>
+      <a href="http://www.flickr.com/photos/realivansanchez/4984246006/" title=
+      "Glittervest! by RealIvanSanchez, on Flickr"><img src=
+      "http://farm5.staticflickr.com/4113/4984246006_9bf12f56b5_b.jpg" width=
+      "1024" height="768" alt="Glittervest!"></a>
     </div>
 
-    
-    <div id="flujoEditar" class="step hide" data-x="4500" data-y="2000" data-scale="4">
-			<h2>Flujo de trabajo</h2>
-			<ul class="discs">
-			<li>Recolectar</li>
-			<li><strong>Editar</strong></li>
-			<li></li>
-			</ul>
+    <div id="flujoEditar" class="step hide" data-x="4500" data-y="2000"
+    data-scale="4">
+      <h2>Flujo de trabajo</h2>
+
+      <ul class="discs">
+        <li>Recolectar</li>
+
+        <li><strong>Editar</strong></li>
+
+        <li>&nbsp;</li>
+      </ul>
     </div>
-		
+
     <div id="apuntate" class="step" data-x="4000" data-y="900">
-    	<blockquote>¡¡Lo primero que hay que hacer <br>
-    			es <strong><a href="https://www.openstreetmap.org/user/new" 
-    			target="_blank" title="Date de alta">darse de alta</a></strong>!!</blockquote>
-    	<p class="center"><img src="imgs/alta.png" height="500" alt="Date de alta" /></p>
+      <blockquote>
+        ¡¡Lo primero que hay que hacer<br>
+        es <strong><a href="https://www.openstreetmap.org/user/new" target=
+        "_blank" title="Date de alta">darse de alta</a></strong>!!
+      </blockquote>
+
+      <p class="center"><img src="imgs/alta.png" height="500" alt=
+      "Date de alta"></p>
     </div>
-    
-		
+
     <div id="editar" class="step" data-x="4000" data-y="100">
-			<h2>Editores de datos OSM</h2>
-			<ul class="discs">
-				<li><strong>JOSM</strong><ul>
-					<li>escritorio, Java</li>
-					<li>mucha funcionalidad, plugins, etc</li>
-					</ul></li>
-				<li>Potlach 2<ul>
-					<li>directamente en la web de OSM</li>
-					<li>bueno para corregir etiquetas y ediciones sencillas</li>
-					</ul></li>
-				<li>... hay <a href="http://wiki.openstreetmap.org/wiki/Editing" target="_blank" title="Editores">muchos más</a></li>
-			</ul>	
+      <h2>Editores de datos OSM</h2>
+
+      <ul class="discs">
+        <li>
+          <strong>JOSM</strong>
+
+          <ul>
+            <li>escritorio, Java</li>
+
+            <li>mucha funcionalidad, plugins, etc</li>
+          </ul>
+        </li>
+
+        <li>Potlach 2
+
+          <ul>
+            <li>directamente en la web de OSM</li>
+
+            <li>bueno para corregir etiquetas y ediciones sencillas</li>
+          </ul>
+        </li>
+
+        <li>... hay <a href="http://wiki.openstreetmap.org/wiki/Editing"
+        target="_blank" title="Editores">muchos más</a></li>
+      </ul>
     </div>
-    
+
     <div id="editPotlach" class="step center hide" data-x="4000" data-y="-600">
-			<img src="imgs/empire-state-edit.png" width="1000" alt="Empire State " />
-    </div>
+    <img src="imgs/empire-state-edit.png" width="1000" alt=
+    "Empire State "></div>
+
     <div id="editJOSM" class="step center hide" data-x="4000" data-y="-600">
-    	<img src="imgs/edit-josm.png" width="1000" alt="JOSM" />
+    <img src="imgs/edit-josm.png" width="1000" alt="JOSM"></div>
+
+    <div id="flujoRender" class="step hide" data-x="4500" data-y="2000"
+    data-scale="4">
+      <h2>Flujo de trabajo</h2>
+
+      <ul class="discs">
+        <li>Recolectar</li>
+
+        <li>Editar</li>
+
+        <li><strong>Renderizar</strong></li>
+      </ul>
     </div>
 
-     
-    <div id="flujoRender" class="step hide" data-x="4500" data-y="2000" data-scale="4">
-			<h2>Flujo de trabajo</h2>
-			<ul class="discs">
-			<li>Recolectar</li>
-			<li>Editar</li>
-			<li><strong>Renderizar</strong></li>
-			</ul>
-    </div>
-    
     <div id="render" class="step" data-x="5100" data-y="1000">
-			<p>¿Qué pasa con los datos una vez se suben y se actualiza la base de datos?</p>
+      <blockquote>¿Qué pasa con los datos una vez se suben y se actualiza la 
+      base de datos?</blockquote>
     </div>
-    
+
     <div id="render2" class="step" data-x="5100" data-y="400">
-			<p>Varios renderizadores actualizan los datos:</p>
-			<ul class="discs smaller">
-				<li><a href="http://wiki.openstreetmap.org/wiki/Osmarender" 
-				target="_blank" title="osmarender">osmarender</a>: <ul>
-					<li>usa reglas XSLT para generar SVG que se convierten a PNG</li>
-					<li>era el render oficial, ahora ya 
-          <a href="http://lists.openstreetmap.org/pipermail/dev/2012-February/024301.html"
-            target="_blank" title="Anuncio retirada Tiles At Home">
-            retirado</a></li>
-				</ul></li>
-				<li><a href="http://mapnik.org/" target="_blank" title="Mapnik">Mapnik</a><ul>
-					<li>conecta con PostGIS</li>
-					<li>el render principal en OSM</li
-					<li>genera teselas en varios estilos oficiales</li>	
-					</ul>	
-			</ul>
-    </div>
-    
-    <div id="render3" class="step" data-x="5100" data-y="-400">		
-    	<h2>Estilos oficiales</h2>
-			<a href="http://www.openstreetmap.org/?lat=40.74862&lon=-73.98536&zoom=15&layers=M" 
-			target="_blank" title="Estándar">
-				<img src="imgs/render-standard.png" title="Estándar" /></a>
-			<a href="http://www.openstreetmap.org/?lat=40.74862&lon=-73.98536&zoom=15&layers=C"
-			 target="_parent" title="Ciclista">
-				<img src="imgs/render-cycle.png" alt="Ciclista" /></a><br>
-			<a href="http://www.openstreetmap.org/?lat=40.74862&lon=-73.98536&zoom=15&layers=T" 
-				target="_blank" title="Transporte">
-					<img src="imgs/render-transport.png" alt="Transporte" /></a>
-			<a href="http://www.openstreetmap.org/?lat=40.74862&lon=-73.98536&zoom=15&layers=Q" 
-			target="_blank" title="MapQuest">
-				<img src="imgs/render-mapquest.png" alt="Mapquest" /></a>
-    </div>
-    
-    <div id="render4" class="step" data-x="5100" data-y="-1200">		
-    	<h2>Otros renders</h2>
-			<a href="http://maps.cloudmade.com/?lat=40.74742&lng=-73.987212&zoom=15&styleId=2&opened_tab=0" 
-			target="_blank" title="Free Line">
-				<img src="imgs/render-freeline.png" title="Free Line" /></a>
-				
-			<a href="http://maps.cloudmade.com/?lat=40.74742&lng=-73.987212&zoom=15&styleId=999&opened_tab=0"
-			 target="_parent" title="Midnight Commander">
-				<img src="imgs/render-midnight.png" alt="Midnight Commander" /></a><br>
-				
-			<a href="http://maps.cloudmade.com/?lat=40.74742&lng=-73.987212&zoom=15&styleId=998&opened_tab=0" 
-				target="_blank" title="Pale Down">
-					<img src="imgs/render-pale.png" alt="Pale Down" /></a>
-			<a href="http://maps.cloudmade.com/?lat=40.74742&lng=-73.987212&zoom=15&styleId=2400&opened_tab=0" 
-			target="_blank" title="City Living">
-				<img src="imgs/render-city.png" alt="City Living" /></a>
+      <p>Varios renderizadores actualizan los datos:</p>
 
+      <ul class="discs smaller">
+        <li>
+          <a href="http://wiki.openstreetmap.org/wiki/Osmarender" target=
+          "_blank" title="osmarender">osmarender</a>:
+
+          <ul>
+            <li>usa reglas XSLT para generar SVG que se convierten a PNG</li>
+
+            <li>era el render oficial, ahora ya <a href=
+            "http://lists.openstreetmap.org/pipermail/dev/2012-February/024301.html"
+            target="_blank" title=
+            "Anuncio retirada Tiles At Home">retirado</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="http://mapnik.org/" target="_blank" title=
+          "Mapnik">Mapnik</a>
+
+          <ul>
+            <li>conecta con PostGIS</li>
+
+            <li>el render principal en OSM</li>
+
+            <li>genera teselas en varios estilos oficiales</li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
+    <div id="render3" class="step" data-x="5100" data-y="-400">
+      <h2>Estilos oficiales</h2><a href=
+      "http://www.openstreetmap.org/?lat=40.74862&amp;lon=-73.98536&amp;zoom=15&amp;layers=M"
+      target="_blank" title="Estándar"><img src="imgs/render-standard.png" alt=
+      "Estándar"></a> <a href=
+      "http://www.openstreetmap.org/?lat=40.74862&amp;lon=-73.98536&amp;zoom=15&amp;layers=C"
+      target="_parent" title="Ciclista"><img src="imgs/render-cycle.png" alt=
+      "Ciclista"></a><br>
+      <a href=
+      "http://www.openstreetmap.org/?lat=40.74862&amp;lon=-73.98536&amp;zoom=15&amp;layers=T"
+      target="_blank" title="Transporte"><img src="imgs/render-transport.png"
+      alt="Transporte"></a> <a href=
+      "http://www.openstreetmap.org/?lat=40.74862&amp;lon=-73.98536&amp;zoom=15&amp;layers=Q"
+      target="_blank" title="MapQuest"><img src="imgs/render-mapquest.png" alt=
+      "Mapquest"></a>
+    </div>
+
+    <div id="render4" class="step" data-x="5100" data-y="-1200">
+      <h2>Otros renders</h2><a href=
+      "http://maps.cloudmade.com/?lat=40.74742&amp;lng=-73.987212&amp;zoom=15&amp;styleId=2&amp;opened_tab=0"
+      target="_blank" title="Free Line"><img src="imgs/render-freeline.png"
+      alt="Free Line"></a> <a href=
+      "http://maps.cloudmade.com/?lat=40.74742&amp;lng=-73.987212&amp;zoom=15&amp;styleId=999&amp;opened_tab=0"
+      target="_parent" title="Midnight Commander"><img src=
+      "imgs/render-midnight.png" alt="Midnight Commander"></a><br>
+      <a href=
+      "http://maps.cloudmade.com/?lat=40.74742&amp;lng=-73.987212&amp;zoom=15&amp;styleId=998&amp;opened_tab=0"
+      target="_blank" title="Pale Down"><img src="imgs/render-pale.png" alt=
+      "Pale Down"></a> <a href=
+      "http://maps.cloudmade.com/?lat=40.74742&amp;lng=-73.987212&amp;zoom=15&amp;styleId=2400&amp;opened_tab=0"
+      target="_blank" title="City Living"><img src="imgs/render-city.png" alt=
+      "City Living"></a>
+    </div>
 
     <div id="render5" class="step slide" data-x="5100" data-y="-2000">
-			<h2>Do It Yourself</h2>
-			<ul class="discs">
-				<li>Puedes descargarte toda la base de datos o una parte</li>
-				<li>Renderizarlo y servirlo como cualquier otro dato GIS</li>
-				<li>Por ejemplo si usas Mapnik:<ul>
-					<li>Creas el estilo con  <a href="http://mapbox.com/tilemill/" target="_blank">TileMill</a></li>
-					<li>Y sirves los MBTiles con <a href="https://github.com/mapbox/tilestream" 
-							target="_blank" title="TileStream">TileStream</a></li>
-					<li>O renderizas y sirves teselas con <a href="http://wiki.openstreetmap.org/wiki/Mod_tile" 
-							target="_blank" name="mod_tile">mod_tile</a></li>
-					<li>O generas imágenes estáticas con 	
-						<a href="http://code.google.com/p/mapnik-utils/wiki/Nik2Img" target="_blank"
-						 title="nik2img">nik2img</a></li>
-					<li>...</li>
-				</ul>
-				</li>
-			</ul>
-    </div>
-    
-    <div id="flujoFinal" class="step" data-x="4500" data-y="2000" data-scale="4">
-			<h2>Flujo de trabajo</h2>
-			<ul class="discs">
-			<li>Recolectar</li>
-			<li>Editar</li>
-			<li>Renderizar</li>
-			</ul>
-    </div>
-    
+      <h2>Do It Yourself</h2>
 
-    <!-- TIPOS DE DATOS    --> 
+      <ul class="discs">
+        <li>Puedes descargarte toda la base de datos o una parte</li>
+
+        <li>Renderizarlo y servirlo como cualquier otro dato GIS</li>
+
+        <li>Por ejemplo si usas Mapnik:
+
+          <ul>
+            <li>Creas el estilo con <a href="http://mapbox.com/tilemill/"
+            target="_blank">TileMill</a></li>
+
+            <li>Y sirves los MBTiles con <a href=
+            "https://github.com/mapbox/tilestream" target="_blank" title=
+            "TileStream">TileStream</a></li>
+
+            <li>O renderizas y sirves teselas con <a href=
+            "http://wiki.openstreetmap.org/wiki/Mod_tile" target="_blank"
+            title="mod_tile">mod_tile</a></li>
+
+            <li>O generas imágenes estáticas con <a href=
+            "http://code.google.com/p/mapnik-utils/wiki/Nik2Img" target=
+            "_blank" title="nik2img">nik2img</a></li>
+
+            <li>...</li>
+          </ul>
+        </li>
+        
+        <li>O montarte tu propio render en la nube usando 
+        <a href="http://tiledrawer.com/" target="_blank" 
+        title="Tile Drawer, OSM en  EC2">Tile Drawer</a></li>
+        
+        <li>Caso de uso: USGS replicando la infraestructura de OSM para su cartografía</li>
+      </ul>
+    </div>
+
+    <div id="flujoFinal" class="step section" data-x="4500" data-y="2000" data-scale=
+    "4">
+      <h2>Flujo de trabajo</h2>
+
+      <ul class="discs">
+        <li>Recolectar</li>
+
+        <li>Editar</li>
+
+        <li>Renderizar</li>
+      </ul>
+    </div><!-- TIPOS DE DATOS    -->
+
     <div id="datos1" class="step" data-x="-3500" data-y="200" data-scale="4">
-			<h2>El modelo de datos</h2>
+      <h2>El modelo de datos</h2>
     </div>
-    
-    
+
     <div id="datos2" class="step" data-x="-3500" data-y="-500" data-scale="2">
-			<blockquote>Nada que ver con el modelo tradicional de <em>features</em></blockquote>
+      <blockquote>
+        Nada que ver con el modelo tradicional de <em>features</em>
+      </blockquote>
     </div>
-    
-    <div id="datos3" class="step" data-x="-3500" data-y="-1000" data-scale="1">
-			<h2>Modelo de datos</h2>
-			<ul class="discs">
-			<li>Primitivas gráficas<ul>
-				<li>Nodos</li>
-				<li>Vías (si se cierran pueden ser un área)</li>			
-			</ul></li>
-			<li>Atributos<ul>			
-				<li>Relaciones</li>
-				<li>Etiquetas</li>
-			</ul></li>
-			</ul>
+
+    <div id="datos3" class="step section" data-x="-3500" data-y="-1000" data-scale="1">
+      <h2>Modelo de datos</h2>
+
+      <ul class="discs">
+        <li>Primitivas <strong>gráficas</strong>
+
+          <ul>
+            <li>Nodos</li>
+
+            <li>Vías (si se cierran pueden ser un área)</li>
+          </ul>
+        </li>
+
+        <li>Atributos <strong>alfanuméricos</strong>
+
+          <ul>
+            <li>Relaciones</li>
+
+            <li>Etiquetas</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    
+
     <div id="datos4" class="step" data-x="-4400" data-y="-1800" data-scale="1">
-    	<h2>Nodos</h2>
-			<ul class="discs smaller">
-				<li>Atributos importantes
-				<ul><li>identificador, latitud y longitud (EPSG:4326),
-					usuario que creó el nodo, versión y <em>changeset</em></li>			
-			</ul></li>
-			<li>Contenido<ul>
-			<li>etiquetas</li></ul></li>
-			</ul>
-			
-<pre class="brush: xml;">&lt;node id=&quot;25496583&quot; lat=&quot;51.5173639&quot; lon=&quot;-0.140043&quot;
-		version=&quot;1&quot; changeset=&quot;203496&quot; user=&quot;80n&quot; uid=&quot;1238&quot;
-		visible=&quot;true&quot; timestamp=&quot;2007-01-28T11:40:26Z&quot;&gt;
-        &lt;tag k=&quot;highway&quot; v=&quot;traffic_signals&quot;/&gt;
+      <h2>Nodos</h2>
+
+      <ul class="discs smaller">
+        <li>Atributos importantes
+
+          <ul>
+            <li>identificador, latitud y longitud (EPSG:4326), usuario que creó
+            el nodo, versión y <em>changeset</em></li>
+          </ul>
+        </li>
+
+        <li>Contenido
+
+          <ul>
+            <li>etiquetas</li>
+          </ul>
+        </li>
+      </ul>
+      <pre class="brush: xml;">
+&lt;node id="25496583" lat="51.5173639" lon="-0.140043"
+                version="1" changeset="203496" user="80n" uid="1238"
+                visible="true" timestamp="2007-01-28T11:40:26Z"&gt;
+        &lt;tag k="highway" v="traffic_signals"/&gt;
 &lt;/node&gt;
-    </pre>			
-    </div>
     
+</pre>
+    </div>
+
     <div id="datos5" class="step" data-x="-4400" data-y="-2600" data-scale="1">
-    	<h2>Vías</h2>
-			<ul class="discs smaller">
-				<li>Atributos igual que los nodos</li>
-			<li>Contenido<ul>
-			<li>Nodos de la vía y etiquetas</li></ul></li>
-			</ul>
-			
-		<pre class="brush: xml;">&lt;way id=&quot;5090250&quot; visible=&quot;true&quot; timestamp=&quot;2009-01-19T19:07:25Z&quot; 
-  version=&quot;8&quot; changeset=&quot;816806&quot; user=&quot;Blumpsy&quot;  uid=&quot;64226&quot;&gt;
-    &lt;nd ref=&quot;822403&quot;/&gt;&lt;nd ref=&quot;21533912&quot;/&gt;
-    &lt;nd ref=&quot;21533910&quot;/&gt;&lt;nd ref=&quot;333725776&quot;/&gt;&lt;nd ref=&quot;823771&quot;/&gt;
-    &lt;tag k=&quot;highway&quot; v=&quot;unclassified&quot;/&gt;
-    &lt;tag k=&quot;name&quot; v=&quot;Clipstone Street&quot;/&gt;
-    &lt;tag k=&quot;oneway&quot; v=&quot;yes&quot;/&gt;
+      <h2>Vías</h2>
+
+      <ul class="discs smaller">
+        <li>Atributos igual que los nodos</li>
+
+        <li>Contenido
+
+          <ul>
+            <li>Nodos de la vía y etiquetas</li>
+          </ul>
+        </li>
+      </ul>
+      <pre class="brush: xml;">
+&lt;way id="5090250" visible="true" timestamp="2009-01-19T19:07:25Z" 
+  version="8" changeset="816806" user="Blumpsy"  uid="64226"&gt;
+    &lt;nd ref="822403"/&gt;&lt;nd ref="21533912"/&gt;
+    &lt;nd ref="21533910"/&gt;&lt;nd ref="333725776"/&gt;&lt;nd ref="823771"/&gt;
+    &lt;tag k="highway" v="unclassified"/&gt;
+    &lt;tag k="name" v="Clipstone Street"/&gt;
+    &lt;tag k="oneway" v="yes"/&gt;
 &lt;/way&gt;
-    </pre>
-    </div>
     
+</pre>
+    </div>
+
     <div id="datos6" class="step" data-x="-3200" data-y="-2600" data-scale="1">
-    	<h2>Relaciones</h2>
-			<ul class="discs smaller">
-				<li>Atributos
-				<ul><li>id, visible, usuario y timestamp</li></ul>
-				</li>
-			<li>Contenido<ul>
-			<li>Miembros: id, tipo y rol en la relación</li>
-			<li>Etiquetas</li></ul></li>
-			</ul>
-			
-<pre class="brush: xml;">&lt;relation id=&quot;77&quot; visible=&quot;true&quot; 
-    timestamp=&quot;2006-03-14T10:07:23+00:00&quot; user=&quot;fred&quot;&gt;
-	    &lt;member type=&quot;way&quot; id=&quot;343&quot; role=&quot;from&quot; /&gt;
-	    &lt;member type=&quot;node&quot; id=&quot;911&quot; role=&quot;via&quot; /&gt;
-	    &lt;member type=&quot;way&quot; id=&quot;227&quot; role=&quot;to&quot; /&gt;
-	    &lt;tag k=&quot;type&quot; v=&quot;restriction&quot;/&gt;
-	    &lt;tag k=&quot;type&quot; v=&quot;no_left_turn&quot;/&gt;
-&lt;/relation&gt;</pre>
+      <h2>Relaciones</h2>
+
+      <ul class="discs smaller">
+        <li>Atributos
+
+          <ul>
+            <li>id, visible, usuario y timestamp</li>
+          </ul>
+        </li>
+
+        <li>Contenido
+
+          <ul>
+            <li>Miembros: id, tipo y rol en la relación</li>
+
+            <li>Etiquetas</li>
+          </ul>
+        </li>
+      </ul>
+      <pre class="brush: xml;">
+&lt;relation id="77" visible="true" 
+    timestamp="2006-03-14T10:07:23+00:00" user="fred"&gt;
+            &lt;member type="way" id="343" role="from" /&gt;
+            &lt;member type="node" id="911" role="via" /&gt;
+            &lt;member type="way" id="227" role="to" /&gt;
+            &lt;tag k="type" v="restriction"/&gt;
+            &lt;tag k="type" v="no_left_turn"/&gt;
+&lt;/relation&gt;
+</pre>
     </div>
-    
-    
+
     <div id="datos7" class="step" data-x="-3200" data-y="-1800" data-scale="1">
-    	<h2>Etiquetas</h2>
-			<ul class="discs smaller">
-				<li>Dan <strong>semántica</strong> a las primitivas gráficas<br> y relaciones</li>
-				<li>Definidas por la <strong>comunidad</strong> en 
-					<a href="http://wiki.openstreetmap.org/wiki/Map_Features" 
-					target="_blank" name="MapFeatures">el wiki</a></li>
-			</ul>
-			
-			<p class="center">
-			<a href="http://wiki.openstreetmap.org/wiki/Map_Features" 
-				target="_blank" name="MapFeatures"><img class="figure" 
-				src="imgs/map-features.png" width="500" alt="MapFeatures" /></a>
-			</p>
+      <h2>Etiquetas</h2>
+
+      <ul class="discs smaller">
+        <li>Dan <strong>semántica</strong> a las primitivas gráficas<br>
+        y relaciones</li>
+
+        <li>Definidas por la <strong>comunidad</strong> en <a href=
+        "http://wiki.openstreetmap.org/wiki/Map_Features" target="_blank"
+        title="MapFeatures">el wiki</a></li>
+      </ul>
+
+      <p class="center"><a href=
+      "http://wiki.openstreetmap.org/wiki/Map_Features" target="_blank" title=
+      "MapFeatures"><img class="figure" src="imgs/map-features.png" width="500"
+      alt="MapFeatures"></a></p>
+    </div><!-- LLAMADAS A LA API  -->
+
+    <div id="api" class="step section" data-x="-500" data-y="-3000" data-scale="4">
+      <h2>La API de OSM</h2>
     </div>
-    
-    
-    <!-- LLAMADAS A LA API  -->
-    <div id="api" class="step" data-x="-500" data-y="-3000" data-scale="4">
-			<h2>La API de OSM</h2>
-    </div>
-    
- 
+
     <div id="api1" class="step" data-x="-1300" data-y="-2200" data-scale="2">
-			<ul class="discs">				
-				<li>Único medio de modificar datos</li>
-				<li><a href="http://wiki.openstreetmap.org/wiki/API_v0.6" 
-						target="_blank" name="API 0.6">v0.6</a> desde 2009</li>			
-				<li>RESTful</li>
-				<li>Consultas anónimas, actualizaciones por OAuth</li>
-				<li>Soporte de versionado</li>
-				<li>Descargas limitadas<br> a cuadrados de 15'</li>
-			</ul>
+      <ul class="discs">
+        <li>Único medio de <strong>modificar</strong> datos</li>
+
+        <li><a href="http://wiki.openstreetmap.org/wiki/API_v0.6" target=
+        "_blank" title="API 0.6">v0.6</a> desde 2009</li>
+
+        <li>RESTful</li>
+
+        <li>Consultas anónimas, actualizaciones por <strong>OAuth</strong></li>
+
+        <li>Soporte de <strong>versionado</strong></li>
+
+        <li>Descargas limitadas<br>
+        a cuadrados de <strong>15'</strong></li>
+      </ul>
     </div>
 
     <div id="api2" class="step api" data-x="300" data-y="-3000" data-scale="1">
-    <p><a href="http://api.openstreetmap.org/api/capabilities" >http://api.openstreetmap.org/api/capabilities</a></p>
-    <pre class="brush: xml;">
-&lt;osm version=&quot;0.6&quot; generator=&quot;OpenStreetMap server&quot;&gt;
+      <p><a href=
+      "http://api.openstreetmap.org/api/capabilities">http://api.openstreetmap.org/api/capabilities</a></p>
+      <pre class="brush: xml;">
+&lt;osm version="0.6" generator="OpenStreetMap server"&gt;
 &lt;api&gt;
-&lt;version minimum=&quot;0.6&quot; maximum=&quot;0.6&quot;/&gt;
-&lt;area maximum=&quot;0.25&quot;/&gt;
-&lt;tracepoints per_page=&quot;5000&quot;/&gt;
-&lt;waynodes maximum=&quot;2000&quot;/&gt;
-&lt;changesets maximum_elements=&quot;50000&quot;/&gt;
-&lt;timeout seconds=&quot;300&quot;/&gt;
+&lt;version minimum="0.6" maximum="0.6"/&gt;
+&lt;area maximum="0.25"/&gt;
+&lt;tracepoints per_page="5000"/&gt;
+&lt;waynodes maximum="2000"/&gt;
+&lt;changesets maximum_elements="50000"/&gt;
+&lt;timeout seconds="300"/&gt;
 &lt;/api&gt;
 &lt;/osm&gt;
-    </pre>
-    </div>
     
+</pre>
+    </div>
+
     <div id="api3" class="step api" data-x="300" data-y="-2400" data-scale="1">
-    <p><a href="http://api.openstreetmap.org/api/0.6/node/933346497" >http://api.openstreetmap.org/api/0.6/node/933346497</a></p>
-    <pre class="brush: xml;">
-&lt;osm version=&quot;0.6&quot; generator=&quot;OpenStreetMap server&quot;&gt;
-&lt;node id=&quot;933346497&quot; lat=&quot;41.5827283&quot; lon=&quot;2.013415&quot; 
-version=&quot;3&quot; changeset=&quot;8211372&quot; user=&quot;Jaume Figueras&quot;
-uid=&quot;55987&quot; visible=&quot;true&quot; timestamp=&quot;2011-05-21T22:26:13Z&quot;&gt;
-&lt;tag k=&quot;ref&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;network&quot; v=&quot;Xarxa d&apos;autobusos Urbans de Terrassa&quot;/&gt;
-&lt;tag k=&quot;covered&quot; v=&quot;no&quot;/&gt;
-&lt;tag k=&quot;tactile_paving&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;bench&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;public_transport&quot; v=&quot;platform&quot;/&gt;
-&lt;tag k=&quot;highway&quot; v=&quot;bus_stop&quot;/&gt;
-&lt;tag k=&quot;uic_ref&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;uic_name&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;name&quot; v=&quot;Arenys de Mar&quot;/&gt;
-&lt;tag k=&quot;shelter&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;operator&quot; v=&quot;TMESA&quot;/&gt;
-&lt;tag k=&quot;layer&quot; v=&quot;0&quot;/&gt;
+      <p><a href=
+      "http://api.openstreetmap.org/api/0.6/node/933346497">http://api.openstreetmap.org/api/0.6/node/933346497</a></p>
+      <pre class="brush: xml;">
+&lt;osm version="0.6" generator="OpenStreetMap server"&gt;
+&lt;node id="933346497" lat="41.5827283" lon="2.013415" 
+version="3" changeset="8211372" user="Jaume Figueras"
+uid="55987" visible="true" timestamp="2011-05-21T22:26:13Z"&gt;
+&lt;tag k="ref" v="FIXME"/&gt;
+&lt;tag k="network" v="Xarxa d'autobusos Urbans de Terrassa"/&gt;
+&lt;tag k="covered" v="no"/&gt;
+&lt;tag k="tactile_paving" v="yes"/&gt;
+&lt;tag k="bench" v="yes"/&gt;
+&lt;tag k="public_transport" v="platform"/&gt;
+&lt;tag k="highway" v="bus_stop"/&gt;
+&lt;tag k="uic_ref" v="FIXME"/&gt;
+&lt;tag k="uic_name" v="FIXME"/&gt;
+&lt;tag k="name" v="Arenys de Mar"/&gt;
+&lt;tag k="shelter" v="yes"/&gt;
+&lt;tag k="operator" v="TMESA"/&gt;
+&lt;tag k="layer" v="0"/&gt;
 &lt;/node&gt;
 &lt;/osm&gt;
-    </pre>
-    </div>
     
+</pre>
+    </div>
+
     <div id="api4" class="step api" data-x="300" data-y="-1700" data-scale="1">
-    <p><a href="http://api.openstreetmap.org/api/0.6/node/933346497/history" >
-    http://api.openstreetmap.org/api/0.6/node/933346497/history</a>
-    </p>
-    <pre class="brush: xml;">    
-&lt;osm version=&quot;0.6&quot; generator=&quot;OpenStreetMap server&quot;&gt;
-&lt;node id=&quot;933346497&quot; lat=&quot;41.5827339&quot; lon=&quot;2.0134288&quot; changeset=&quot;5928981&quot;
-user=&quot;Jaume Figueras&quot; uid=&quot;55987&quot; visible=&quot;true&quot; timestamp=&quot;2010-10-01T15:46:00Z&quot; version=&quot;1&quot;&gt;
-&lt;tag k=&quot;highway&quot; v=&quot;bus_stop&quot;/&gt;
-&lt;tag k=&quot;shelter&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;name&quot; v=&quot;Arenys de Mar&quot;/&gt;
-&lt;tag k=&quot;tactile_paving&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;bench&quot; v=&quot;yes&quot;/&gt;
+      <p><a href=
+      "http://api.openstreetmap.org/api/0.6/node/933346497/history">http://api.openstreetmap.org/api/0.6/node/933346497/history</a></p>
+      <pre class="brush: xml;">
+    
+&lt;osm version="0.6" generator="OpenStreetMap server"&gt;
+&lt;node id="933346497" lat="41.5827339" lon="2.0134288" changeset="5928981"
+user="Jaume Figueras" uid="55987" visible="true" timestamp="2010-10-01T15:46:00Z" version="1"&gt;
+&lt;tag k="highway" v="bus_stop"/&gt;
+&lt;tag k="shelter" v="yes"/&gt;
+&lt;tag k="name" v="Arenys de Mar"/&gt;
+&lt;tag k="tactile_paving" v="yes"/&gt;
+&lt;tag k="bench" v="yes"/&gt;
 &lt;/node&gt;
-&lt;node id=&quot;933346497&quot; lat=&quot;41.5827339&quot; lon=&quot;2.0134288&quot; changeset=&quot;8167041&quot; 
-user=&quot;Jaume Figueras&quot; uid=&quot;55987&quot; visible=&quot;true&quot; timestamp=&quot;2011-05-16T21:38:38Z&quot; version=&quot;2&quot;&gt;
-&lt;tag k=&quot;highway&quot; v=&quot;bus_stop&quot;/&gt;
-&lt;tag k=&quot;shelter&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;network&quot; v=&quot;Xarxa d&apos;autobusos Urbans de Terrassa&quot;/&gt;
-&lt;tag k=&quot;name&quot; v=&quot;Arenys de Mar&quot;/&gt;
-&lt;tag k=&quot;ref&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;uic_name&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;tactile_paving&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;layer&quot; v=&quot;0&quot;/&gt;
-&lt;tag k=&quot;covered&quot; v=&quot;no&quot;/&gt;
-&lt;tag k=&quot;public_transport&quot; v=&quot;platform&quot;/&gt;
-&lt;tag k=&quot;uic_ref&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;bench&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;operator&quot; v=&quot;TMESA&quot;/&gt;
+&lt;node id="933346497" lat="41.5827339" lon="2.0134288" changeset="8167041" 
+user="Jaume Figueras" uid="55987" visible="true" timestamp="2011-05-16T21:38:38Z" version="2"&gt;
+&lt;tag k="highway" v="bus_stop"/&gt;
+&lt;tag k="shelter" v="yes"/&gt;
+&lt;tag k="network" v="Xarxa d'autobusos Urbans de Terrassa"/&gt;
+&lt;tag k="name" v="Arenys de Mar"/&gt;
+&lt;tag k="ref" v="FIXME"/&gt;
+&lt;tag k="uic_name" v="FIXME"/&gt;
+&lt;tag k="tactile_paving" v="yes"/&gt;
+&lt;tag k="layer" v="0"/&gt;
+&lt;tag k="covered" v="no"/&gt;
+&lt;tag k="public_transport" v="platform"/&gt;
+&lt;tag k="uic_ref" v="FIXME"/&gt;
+&lt;tag k="bench" v="yes"/&gt;
+&lt;tag k="operator" v="TMESA"/&gt;
 &lt;/node&gt;
-&lt;node id=&quot;933346497&quot; lat=&quot;41.5827283&quot; lon=&quot;2.013415&quot; changeset=&quot;8211372&quot; 
-user=&quot;Jaume Figueras&quot; uid=&quot;55987&quot; visible=&quot;true&quot; timestamp=&quot;2011-05-21T22:26:13Z&quot; version=&quot;3&quot;&gt;
-&lt;tag k=&quot;highway&quot; v=&quot;bus_stop&quot;/&gt;
-&lt;tag k=&quot;shelter&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;network&quot; v=&quot;Xarxa d&apos;autobusos Urbans de Terrassa&quot;/&gt;
-&lt;tag k=&quot;name&quot; v=&quot;Arenys de Mar&quot;/&gt;
-&lt;tag k=&quot;ref&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;uic_name&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;tactile_paving&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;layer&quot; v=&quot;0&quot;/&gt;
-&lt;tag k=&quot;covered&quot; v=&quot;no&quot;/&gt;
-&lt;tag k=&quot;public_transport&quot; v=&quot;platform&quot;/&gt;
-&lt;tag k=&quot;uic_ref&quot; v=&quot;FIXME&quot;/&gt;
-&lt;tag k=&quot;bench&quot; v=&quot;yes&quot;/&gt;
-&lt;tag k=&quot;operator&quot; v=&quot;TMESA&quot;/&gt;
+&lt;node id="933346497" lat="41.5827283" lon="2.013415" changeset="8211372" 
+user="Jaume Figueras" uid="55987" visible="true" timestamp="2011-05-21T22:26:13Z" version="3"&gt;
+&lt;tag k="highway" v="bus_stop"/&gt;
+&lt;tag k="shelter" v="yes"/&gt;
+&lt;tag k="network" v="Xarxa d'autobusos Urbans de Terrassa"/&gt;
+&lt;tag k="name" v="Arenys de Mar"/&gt;
+&lt;tag k="ref" v="FIXME"/&gt;
+&lt;tag k="uic_name" v="FIXME"/&gt;
+&lt;tag k="tactile_paving" v="yes"/&gt;
+&lt;tag k="layer" v="0"/&gt;
+&lt;tag k="covered" v="no"/&gt;
+&lt;tag k="public_transport" v="platform"/&gt;
+&lt;tag k="uic_ref" v="FIXME"/&gt;
+&lt;tag k="bench" v="yes"/&gt;
+&lt;tag k="operator" v="TMESA"/&gt;
 &lt;/node&gt;
 &lt;/osm&gt;
-    </pre>
-    </div>
     
-		<div id="api5" class="step api" data-x="1500" data-y="-1700" data-scale="1">
-    <p><a href="http://api.openstreetmap.org/api/0.6/changeset/8211372" >
-    http://api.openstreetmap.org/api/0.6/changeset/8211372</a>
-    </p>
-    <pre class="brush: xml;">    
-&lt;osm version=&quot;0.6&quot; generator=&quot;OpenStreetMap server&quot;&gt;
-&lt;changeset id=&quot;8211372&quot; user=&quot;Jaume Figueras&quot; 
-uid=&quot;55987&quot; created_at=&quot;2011-05-21T22:26:04Z&quot; 
-closed_at=&quot;2011-05-21T22:26:17Z&quot; open=&quot;false&quot;
-min_lat=&quot;41.5617613&quot; min_lon=&quot;2.0082875&quot; 
-max_lat=&quot;41.5859881&quot; max_lon=&quot;2.0241229&quot;&gt;
-&lt;tag k=&quot;comment&quot; v=&quot;Bus de Terrassa - Línia 7 adaptada al nou esquema i arranjaments varis&quot;/&gt;
-&lt;tag k=&quot;created_by&quot; v=&quot;JOSM/1.5 (4064 en)&quot;/&gt;
+</pre>
+    </div>
+
+    <div id="api5" class="step api" data-x="1500" data-y="-1700" data-scale=
+    "1">
+      <p><a href=
+      "http://api.openstreetmap.org/api/0.6/changeset/8211372">http://api.openstreetmap.org/api/0.6/changeset/8211372</a></p>
+      <pre class="brush: xml;">
+    
+&lt;osm version="0.6" generator="OpenStreetMap server"&gt;
+&lt;changeset id="8211372" user="Jaume Figueras" 
+uid="55987" created_at="2011-05-21T22:26:04Z" 
+closed_at="2011-05-21T22:26:17Z" open="false"
+min_lat="41.5617613" min_lon="2.0082875" 
+max_lat="41.5859881" max_lon="2.0241229"&gt;
+&lt;tag k="comment" v="Bus de Terrassa - Línia 7 adaptada al nou esquema i arranjaments varis"/&gt;
+&lt;tag k="created_by" v="JOSM/1.5 (4064 en)"/&gt;
 &lt;/changeset&gt;
 &lt;/osm&gt;
-    </pre>
+    
+</pre>
     </div>
 
+    <div id="api6" class="step api" data-x="1500" data-y="-2300" data-scale=
+    "1">
+      <p><a href=
+      "http://api.openstreetmap.org/api/0.6/map?bbox=2.0082875,41.5617613,2.0241229,41.5859881">
+      http://api.openstreetmap.org/api/0.6/map?bbox=2.0082875,41.5617613,2.0241229,41.5859881</a></p>
+      <pre class="brush: xml;">
     
-		<div id="api6" class="step api" data-x="1500" data-y="-2300" data-scale="1">
-    <p><a href="http://api.openstreetmap.org/api/0.6/map?bbox=2.0082875,41.5617613,2.0241229,41.5859881" >
-    http://api.openstreetmap.org/api/0.6/map?bbox=2.0082875,41.5617613,2.0241229,41.5859881</a>
-    </p>
-    <pre class="brush: xml;">    
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;osm version=&quot;0.6&quot; generator=&quot;CGImap 0.0.2&quot;&gt;
-	&lt;bounds minlat=&quot;41.5617613&quot; minlon=&quot;2.0082875&quot; 
-		maxlat=&quot;41.5859881&quot; maxlon=&quot;2.0241229&quot;/&gt;
-	&lt;node id=&quot;282873786&quot; lat=&quot;41.5803041&quot; lon=&quot;2.0268698&quot; 
-		user=&quot;Jaume Figueras&quot; uid=&quot;55987&quot; visible=&quot;true&quot;
-		version=&quot;5&quot; changeset=&quot;1576508&quot; timestamp=&quot;2009-06-20T17:59:37Z&quot;&gt;
-			&lt;tag k=&quot;highway&quot; v=&quot;traffic_signals&quot;/&gt;
-	&lt;/node&gt;
-	&lt;node id=&quot;282873797&quot; lat=&quot;41.5805069&quot; lon=&quot;2.0266905&quot; 
-		user=&quot;Jaume Figueras&quot; uid=&quot;55987&quot; visible=&quot;true&quot;
-		version=&quot;6&quot; changeset=&quot;5858775&quot; timestamp=&quot;2010-09-23T23:30:09Z&quot;&gt;
-			&lt;tag k=&quot;highway&quot; v=&quot;traffic_signals&quot;/&gt;
-	&lt;/node&gt;
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;osm version="0.6" generator="CGImap 0.0.2"&gt;
+        &lt;bounds minlat="41.5617613" minlon="2.0082875" 
+                maxlat="41.5859881" maxlon="2.0241229"/&gt;
+        &lt;node id="282873786" lat="41.5803041" lon="2.0268698" 
+                user="Jaume Figueras" uid="55987" visible="true"
+                version="5" changeset="1576508" timestamp="2009-06-20T17:59:37Z"&gt;
+                        &lt;tag k="highway" v="traffic_signals"/&gt;
+        &lt;/node&gt;
+        &lt;node id="282873797" lat="41.5805069" lon="2.0266905" 
+                user="Jaume Figueras" uid="55987" visible="true"
+                version="6" changeset="5858775" timestamp="2010-09-23T23:30:09Z"&gt;
+                        &lt;tag k="highway" v="traffic_signals"/&gt;
+        &lt;/node&gt;
 ....
-    </pre>
-    <p>Son 1.6MB de descarga</p>
+    
+</pre>
+
+      <p>Son 1.6MB de descarga</p>
     </div>
 
-    <div id="api7" class="step slide" data-x="1500" data-y="-3100" data-scale="1">
-    
-    	<h2>Actualización de datos</h2>
-    	
-			<ul class="discs">				
-				<li>PUT /api/0.6/changeset/create</li>
-				<li>PUT /api/0.6/changeset/#id/close</li>
-				<li> PUT /api/0.6/[N|W|R]/create</li>
-				<li>DELETE /api/0.6/[N|W|R]/#id</li>
-			</ul>
-			
-			<h2>Otras consultas</h2>
-			
-			<ul class="discs">
-				<li>GET /api/0.6/[N|W|R]/#id/relations</li>			
-				<li>GET /api/0.6/node/#id/ways
-				<li>GET /api/0.6/[W|R]/#id/full</li>
-			</ul>
+    <div id="api7" class="step slide" data-x="1500" data-y="-3100" data-scale=
+    "1">
+      <h2>Actualización de datos</h2>
+
+      <ul class="discs">
+        <li>PUT /api/0.6/changeset/create</li>
+
+        <li>PUT /api/0.6/changeset/#id/close</li>
+
+        <li>PUT /api/0.6/[N|W|R]/create</li>
+
+        <li>DELETE /api/0.6/[N|W|R]/#id</li>
+      </ul>
+
+      <h2>Otras consultas</h2>
+
+      <ul class="discs">
+        <li>GET /api/0.6/[N|W|R]/#id/relations</li>
+
+        <li>GET /api/0.6/node/#id/ways</li>
+
+        <li>GET /api/0.6/[W|R]/#id/full</li>
+      </ul>
+    </div><!-- JOSM -->
+
+    <div id="josm" class="step section" data-x="-1300" data-y="2600" data-scale="4">
+      <h2>Java OpenStreetMap<br>
+      Editor</h2>
     </div>
-    
-    
-		<!-- JOSM -->
-    <div id="josm" class="step" data-x="-1300" data-y="2600" data-scale="4">
-			<h2>Java OpenStreetMap <br> Editor</h2>
-    </div>	
-    
+
     <div id="josm1" class="step" data-x="-2100" data-y="3400" data-scale="2">
-			<ul class="discs">
-				<li><a href="http://josm.openstreetmap.de/" name="JOSM">
-				http://josm.openstreetmap.de/</a></li>		
-				<li>Potente editor OSM</li>
-				<li>Carga datos GPX</li>			
-				<li>Carga imágenes (TMS/WMS)</li>
-				<li>Extensible mediante plugins</li>
-				<li>Altamente especializado</li>
-			</ul>
+      <ul class="discs">
+        <li><a href="http://josm.openstreetmap.de/" title=
+        "JOSM">http://josm.openstreetmap.de/</a></li>
+
+        <li>Potente editor OSM</li>
+
+        <li>Carga datos GPX</li>
+
+        <li>Carga imágenes (TMS/WMS)</li>
+
+        <li>Extensible mediante plugins</li>
+
+        <li>Altamente especializado</li>
+      </ul>
     </div>
-    
+
     <div id="josm2" class="step" data-x="-700" data-y="3000" data-scale="1">
-			<h2>Descargar datos</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Descargar datos</h2><img src="http://placekitten.com/800/500" alt=
+    ""></div>
+
     <div id="josm3" class="step" data-x="500" data-y="3000" data-scale="1">
-			<h2>Cargar GPX</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Cargar GPX</h2><img src="http://placekitten.com/800/500" alt=""></div>
+
     <div id="josm4" class="step" data-x="1700" data-y="3000" data-scale="1">
-			<h2>Imagen de fondo</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Imagen de fondo</h2><img src="http://placekitten.com/800/500" alt=
+    ""></div>
+
     <div id="josm5" class="step" data-x="1700" data-y="3800" data-scale="1">
-			<h2>Comandos más usados</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Comandos más usados</h2><img src="http://placekitten.com/800/500" alt=
+    ""></div>
+
     <div id="josm6" class="step" data-x="500" data-y="3800" data-scale="1">
-			<h2>Etiquetas y predefinidos</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Etiquetas y predefinidos</h2><img src="http://placekitten.com/800/500"
+    alt=""></div>
+
     <div id="josm7" class="step" data-x="-700" data-y="3800" data-scale="1">
-			<h2>Filtros</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Filtros</h2><img src="http://placekitten.com/800/500" alt=""></div>
+
     <div id="josm8" class="step" data-x="-700" data-y="4600" data-scale="1">
-			<h2>Subir los cambios</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
+    <h2>Subir los cambios</h2><img src="http://placekitten.com/800/500" alt=
+    ""></div>
+
     <div id="josm9" class="step" data-x="500" data-y="4600" data-scale="1">
-			<h2>Preferencias y plugins</h2>
-			<img src="http://placekitten.com/800/500" alt="" />
-    </div>
-    
-    
-    <!-- COLOFON -->
-        
-    <div  id="colofon" class="step" data-x="-500" data-y="1800" data-scale="1">
-        <p>¿No te dan ganas de entrar a editar? <strong>¡ánimo!</strong>
-        </p>
-        
-        <img src="imgs/success-kid.jpg" alt="Vamos!" >
-    </div>
-    
-    <!-- referencias y licencia -->
-       
-    <div id="refs" class="step slide" data-x="-1600" data-y="1800" data-scale="1">
-        <h2>Referencias</h2>
-        <ul class="smaller discs">
-          <li></li>
-        </ul>
-        
-        <h2>Licencia</h2>
-        <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.es" name="cc-by-sa">
-        	<img src="imgs/cc-by-sa.png" height="100" alt="" />
-        </a>
-    </div>
-    
-    <!-- OVERVIEW -->
-    <div id="overview" class="step" data-x="0" data-y="-100" data-rotate-x="-20" data-rotate-y="-20" data-scale="10">
-    	<p>Gracias!!</p>
-    </div>
-    
-    
-    
+    <h2>Preferencias y plugins</h2><img src="http://placekitten.com/800/500"
+    alt=""></div><!-- COLOFON -->
 
-</div>
+    <div id="colofon" class="step" data-x="-500" data-y="1800" data-scale="1">
+    <p>¿No te dan ganas de entrar a editar?
+    <strong>¡ánimo!</strong></p><img src="imgs/success-kid.jpg" alt=
+    "Vamos!"></div><!-- referencias y licencia -->
 
-<div class="banner"></div>
-<div class="hint">
+    <div id="refs" class="step slide section" data-x="-1600" data-y="1800" data-scale=
+    "1">
+      <h2>Referencias</h2>
+
+      <ul class="smaller discs">
+        <li><a href="http://pubs.usgs.gov/of/2011/1136/" target="_blank"
+        title="USGS ala OSM">OpenStreetMap Collaborative Prototype, 
+        Phase One</a></li>
+      </ul>
+
+      <h2>Licencia</h2><a href=
+      "http://creativecommons.org/licenses/by-sa/3.0/deed.es" title=
+      "cc-by-sa"><img src="imgs/cc-by-sa.png" height="100" alt=""></a>
+    </div><!-- OVERVIEW -->
+
+    <div id="overview" class="step" data-x="0" data-y="-100" data-rotate-x=
+    "-20" data-rotate-y="-20" data-scale="10">
+      <p>Gracias!!</p>
+    </div>
+  </div>
+
+  <div class="banner"></div>
+
+  <div class="hint">
     <p>Usa la barra espaciadora o las flechas para navegar</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Toca o la derecha o la izquierda para navegar</p>";
-}
-</script>
+  </div>
+  
+  <!-- JavaScript -->
+  <script type="text/javascript" src="../resources/jquery-1.7.min.js">
+  </script><script type="text/javascript" src=
+"../resources/impress/js/impress.js">
+  </script><!-- Syntax highlighter stuff -->
+    <script type="text/javascript" src="../resources/sh/scripts/shCore.js">
+  </script><script type="text/javascript" src=
+  "../resources/sh/scripts/shBrushXml.js">
+  </script><script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){ 
 
+  if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Toca o la derecha o la izquierda para navegar<\/p>";
+  }
 
-
-<script type="text/javascript" src="../resources/jquery-1.7.min.js"></script>
-<script type="text/javascript" src="../resources/impress/js/impress.js"></script>
-
-<!-- Syntax highlighter stuff -->
-<script type="text/javascript" src="../resources/sh/scripts/shCore.js"></script>
-<script type="text/javascript" src="../resources/sh/scripts/shBrushXml.js"></script> 
-<script>
-$(document).ready(function(){ 
-		SyntaxHighlighter.all();
-		impress();
-});
-</script>
-
+                SyntaxHighlighter.all();
+                impress();
+  });
+  //]]>
+  </script>
 </body>
 </html>
