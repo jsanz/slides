@@ -88,6 +88,33 @@
 	font-family: Iconsoledata,courier;
 }
 
+/* josm */
+#josm img{
+			float:right;
+			width: 60px;
+			margin-top: 150px;
+			margin-right: 50px;
+}
+#josm.active img{
+
+	-webkit-transform: scale(3);
+	-moz-transform:    scale(3);
+	-ms-transform:     scale(3);
+	-o-transform:      scale(3);
+	transform:         scale(3);
+	
+	-webkit-transition-duration: 2.0s;
+	-moz-transition-duration:    2.0s;
+	-ms-transition-duration:     2.0s;
+	-o-transition-duration:      2.0s;
+	transition-duration:         2.0s;
+	
+	-webkit-transition-delay: 2.0s;
+	-moz-transition-delay:    2.0s;
+	-ms-transition-delay:     2.0s;
+	-o-transition-delay:      2.0s;
+	transition-delay:         2.0s;
+}
 
 /* fin */
 

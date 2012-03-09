@@ -274,7 +274,7 @@ div.syntaxhighlighter{
 /* on overview step everything is visible */
 
 .step-overview .step {
-    opacity: 0.2;
+    opacity: 0;
     cursor: pointer;
 }
 
@@ -282,6 +282,11 @@ div.syntaxhighlighter{
 	display: none;
 }
 
+
+
+.step-overview .section{
+	opacity: .6;
+}
 .step-overview #title, .step-overview #overview{
 	display: block;
 	opacity: 1;
