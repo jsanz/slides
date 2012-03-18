@@ -1,0 +1,30 @@
+/* 
+Juego de variables que se usan en la plantilla. 
+
+Se declaran aparte para poder cargarlas antes de la plantilla 
+y poder en medio sobrecargarlas de forma que sea sencillo 
+cambiarlas para cada charla sin alterar el aspecto de la
+plantilla base.
+
+Cambios:
+- 17/03/12: Creación de la primera versión de la plantilla jsanz@prodevelop.es
+ */
+
+/* colores */
+$cPrimario:   #00486b;
+$cSecundario: #006b59;
+$cTerciario:  #00126b;
+
+$cFondo1: rgb(240,240,240);
+$cFondo2: rgb(190,190,190); 
+$cFondo3: rgb(215,215,215); 
+$cQuotes: #2B2B2B;
+
+$cOSGeo1: #49a942;
+$cOSGeo2: #A0CE67;
+$cOSGeoLive:#1166AD;
+
+
+/* Fuentes */
+$f_principal:  Arial, Helvetica, 'Free Sans', sans-serif;
+$f_condensada: Courier New, Monaco, 'Free Mono', monospace;

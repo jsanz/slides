@@ -1,0 +1,198 @@
+// ---- CSS3 SASS MIXINS ----
+// https://github.com/madr/css3-sass-mixins
+//  
+//  Copyright (C) 2011 by Anders Ytterström
+//  
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
+
+/*****
+SCSS CSS 3 Property Maxin v 0.1
+
+by Dele O
+*******/
+
+
+
+//  Should IE filters be used or not?
+//  PROS: gradients, drop shadows etc will be handled by css.
+//  CONS: will harm the site performance badly, 
+//        especially on sites with heavy rendering and scripting. 
+$useIEFilters: 0; // might be 0 or 1. disabled by default.
+
+
+
+@mixin rotate ($deg) {
+  -moz-transform: rotate(#{$deg}deg);
+  -o-transform: rotate(#{$deg}deg);
+  -ms-transform: rotate(#{$deg}deg);
+  -webkit-transform: rotate(#{$deg}deg);
+}
+
+@mixin scale ($size) {
+	-moz-transform: scale(#{$size});
+	-o-transform: scale(#{$size});
+	-ms-transform: scale(#{$size});
+	-webkit-transform: scale(#{$size});
+}
+
+@mixin transition ($value) {
+  -moz-transition: $value;
+  -o-transition: $value;
+  -ms-transition: $value;
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin transition2 ($value1,$value2) {
+  -webkit-transition: $value1, -webkit-transform $value2;
+  -moz-transition:    $value1,    -moz-transform $value2;
+  -ms-transition:     $value1,     -ms-transform $value2;
+  -o-transition:      $value1,      -o-transform $value2;
+  transition:         $value1,         transform $value2;
+}
+
+@mixin transition-property($value){
+	-webkit-transition-property: $value;
+	-moz-transition-property:    $value;
+	-ms-transition-property:     $value;
+	-o-transition-property:      $value;
+	transition-property:         $value;
+}
+
+@mixin transition-duration($value){
+  -webkit-transition-duration: $value;
+  -moz-transition-duration:    $value;
+  -ms-transition-duration:     $value;
+  -o-transition-duration:      $value;
+  transition-duration:         $value;
+}
+
+@mixin transition-delay($value){
+  -webkit-transition-delay: $value;
+  -moz-transition-delay:    $value;
+  -ms-transition-delay:     $value;
+  -o-transition-delay:      $value;
+  transition-delay:         $value;
+}
+
+@mixin transform($skew-x, $skew-y, $scale-x, $scale-y, $rotate, $trans-x, $trans-y){	
+	-webkit-transform: skew($skew-x, $skew-y) scale($scale-x,$scale-y) rotate($rotate) translate($trans-x, $trans-y);
+	-moz-transform:    skew($skew-x, $skew-y) scale($scale-x,$scale-y) rotate($rotate) translate($trans-x, $trans-y);
+	-ms-transform:     skew($skew-x, $skew-y) scale($scale-x,$scale-y) rotate($rotate) translate($trans-x, $trans-y);
+	-o-transform:      skew($skew-x, $skew-y) scale($scale-x,$scale-y) rotate($rotate) translate($trans-x, $trans-y);
+	transform:         skew($skew-x, $skew-y) scale($scale-x,$scale-y) rotate($rotate) translate($trans-x, $trans-y);
+}
+
+@mixin box-sizing($value){
+    -moz-box-sizing:    $value;
+    -ms-box-sizing:     $value;
+    -o-box-sizing:      $value;
+    box-sizing:         $value;
+}
+
+/* Backgrounds */
+
+@mixin back-rgba($hex, $alpha, $ie: $useIEFilters) {     
+  @if $ie == 1 { 
+    // this formula is not accurate enough, will be fixed with sass 3.1
+    $hexopac: '#' + ceil((($alpha * 255)/16) *10) + $hex;
+    background-color: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$hexopac}',EndColorStr='#{$hexopac}}');
+    -ms-filter: quote(progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$hexopac}',EndColorStr='#{$hexopac}'));
+  }
+  @else {
+    background-color: $hex;
+    background-color: rgba(red($hex), green($hex), blue($hex), $alpha);
+  }
+}
+
+@mixin back-linear-gradient($from, $to, $ie: $useIEFilters) {
+  @if $ie != 1 {
+    background-color: $to;
+  }
+  
+  background-image: -moz-linear-gradient($from, $to);
+  background-image: -o-linear-gradient($from, $to);
+  background-image: -ms-linear-gradient($from, $to);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $from),color-stop(1, $to));
+  background-image: -webkit-linear-gradient($from, $to);
+
+  @if $ie == 1 { 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+    -ms-filter: quote(progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}'));
+  }
+}
+
+@mixin back-radial-gradient($from, $to, $ie: $useIEFilters) {
+  @if $ie != 1 {
+    background-color: $to;
+  }
+   
+  background-image: -webkit-gradient(radial,50% 50%, 0, 50% 50%, 500,from($from),to($to));
+  background-image: -webkit-radial-gradient($from, $to);
+  background-image:    -moz-radial-gradient($from, $to);
+  background-image:      -o-radial-gradient($from, $to);
+  background-image:         radial-gradient($from, $to);
+
+  @if $ie == 1 { 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+    -ms-filter: quote(progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}'));
+  }
+}
+
+
+/* Borders and boxes*/
+
+@mixin border-image ($path, $offsets, $repeats) {
+  -moz-border-image: $path $offsets $repeats;
+  -o-border-image: $path $offsets $repeats;
+  -webkit-border-image: $path $offsets $repeats;
+  border-image: $path $offsets $repeats;
+}
+
+@mixin border-radius ($values) {
+  -moz-border-radius: $values;
+  -webkit-border-radius: $values;
+  border-radius: $values;
+}
+
+@mixin roundedSides($topLeft, $topRight, $bottomRight, $bottomLeft) {
+	-moz-border-radius-topleft: $topLeft;
+	-moz-border-radius-topright: $topRight;
+	-moz-border-radius-bottomright: $bottomRight;
+	-moz-border-radius-bottomleft: $bottomLeft;
+	border-top-left-radius:$topLeft;
+	border-top-right-radius: $topRight;
+	border-bottom-right-radius: $bottomRight;
+	border-bottom-left-radius: $bottomLeft; 
+}
+
+@mixin box-shadow ($x, $y, $offset, $hex, $ie: $useIEFilters) {
+  -moz-box-shadow: $x $y $offset $hex;
+  -webkit-box-shadow: $x $y $offset $hex;
+  box-shadow: $x $y $offset $hex;
+  
+  @if $ie == 1 {
+    $iecolor: '#' + red($hex) + green($hex) + blue($hex);
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=#{$x}, OffY=#{$y}, Color='#{$iecolor}');
+    -ms-filter: quote(progid:DXImageTransform.Microsoft.dropshadow(OffX=#{$x}, OffY=#{$y}, Color='#{$iecolor}'));
+  }
+}
+

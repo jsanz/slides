@@ -1,0 +1,391 @@
+/*
+Plantilla de base para charlas. Está
+basada en la hoja de estilo original de impress.js
+pero migrada a SASS, sacando variables fuera, y poco
+más.
+
+Cambios:
+- 17/03/12: Creación de la primera versión de la plantilla jsanz@prodevelop.es
+*/
+
+
+/*
+ HAY QUE IMPORTAR O DECLARAR ANTES UNA PALETA DE COLORES
+ TODO: mirar si se puede comprobar que las variables están seteadas y
+       si no es así hacer un import de _variables.scss
+*/
+
+/** SCSS para resetar estilos **/ 
+@import "_reset";
+/** SCSS con mixins para CSS3 **/
+@import "_css3-mixins";
+
+/** BODY **/
+body {
+		/** Fuentes **/
+    font-family: $f_principal;
+  
+  	/** Tamaño **/
+    min-height: 740px;
+
+    background: $cFondo3;
+    @include back-radial-gradient($cFondo1,$cFondo2);
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+/* enable clicking on elements 'hiding' behind body in 3D */
+body     { pointer-events: none; }
+#impress { pointer-events: auto; }
+
+/* COMMON STEP STYLES */
+
+.step {
+	width: 900px;
+	padding: 40px;
+	
+	@include box-sizing(border-box);
+	font-family: $f_principal;
+	
+	font-size: 40px;
+	line-height: 1.5;
+	
+	@include transition(opacity 1s);
+    
+	/* fade out inactive slides */
+	&:not(.active) {
+		opacity: 0.1;
+	}
+	
+	h1,h2{
+		margin-bottom: 20px;   
+		line-height: 1.1;
+	}
+	
+	h1{
+	  color: $cPrimario;
+		font-size: 85px;
+	}
+	
+	h2{
+	  color: $cSecundario;
+		font-size: 60px;
+	}
+}
+
+/* IMÁGENES */
+
+/* quitar propiedades cuando sean enlaces a fotos o con la clase noframe */
+a.noframe, a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif],a[href*=flickr] {
+	text-decoration: none;
+	border: 0 none;
+	padding: 0;
+	background: none;
+	text-shadow: none;
+	border-radius: 0;
+}
+
+img{
+	max-width: 900px;
+	max-height:700px;
+	
+	height: auto;
+	
+	&.figure, &[src*="flickr.com"]{  
+	  margin:10px; 	
+		padding: 15px;
+		background-color: white;  
+	  border: 2px solid black;
+		max-width: 800px;
+	}
+}
+
+.slide img{
+	max-width: 800px;
+	max-height:600px;
+}
+
+/* ESTILOS BÁSICOS */
+
+b, strong { font-weight: bold }
+i, em { font-style: italic}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	padding: 0 0.1em;
+	
+	text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+	background: rgba(255,255,255,0.5);
+	@include border-radius(0.2em);
+	
+	@include transition(0.5s);
+}
+
+.left { float: left; }
+.right { float: right; }
+.center{  text-align: center;}
+.larger{  font-size: larger;}
+.smaller{ font-size: smaller;}
+.nobold{font-weight: normal;}
+
+blockquote {
+  color: $cQuotes;
+	margin: 1em 20px;
+	padding-left: 60px;
+	background: transparent url(../../resources/impress/css/quote.png) no-repeat; 
+	font-style: italic;
+}
+
+
+ul.discs{
+	margin: 30px 0 30px 50px;
+	list-style-type: disc;
+	
+	ul{
+		list-style-type: disc;
+		font-size: smaller;
+		margin-left: 50px;
+	}
+}
+
+/** ralentizar la aparición de un objeto **/
+
+.step:not(.active) .fade-in{
+	opacity:0;
+	@include transition-property(opacity);
+	@include transition-duration(1.0s);	
+	@include transition-delay(0.5s);
+	@include transform(0,0,0,0,0,0,0);
+}
+
+.step.active .fade-in{
+	opacity: 1;
+	@include transition-property(opacity);
+	@include transition-duration(2.0s);	
+	@include transition-delay(3.0s);
+	@include transform(0,0,1,1,0,0,0);
+}
+
+
+
+/** BANNER POR DEFECTO **/
+
+.banner{
+	position: fixed;
+	left: auto;
+	right: 10px;
+	bottom: 10px;
+	background: url(/resources/imgs/prodevelop/logo-150x32.png) no-repeat right bottom;
+	width: 150px;
+	height: 32px;
+	z-index: -100;
+}
+
+/* TRANSICIÓN DEL STRONG A UN COLOR AL ACTIVAR DIAPO */
+
+.active strong{
+	color:  $cPrimario;
+	
+	@include transition-property(color);
+	@include transition-duration(1.0s);	
+	@include transition-delay(1.0s);
+}
+
+/* DIAPOSITIVA DE OVERVIEW */
+
+.impress-on-overview { 
+	/* ocultar todo por defecto */
+	.step {
+    opacity: 0;
+    cursor: pointer;
+	}
+	
+	/* mostrar ligeramente las que tengan la clase section */
+	.section{
+		opacity: .6;
+	}
+	
+	/* mostrar completamente el título y la propia diapo */
+	#title,  #overview{
+		display: block;
+		opacity: 1;
+	}
+}
+
+#overview {
+  z-index: -1;
+  padding: 0;
+  
+  /*ocultar el párrafo durante el resto de la charla*/
+  &:not(.active) p{
+		display: none;
+	}
+	
+	/* colocar el texto */
+  &.active p{
+  	margin-top: 570px;
+  	font-weight: bold;
+  	font-size:   40px;
+  }
+}
+
+/* DIAPOSITIVAS SUPERPUESTAS USANDO LA CLASE HIDE */
+
+.hide{
+  /*eliminar el grosor del strong para que no se resalte*/
+  strong { font-weight: normal; }
+  
+  /*cuando no esté activa se oculta completamente con transición*/
+  &:not(.active){
+  	opacity: 0;
+  	@include transition-property(opacity);
+  	@include transition-duration(1.0s);
+  }
+}
+
+.nohide{
+  &:not(.active){
+  	opacity: .8;
+  }
+}
+
+
+
+/* hint on the first slide */
+
+.hint {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	
+	background: rgba(0,0,0,0.5);
+	color: #EEE;
+	text-align: center;
+	
+	font-size: 30px;
+	padding: 20px;
+	
+	z-index: 100;
+	
+	opacity: 0;
+	
+	@include transform(0,0,1,1,0,0,400px);
+	@include transition2(opacity 1s, 0.5s 1s);
+}
+
+.impress-on-title .hint {
+	opacity: 1;
+	@include transition2(opacity 1s 5s, 0.5s);
+	@include transform(0,0,1,1,0,0,0);
+}
+
+
+/*
+ * SLIDE STEP STYLES
+ *
+ * inspired by: http://html5slides.googlecode.com/svn/trunk/styles.css
+ *
+ * ;)
+ */
+
+.slide {
+  display: block;
+
+  width: 900px;
+  height: 700px;
+
+  padding: 40px 60px;
+	@include border-radius(10px);
+
+  background-color: white;
+  
+  @include box-shadow(0, 2px, 6px, rgba(0, 0, 0, .1));
+  border: 1px solid rgba(0, 0, 0, .3);
+
+  font-family: $f_principal;
+
+  color: rgb(102, 102, 102);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+  font-size: 30px;
+  line-height: 36px;
+
+  letter-spacing: -1px;
+  
+  q {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+    margin-top: 100px;
+    
+		strong {
+		    white-space: nowrap;
+		}
+	}
+	
+	ul{margin-top: 10px;}
+	
+	a{
+		color: 	$cPrimario;
+		background: none;
+		text-shadow: none;
+	}
+	
+	h2{
+	   color: $cSecundario;
+	   line-height:1.5;
+  }
+  
+  li{margin-bottom:15px;}
+	
+}
+
+/* IMPRESS NOT SUPPORTED STYLES */
+
+.fallback-message {
+  font-family: $f_principal;
+  line-height: 1.3;
+  
+  display: none;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+
+  border-radius: 10px;
+  border: 1px solid #E4C652;
+  background: #EEDC94;
+  
+  p {
+	  margin-bottom: 10px;
+	}
+}
+
+.impress-not-supported{
+	.step {
+    position: relative;
+    opacity: 1;
+    margin: 100px auto;
+	}
+  .fallback-message {
+    display: block;
+ }
+} 
+ 
+
+/* Estilos para el syntaxhighlighter */
+.syntaxhighlighter{
+	max-height: 500px;
+	
+	a, div, code, table, table td,
+	table tr, table tbody, table thead,
+	table caption, textarea, .step pre{
+		font-family: $f_condensada !important;	
+		font-size: 25px !important;
+	}
+	
+	td.gutter{
+		display: none;
+	}
+}

@@ -1,0 +1,89 @@
+/*
+Hoja para la charla de AVT de Girona 2012
+
+Cambios
+- 17/3/12 jsanz
+*/ 
+
+/* Paleta de colores a usar por defecto */
+@import "../../resources/impress/css/_variables";
+
+/* colores y fuentes sobrecargados 
+
+/* Colores y fuentes para charla OSGeo */
+
+$cPrimario: $cOSGeo1;
+$cSecundario: $cOSGeoLive;
+
+$cFondo: $cOSGeo2;// $cIz1;
+$cFondo1: lighten($cFondo,50%); /*fondo*/
+$cFondo2: lighten($cFondo,20%); /*exterior*/
+$cFondo3: lighten($cFondo,35%); /*interior*/
+
+$cQuotes: darken($cOSGeo1,50%);
+
+@import url("http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=Inconsolata");
+
+$f_principal: 'Asap', georgia, sans-serif;
+$f_condensada: Inconsolata, courier;
+
+/* 
+   Plantilla base con todo lo necesario 
+   para una presentación básica
+ */
+@import "../../resources/impress/css/_plantilla"; 
+
+.hint{bottom: 60px;}
+
+/** BANNER PARA ESTE SARAO **/
+.banner{
+	background-image: url(banner.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	/* los tamaños son los de la imagen */
+	width: 254px; 
+	height: 45px;
+}
+
+
+/* estilos básicos */
+a { background:lighten($cOSGeo1,40%);}
+
+img {z-index:1000;}
+
+/* portada */
+#title {
+	/*fuentes de la portada*/
+	h1{
+		font-size: 90px;
+		font-weight: bold;
+		margin-bottom:50px;
+	}
+	h2{
+		font-size: 50px;
+		margin-bottom: 50px
+	}
+	p{font-size:35px;}
+	.yo{font-size:28px;margin-bottom:90px;}
+	
+}
+
+
+
+/* mientras hago la diapo dejo este
+ estilo para ver dónde queda cada cosa
+ en el overview, luego puedo quitarlo
+ y solo saldrán las diapos con clase "section"
+ */
+.impress-on-overview{ 
+	/* ocultar todo por defecto 
+	.step {
+    opacity: 0.6;
+    cursor: pointer;
+	}*/
+}
+
+#overview.active p{
+	margin: 420px 0 0 250px;
+}
