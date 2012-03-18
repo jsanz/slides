@@ -1,0 +1,473 @@
+/**
+ * This is a stylesheet for a demo presentation for impress.js
+ * 
+ * It is not meant to be a part of impress.js and is not required by impress.js.
+ * I expect that anyone creating a presentation for impress.js would create their own
+ * set of styles.
+ */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("http://fonts.googleapis.com/css?family=Inconsolata");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic");
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body { line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    
+    min-height: 740px;
+
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+
+    -webkit-font-smoothing: antialiased;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+    
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+
+/* images */
+
+a.noframe, a[href$=jpg], a[href$=jpeg], a[href$=jpe], a[href$=png], a[href$=gif],a[href*=flickr] {
+		text-decoration: none;
+		border: 0 none;
+    padding: 0;
+    background: none;
+    text-shadow: none;
+    border-radius: 0;
+}
+
+img.figure, img[src*="flickr.com"]{  
+  margin:10px; 	
+	padding: 15px;
+	background-color: white;  
+  border: 2px solid black;
+	max-width: 800px;
+}
+
+img{
+	max-width: 900px;
+	height: auto;
+}
+
+/* enable clicking on elements 'hiding' behind body in 3D */
+body     { pointer-events: none; }
+#impress { pointer-events: auto; }
+
+/* COMMON STEP STYLES */
+
+.step {
+    width: 900px;
+    padding: 40px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/* fade out inactive slides */
+
+.step {
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.step:not(.active) {
+    opacity: 0.1;
+}
+
+/* hint on the first slide */
+
+.hint {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+    
+    font-size: 30px;
+    padding: 20px;
+    
+    z-index: 100;
+    
+    opacity: 0;
+    
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+.step-title + .hint {
+    opacity: 1;
+    
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s;
+    transition:         opacity 1s 5s,         transform 0.5s;
+    
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+}
+
+
+/* genéricos */
+
+.left { float: left; }
+.right { float: right; }
+.center{  text-align: center;}
+
+.larger{  font-size: larger;}
+.smaller{ font-size: smaller;}
+
+.nobold{font-weight: normal;}
+
+blockquote {
+  color: #2B2B2B;
+	margin: 1em 20px;
+	padding-left: 60px;
+	background: transparent url(quote.png) no-repeat; 
+	font-style: italic;
+	}
+
+
+ul.discs{
+	margin-top: 30px;
+	margin-left: 50px;
+	list-style-type: disc;
+  }
+ul.discs ul{
+	list-style-type: disc;
+	font-size: smaller;
+	margin-left: 50px;
+}
+.step h2{
+   font-size: 70px;
+   margin-top: 20px;
+   margin-bottom: 20px;   
+   line-height: 70px;
+}
+
+
+/* pre */
+.syntaxhighlighter a,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table tbody,
+.syntaxhighlighter table thead,
+.syntaxhighlighter table caption,
+.syntaxhighlighter textarea,
+.step pre{
+	font-family: Inconsolata, courier !important;	
+	font-size: 25px !important;
+}
+
+div.syntaxhighlighter{
+	max-height: 500px;
+}
+
+.syntaxhighlighter td.gutter{
+	display: none;
+}
+
+/* overview */
+
+/* overview step */
+
+#overview {
+    z-index: -1;
+    padding: 0;
+}
+
+/* on overview step everything is visible */
+
+.step-overview .step {
+    opacity: 0;
+    cursor: pointer;
+}
+
+#overview:not(.active) p{
+	display: none;
+}
+
+
+
+.step-overview .section{
+	opacity: .6;
+}
+.step-overview #title, .step-overview #overview{
+	display: block;
+	opacity: 1;
+}
+
+#overview.active p{
+	margin-top: 570px;
+	font-weight: bold;
+	font-size:   40px;
+}
+
+/* slides */
+.slide ul{margin-top: 10px;}
+
+.slide a{
+	color: 	#A52A2A;
+	background: none;
+	text-shadow: none;
+}
+
+.slide h2{color: #A52A2A;}
+
+
+.active strong{
+	color:  #A52A2A;
+	
+	-webkit-transition-property: color;
+	-moz-transition-property:    color;
+	-ms-transition-property:     color;
+	-o-transition-property:      color;
+	transition-property:         color;
+	
+  -webkit-transition-duration: 1.0s;
+  -moz-transition-duration:    1.0s;
+  -ms-transition-duration:     1.0s;
+  -o-transition-duration:      1.0s;
+  transition-duration:         1.0s;
+    
+	-webkit-transition-delay: 1.0s;
+	-moz-transition-delay:    1.0s;
+	-ms-transition-delay:     1.0s;
+	-o-transition-delay:      1.0s;
+	transition-delay:         1.0s;
+}
+
+
+/* diapos superpuestas */
+
+.hide strong { font-weight: normal; }
+
+.hide:not(.active){
+	opacity: 0;
+ 
+	-webkit-transition-property: opacity;
+	-moz-transition-property:    opacity;
+	-ms-transition-property:     opacity;
+	-o-transition-property:      opacity;
+	transition-property:         opacity;
+	
+  -webkit-transition-duration: 1.0s;
+  -moz-transition-duration:    1.0s;
+  -ms-transition-duration:     1.0s;
+  -o-transition-duration:      1.0s;
+  transition-duration:         1.0s;
+}
+
+
+/* it's in 3D */
+
+.its-in-3d  {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
+    -ms-transform-style:     preserve-3d;
+    -o-transform-style:      preserve-3d;
+    transform-style:         preserve-3d;
+}
+
+.its-in-3d span,
+.its-in-3d b {
+    display: inline-block;
+    -webkit-transform: translateZ(40px);
+    -moz-transform:    translateZ(40px);
+    -ms-transform:     translateZ(40px);
+    -o-transform:      translateZ(40px);
+     transform:        translateZ(40px);
+            
+    -webkit-transition: 1s;
+    -moz-transition:    1s;
+    -ms-transition:     1s;
+    -o-transition:      1s;
+    transition:         1s;
+}
+
+.its-in-3d .in {
+    -webkit-transform: translateZ(-40px);
+    -moz-transform:    translateZ(-40px);
+    -ms-transform:     translateZ(-40px);
+    -o-transform:      translateZ(-40px);
+    transform:         translateZ(-40px);
+}
+.its-in-3d .out {
+    -webkit-transform: translateZ(40px);
+    -moz-transform:    translateZ(40px);
+    -ms-transform:     translateZ(40px);
+    -o-transform:      translateZ(40px);
+    transform:         translateZ(40px);
+}
+
+/*
+ * SLIDE STEP STYLES
+ *
+ * inspired by: http://html5slides.googlecode.com/svn/trunk/styles.css
+ *
+ * ;)
+ */
+
+.slide {
+    display: block;
+
+    width: 900px;
+    height: 700px;
+
+    padding: 40px 60px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-size: 30px;
+    line-height: 36px;
+
+    letter-spacing: -1px;
+}
+
+.slide q {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+    margin-top: 100px;
+}
+
+.slide q strong {
+    white-space: nowrap;
+}
+
+
+/* IMPRESS NOT SUPPORTED STYLES */
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+    
+    display: none;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border-radius: 10px;
+    border: 1px solid #E4C652;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-not-supported .step {
+    position: relative;
+    opacity: 1;
+    margin: 100px auto;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
