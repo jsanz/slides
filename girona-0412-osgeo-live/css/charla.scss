@@ -70,6 +70,27 @@ img {z-index:1000;}
 }
 
 
+/* contenidos */
+
+#contenidos{
+	table{
+		width: 100%;
+		font-size:30px;
+		padding: 25px 0;
+		border-top:    3px solid $cOSGeoLive;
+		border-bottom: 3px solid $cOSGeoLive;		
+	}
+	
+	td.bordebajo{
+		border-bottom: 1px solid $cOSGeoLive;
+	}
+	td{
+		width: 50%;
+		margin: 10px 0;
+		padding: 25px 0;	
+	}	
+}
+
 
 /* mientras hago la diapo dejo este
  estilo para ver dónde queda cada cosa

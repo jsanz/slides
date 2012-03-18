@@ -506,6 +506,20 @@ img {
     font-size: 28px;
     margin-bottom: 90px; }
 
+/* contenidos */
+#contenidos table {
+  width: 100%;
+  font-size: 30px;
+  padding: 25px 0;
+  border-top: 3px solid #1166ad;
+  border-bottom: 3px solid #1166ad; }
+#contenidos td.bordebajo {
+  border-bottom: 1px solid #1166ad; }
+#contenidos td {
+  width: 50%;
+  margin: 10px 0;
+  padding: 25px 0; }
+
 /* mientras hago la diapo dejo este
  estilo para ver dónde queda cada cosa
  en el overview, luego puedo quitarlo
