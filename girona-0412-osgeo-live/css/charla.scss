@@ -106,12 +106,27 @@ img {z-index:1000;}
  en el overview, luego puedo quitarlo
  y solo saldrán las diapos con clase "section"
  */
+
+#overview img{
+	display:none;
+}
+ 
 .impress-on-overview{ 
 	/* ocultar todo por defecto 
 	.step {
     opacity: 0.6;
     cursor: pointer;
 	}*/
+	
+   #overview img {
+   	display:block;
+   	opacity:1;
+   	width:200px;
+   	position:absolute;
+   	bottom: 215px;
+   	left:auto;
+   	right:5px;
+   }
 }
 
 #overview.active p{
