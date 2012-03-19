@@ -91,6 +91,14 @@ img {z-index:1000;}
 	}	
 }
 
+.step.empaquetado .mismaaltura{
+	 height:700px;	
+}
+
+
+.impress-on-accion-gvsig #accion-osgeo{opacity:1;}
+#accion-gvsig .abajo{height:350px;}
+
 
 /* mientras hago la diapo dejo este
  estilo para ver dónde queda cada cosa
@@ -106,5 +114,5 @@ img {z-index:1000;}
 }
 
 #overview.active p{
-	margin: 420px 0 0 250px;
+	margin: 420px 0 0 50px;
 }
