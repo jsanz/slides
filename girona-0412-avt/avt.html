@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="es">
+<head>
+  <title>Geoportal AVT - SIG Libre 2012</title>
+  
+  <meta name="author" content="Jorge Gaspar Sanz Salinas" >
+  <meta name="description" content=  "Diapositivas de la charla de Solución de alto rendimiento para el geoportal de turismo de la Comunidad Valenciana de Prodevelop en las Jornadas de SIG Libre de Girona">
+    
+  <meta name="generator" content="Bluefish 2.0.2" >
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=1024">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link type="text/css" rel="stylesheet" href="css/charla.css"></link>
+  
+</head>
+
+<body class="impress-not-supported">
+  <div class="banner"></div>
+  
+  <div id="impress">
+    <div class="fallback-message">
+      <p>Your browser <b>doesn't support the features required</b> by
+      impress.js, so you are presented with a simplified version of this
+      presentation.</p>
+
+      <p>For the best experience please use the latest <b>Chrome</b>,
+      <b>Safari</b> or <b>Firefox</b> browser. Upcoming version 10 of Internet
+      Explorer <i>should</i> also handle it.</p>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="5">
+      <h1>Solución de alto rendimiento para el geoportal de turismo de la Comunidad Valenciana</h1>
+      
+      <h2><a href="http://www.comunitatvalenciana.com/geoportal" 
+	      target="_blank" class="noframe" title="Geoportal de la AVT">
+	      comunitatvalenciana.com/geoportal</a>
+      </h2>
+      
+      <p class="evento"><a target="_blank" href="http://www.sigte.udg.edu/jornadassiglibre/">
+        		VI Jornadas de SIG Libre</a> · Girona · Marzo 2012</p>
+      <p class="yo">Jorge Sanz · <a href="mailto:jsanz@prodevelop.es">jsanz@prodevelop.es</a> ·  
+      	<a href="http://twitter.com/xurxosanz" target="_blank" title="Jorge en twitter">@xurxosanz</a> ·
+        <a href="http://www.prodevelop.es" target="_blank" title="Prodevelop">Prodevelop</a></p>
+    </div>
+    
+    <!-- AGENDA -->
+    <div id="agenda" class="step" data-x="-1600" data-y="1800">
+      <h2>Agenda</h2>
+
+      <ul class="discs">
+        <li>Objetivos del proyecto</li>
+        <li>Funcionalidades desarrolladas</li>
+        <li>Arquitectura del geoportal</li>
+        <li>Clientes</li>
+        <li>Servidor
+        <ul>
+        	<li>Migración de datos</li>
+        	<li>Generación de recursos estáticos</li>
+        	<li>Servidor de búsquedas</li>
+        </ul>
+        </li>     
+        <li>Conclusiones</li>   
+      </ul>
+    </div>
+    
+    <!-- OBJETIVOS -->
+    
+    <div id="objetivos-portal" class="step section objetivos" data-x="-3500" data-y="1800" data-scale="4">
+      <h2>Objetivos</h2>
+    </div>
+    
+    <div id="acabado" class="step objetivos" data-x="-4300" data-y="1800" data-scale="3">
+      <blockquote>Mejorar el acabado estético</blockquote>
+      
+      <div class="center fade-in">
+      <img class="left"  src="imgs/portal-pre.png" alt="Aspecto anterior" />
+      <img class="right" src="imgs/portal-post3.png" alt="Aspecto actual" />
+      </div>
+    </div>
+    
+    <div id="rendimiento" class="step objetivos" data-x="-4300" data-y="1300" data-scale="3">
+      <blockquote>Mejorar el rendimiento</blockquote>
+      <p class="center fade-in"><a href="http://www.flickr.com/photos/waikikiweekly/3800863315/" 
+      	title="Zilla in her doggles by Vagabond Shutterbug, on Flickr">
+      	<img src="imgs/velocidad.jpg" alt="Zilla in her doggles"></a>
+      </p>
+    </div>  
+
+    <div class="step objetivos" data-x="-4300" data-y="900" data-scale="3">
+      <blockquote>Dispositivos móviles</blockquote>
+      
+			<p class="center fade-in">
+				<a href="http://www.flickr.com/photos/axsman/6082386510/" 
+				title="Walt and iPad by AxsMan, on Flickr">
+					<img src="imgs/cat.jpg"
+					width="500" height="375" alt="Walt and iPad"></a></p>
+    </div>
+    
+    <div class="step objetivos" data-x="-4300" data-y="0" data-scale="3">
+      <blockquote>Independencia del CMS</blockquote>
+    </div>
+    
+    
+    <!-- FUNCIONALIDADES -->
+
+    <div id="funcionalidades" class="step section" data-x="-3500" data-y="-500" data-scale="4">
+      <h2>Funcionalidades</h2>
+    </div>
+    
+    <div class="step hide"  data-x="-4600" data-y="-1500" data-scale="1">
+			<p class="center"><img src="imgs/portal-post.png" alt="Portal AVT" /></p>
+    </div>
+    <div class="step hide"  data-x="-4600" data-y="-1500" data-scale="1">
+			<p class="center"><img src="imgs/listado.png" alt="Listado de elementos" /></p>
+    </div>    
+    <div class="step hide"  data-x="-4600" data-y="-1500" data-scale="1">
+			<p class="center"><img src="imgs/popup.png" alt="Pop up" /></p>
+    </div>  
+     
+    <div class="step hide"  data-x="-3400" data-y="-1500" data-scale="1">
+			<p class="center"><img src="imgs/descarga.png" alt="Descarga de recursos" /></p>
+    </div>  
+    <div class="step hide"  data-x="-3400" data-y="-1500" data-scale="1">
+			<p class="center"><img src="imgs/gearth.png" alt="Vista en Google Earth" /></p>
+    </div>
+    
+    <div class="step hide"  data-x="-4000" data-y="-2200" data-scale="1">
+			<p class="center"><img src="imgs/movil1.png" alt="Del popup a google maps" /></p>
+    </div>  
+    <div class="step hide"  data-x="-4000" data-y="-2200" data-scale="1">
+			<p class="center"><img src="imgs/movil2.png" alt="Aplicaciones móviles" /></p>
+    </div>  
+    <div class="step hide"  data-x="-4000" data-y="-2200" data-scale="1">
+			<p class="center"><img src="imgs/layar.png" alt="Layar" /></p>
+    </div>  
+    
+    
+    <!-- ARQUITECTURA -->
+    
+    <div id="arq" class="step section" data-x="-1300" data-y="-2800" data-scale="4">
+      <h2>Arquitectura</h2>
+    </div>
+    
+    <div class="step slide"  data-x="-1600" data-y="-2200" data-scale="1">
+			<p class="center"><img src="imgs/arq-pre.png" alt="Arquitectura previa" /></p>
+    </div>
+    <div class="step slide"  data-x="-200" data-y="-2200" data-scale="1">
+			<p class="center"><img style="margin:50px 0px;" src="imgs/arq-post.png" alt="Arquitectura actual" /></p>
+    </div>
+    
+    <!-- CLIENTES -->
+    <div id="clientes" class="step section" data-x="2300" data-y="-2800" data-scale="4">
+      <h2>Clientes</h2>
+    </div>
+    
+    <div class="step"  data-x="1300" data-y="-2500" data-scale="1">
+			<p>En el cliente <strong>web</strong>:</p>    	
+    	<ul class="discs">
+    		<li>Google Maps API v3</li>
+    		<li>jQuery y jQuery UI</li>
+    		<li>APIs de redes sociales, bit.ly, Google Chart,...</li>
+    		<li>Yahoo! Query Language</li>
+    	</ul>
+    	
+    	<p>En las aplicaciones <strong>móviles</strong></p>
+    	<ul class="discs">
+				<li>Google Maps</li>
+				<li>HTML</li>    	
+    	</ul>
+    </div>
+    
+    <!-- MIGRACIÓN DE DATOS -->
+    <div id="migración" class="step section" data-x="4900" data-y="-3000" data-scale="4">
+      <h2>Migración</h2>
+    </div>
+    
+    <div class="step"  data-x="4100" data-y="-2700" data-scale="1">
+    	<ul class="discs">
+				<li>Ejecución <strong>diaria</strong></li>
+				<li>Mediante <em>Kettle Kitchen</em> (Pentaho suite)</li>
+				<li>Se actualiza una tabla por <strong>capa</strong></li>
+				<li>Integración en una única <strong>vista</strong></li>
+    	</ul>
+    	
+    	<p class="center"><img src="imgs/mysql-pg.png" height="200" alt="De MySQL a Postgres" /></p>
+    </div>
+   
+    <!-- CREACIÓN DE RECURSOS ESTÁTICOS -->
+    <div id="recursos" class="step section" data-x="4500" data-y="-1500" data-scale="4">
+      <h2>Pregeneración de recursos</h2>
+    </div>
+    
+    <div class="step"  data-x="4000" data-y="-1200" data-scale="1">
+    	<ul class="discs">
+    		<li>Inmediatamente <strong>después</strong> de la migración</li>
+			<li>Desarrollo <strong>J2SE</strong> (JTS, JDBC, Velocity)</li>
+			<li>Generación de archivos de <strong>capa</strong>: OV2/KML</li>    	
+			<li>Generación de <strong>tiles vectoriales</strong>: JSON/KML</li>
+			<li>Gran <strong>número</strong> de ficheros
+				<ul>
+					<li>Superando el número de inodos</li>
+					<li>Varias particiones</li>
+				</ul>			
+			</li>
+    	</ul>
+    	
+    	<p class="center"><img src="imgs/pg-files.png" height="200" alt="De Postgres a recursos" /></p>
+    </div>
+    
+    
+    <!-- SERVIDOR DE BÚSQUEDAS -->
+    <div id="busquedas" class="step section" data-x="4900" data-y="-100" data-scale="4">
+      <h2>Servidor de búsquedas</h2>
+    </div>
+    
+    <div class="step"  data-x="3500" data-y="200" data-scale="1">
+    	<ul class="discs larger">
+    		<li>Desarrollo <strong>JEE</strong></li>
+    		<li><strong>Indexación</strong> después de la migración</li>
+    		<li>Uso intensivo de <strong>Lucene</strong></li>
+    		<li>Un índice por idioma (en <strong>memoria</strong>)</li>
+    		<li><strong>Lucene Spatial</strong> para búsquedas punto/radio</li>
+    	</ul>
+    	
+    	<p class="center"><img src="imgs/pg-lucene.png" height="200" alt="De Postgres a Lucene" /></p>
+   </div>
+    
+    <div class="step"  data-x="4700" data-y="200" data-scale="1">
+    	<ul class="discs larger">
+    		<li><strong>Más casos
+    		   de uso</strong> de los planificados</li>
+    		<li>API de <strong>Layar</strong> y otra
+    		  <strong>específica</strong></li>
+    		<li>Se generan JSON, KML y Atom</li>
+    		<li>Implementa <strong>OpenSearch</strong> (geo)</li>
+    	</ul>
+    	
+    	<p class="center"><img src="imgs/lucene-files.png" height="200" alt="De Lucene a ficheros" /></p>
+	</div>
+	
+	<div class="step"   data-x="5400" data-y="1100" data-scale="2">
+		<img src="imgs/rendimiento.png" width="900" height="600" alt="Gráfica de rendimiento" />	
+	</div>
+
+	<div class="step"   data-x="3700" data-y="900" data-scale="1">
+		<img src="imgs/ol-api.png" alt="Uso del servidor en OL" />	
+	</div>
+	
+	<!-- CONCLUSIONES -->
+    <div id="conclusiones" class="step section" data-x="4300" data-y="1700" data-scale="4">
+      <h2>Conclusiones</h2>
+   </div>
+
+
+    <div class="step"  data-x="3400" data-y="2000" data-scale="1">
+    	<ul class="discs">
+ 			<li> Solución <strong>completa</strong>
+   				para el sector, basada en su
+   				mayor parte en FLOSS</li>
+			<li>Google Maps podría <strong>sustituirse</strong> 
+					por otras tecnologías sin demasiado esfuerzo</li>
+   		<li> El acceso a redes sociales se ha migrado a 
+   				Open Layers y liberado: <strong>olsocial</strong></li>
+			<li> ¿Y los <strong>estándares</strong> OGC?</li>
+    	</ul>
+
+    	<p class="center fade-in"><img src="imgs/logos.png" height="180" alt="logos" /></p>
+	</div>
+    <!-- referencias y licencia -->
+    <div id="refs" class="step slide" data-x="800" data-y="1800" data-scale=
+    "1">
+      <h2>Referencias</h2>
+
+      <ul class="larger discs">
+        <li>
+          <a href="http://www.comunitatvalenciana.com/geoportal" target="_blank"
+          	 title="Geoportal de turirsmo de la AVT">
+          Geoportal de turismo de la AVT</a>
+        </li>
+        <li>
+          <a href="http://www.youtube.com/watch?v=FeAnf00h0aM" target="_blank" 
+          title="Video promocional Geoportal CV">
+          Vídeo promocional del geoportal</a>
+        </li>
+        <li>
+          <a href="http://jquery.com/" target="_blank" 
+          title="jQuery">
+          jQuery</a> y  <a href="http://jqueryui.com/" target="_blank" 
+          title="jQuery UI">
+          jQuery UI</a>
+        </li>
+        <li>
+          <a href="http://developer.yahoo.com/yql/" target="_blank" 
+          title="Yahoo Query Language">
+          Yahoo Query Language</a>
+        </li>
+        <li>
+          <a href="http://code.google.com/intl/es/apis/chart/infographics/docs/overview.html" target="_blank" 
+          title="Google Chart Infographics">
+          Códigos QR con Google Chart</a>
+        </li>
+        <li>
+          <a href="http://wiki.pentaho.com/display/EAI/Kitchen+User+Documentation" target="_blank" 
+          title="¿Qué es Kitchen (Kettle)?">
+          ¿Qué es Kitchen (Kettle)?</a>
+        </li>
+        <li>
+          <a href="http://wiki.apache.org/lucene-java/SpatialSearch" target="_blank" 
+          title="Lucene Spatial">
+          Lucene Spatial</a>
+        </li>
+        <li>
+          <a href="http://layar.com/documentation/browser/api/" target="_blank" 
+          title="Layar API">
+          Documentación de desarrollo de Layar</a>
+        </li>
+        <li>
+          <a href="http://www.opensearch.org/Specifications/OpenSearch/Extensions/Geo/1.0/Draft_1#Contributors" target="_blank" 
+          title="OpenSearch geo">
+          Especificación <em>geo</em> del estándar <em>Open Search</em></a>
+        </li>
+        <li>
+          <a href="https://github.com/jacarma/olsocial" target="_blank" 
+          title="Redes Sociales en Open Layers">
+          Redes sociales en Open Layers</a>
+        </li>
+        
+        
+        
+      </ul>
+    </div>
+    <div id="licencia" class="step" data-x="-400" data-y="1800" data-scale="1">
+      <h2>Licencia</h2><a class="noframe" href=
+      "http://creativecommons.org/licenses/by-sa/3.0/deed.es" title=
+      "cc-by-sa"><img style="margin-top:100px;" src="../resources/imgs/cc-by-sa.png" height="100" alt=""></a>
+    </div>
+    
+    
+    <!-- OVERVIEW -->
+    <div id="overview" class="step" data-x="0" data-y="-100" data-scale="10">
+    <!--data-rotate-x="-20" data-rotate-y="-20" -->
+      <p>¡¡Gracias!!<br>
+      	¿Preguntas?</p>
+    </div>
+  </div>
+
+  <div class="hint">
+    <p>Usa la barra espaciadora o las flechas para navegar</p>
+  </div>
+  
+  <!-- JavaScript -->
+  <script type="text/javascript" src="../resources/jquery/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="../resources/impress/0.4/js/impress.js"></script>
+  <!-- Syntax highlighter stuff 
+  <script type="text/javascript" src="../resources/sh/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../resources/sh/scripts/shBrushXml.js"></script>-->
+  <script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){ 
+  if ("ontouchstart" in document.documentElement) { 
+    $(".hint").innerHTML = "<p>Toca o la derecha o la izquierda para navegar<\/p>";
+  }
+  impress();
+  });
+  //]]>
+  </script>
+</body>
+</html>
