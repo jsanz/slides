@@ -1,4 +1,4 @@
-This repo stores some of the presentations I create. I'm using
+This repo stores some of the presentations I've done. I'm using
 github pages as an easy place to store and publish the HTML or
 SVG slides so I have them always available for me and anyone.
 
@@ -9,8 +9,11 @@ https://github.com/jsanz/slides/tree/gh-pages
 
 Or you can directly browse the slides at:
 
-http://jsanz.github.com/slides/
+http://jsanz.github.com/slides.html
 
+I stored some presentations on this repo, but in order to let
+people fork only an specific talk I'm creating new repos for every
+talk I do.
 
 Have a nice day!!
 Jorge Sanz
