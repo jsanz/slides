@@ -1,0 +1,72 @@
+{
+  "name": "reveal.js",
+  "version": "3.1.0",
+  "description": "The HTML Presentation Framework",
+  "homepage": "http://lab.hakim.se/reveal-js",
+  "subdomain": "revealjs",
+  "main": "js/reveal.js",
+  "scripts": {
+    "test": "grunt test",
+    "start": ""
+  },
+  "author": {
+    "name": "Hakim El Hattab",
+    "email": "hakim.elhattab@gmail.com",
+    "url": "http://hakim.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hakimel/reveal.js.git"
+  },
+  "engines": {
+    "node": "~0.10.0"
+  },
+  "dependencies": {
+    "underscore": "~1.5.1",
+    "express": "~2.5.9",
+    "mustache": "~0.7.2",
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-cssmin": "~0.12.2",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.14.0",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-autoprefixer": "~1.0.1",
+    "grunt-zip": "~0.7.0",
+    "grunt": "~0.4.0",
+    "node-sass": "~0.9.3"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hakimel/reveal.js/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/hakimel/reveal.js/issues"
+  },
+  "_id": "reveal.js@3.1.0",
+  "dist": {
+    "shasum": "430cc957baac44a3d6ac5c71e1ab933b230c041f",
+    "tarball": "http://registry.npmjs.org/reveal.js/-/reveal.js-3.1.0.tgz"
+  },
+  "_from": "reveal.js@3.1.0",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "hakimel",
+    "email": "hakim.elhattab@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "hakimel",
+      "email": "hakim.elhattab@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "430cc957baac44a3d6ac5c71e1ab933b230c041f",
+  "_resolved": "https://registry.npmjs.org/reveal.js/-/reveal.js-3.1.0.tgz"
+}
