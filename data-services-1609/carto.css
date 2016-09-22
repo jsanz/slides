@@ -35,15 +35,15 @@ body {
   color: #eee;
   font-family: 'Montserrat', Impact, sans-serif;
   font-weight: normal;
-  text-transform: none;
+  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.77em; }
+  font-size: 2.5em; }
 
 .reveal h2 {
-  font-size: 1.85em; }
+  font-size: 1.5em; }
 
 .reveal h3 {
   font-size: 1.25em; }
@@ -272,10 +272,6 @@ body {
   color: #8364C5; }
 
 
-/*************************
-CARTODB OVERRIDES
-**************************/
-
 body {
   background: #162945;
   background-color: #162945;
@@ -299,4 +295,26 @@ body {
 .reveal .slides section.withbackground{
   padding: 25px;
   background: rgba(45, 59, 66, 0.90);
+}
+
+/*
+INVERT COLOR SECTIONS
+*/
+
+.reveal .invert-colors,
+.reveal .invert-colors p
+.reveal .invert-colors li{
+  color: #162945;
+}
+
+.reveal .invert-colors h2,
+.reveal .invert-colors h3
+.reveal .invert-colors h4
+.reveal .invert-colors h5{
+  color: #F24440;
+}
+
+
+.reveal .invert-colors {
+  background-color: rgba(255,255,255,.8);
 }
