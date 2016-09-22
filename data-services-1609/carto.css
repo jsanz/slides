@@ -124,7 +124,7 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.55em;
+  font-size: 0.70em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
@@ -298,6 +298,17 @@ body {
 }
 
 /*
+RED SLIDE
+*/
+.reveal .back-red a{
+  color: #162945;
+}
+.reveal .back-red a:hover{
+  color: #4c8ced;
+}
+
+
+/*
 INVERT COLOR SECTIONS
 */
 
@@ -318,3 +329,24 @@ INVERT COLOR SECTIONS
 .reveal .invert-colors {
   background-color: rgba(255,255,255,.8);
 }
+
+
+/* CARTO Colors
+
+Location Red
+#F24440
+#FF918F
+
+Navy Blue
+#162945
+
+Purple
+#C6ACFC
+#C6ACFC
+
+Prediction Blue
+#1785FB
+
+Green
+#73C86B
+*/

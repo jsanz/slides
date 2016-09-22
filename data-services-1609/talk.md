@@ -13,7 +13,7 @@ http://bit.ly/160923-dataservices
 <img class="noborder" src="./imgs/logo_CARTO_negative_180.png" style="width:25%;">
 
 
-___
+---
 
 ## Who am I
 
@@ -22,21 +22,21 @@ ___
 * OSGeo Foundation
 * CARTO Solutions Engineer
 
-___
-<!-- .element data-background-color="#F24440"-->
+---
+<!-- .element data-background-color="#F24440" class="back-red"-->
 
 ## What’s CARTO
 
+* [https://carto.com](https://carto.com)
 * Location Intelligence SaaS
 * Since 2012
 * ~100 people
-* Offices in New York, Madrid, Tartu and London
+* Offices in New York, Madrid,<br> Tartu and London
 * ~230K users
-
-___
+---
 
 <img class="noborder" src="./imgs/team.jpg">
-___
+---
 
 <!-- .element data-background-image="./imgs/manhattan.jpg" class="invert-colors"-->
 
@@ -51,7 +51,7 @@ With CARTO we want **everybody** analyzing, visualizing and extracting valuable 
 
 ![](./imgs/gli.png)
 
-___
+---
 
 
 ## Our offering
@@ -77,22 +77,22 @@ ___
     </li>
 </ul>
 
-___
+---
 
-## CARTO and LBS
+## CARTO and LBS previously
 
 * Our users demand LBS
-* CARTO basemaps and integration with many others (XYZ, WMS,...)
+* CARTO basemaps and integration <br>with many others (XYZ, WMS,...)
 * Simple geocoding: country, place names, etc
 * Street level geocoding with HERE
 
-___
+---
 
-## How we started providing LBS
+## Geocoding on the Editor
 
-![](./imgs/geocoding.gif)
+![](./imgs/geocoding.gif) <!-- .element style="width:85%;" -->
 
-___
+---
 
 ## Focus on the platform
 
@@ -101,42 +101,141 @@ ___
 
 ![](./imgs/finger.jpg) <!-- .element class="fragment" style="width:20%" -->
 
-___
+---
 
 ## *SQL all the things*
 
 > Create an API as SQL functions: <br> **Data Services API**
 
-* On top of the CARTO Postgres extension
-* It's dependent of CARTO architecture
-  * Users accounting
+---
 
-___
+## Data Services API
 
-## Mapzen partnership
+![](./imgs/cdb_geocode.png)<!-- .element  style="width:80%;" -->
 
-___
-
-## Services wrapped
-
-* Geocoding
-* Routing
-* Isolines
-
-___
-
-## CARTO Builder
-
-* For the normal user: Interface on the Builder
-
-___
-
-## Use cases for DataServices API
+[>>](https://github.com/CartoDB/dataservices-api/blob/development/client/cdb_dataservices_client--0.11.1.sql#L335)
 
 ---
 
-Wrap up
+## Data Services API
 
+* On top of the [CARTO Postgres extension](https://github.com/CartoDB/cartodb-postgresql/)
+* It's dependent of CARTO architecture
+  * Users accounting and configuration
+
+---
+
+## Traditional LBS providers
+
+![](./imgs/marx.jpg)
+---
+
+![](./imgs/shaq.gif)
+---
+
+![](./imgs/mapzen-carto.png)<!-- .element style="width:60%" -->
+
+https://mapzen.com/blog/cartodb-partnership/
+
+![](./imgs/carto-mapzen.png)<!-- .element style="width:60%;margin-top:2em;" -->
+
+https://carto.com/blog/location-data-services/
+---
+
+
+## Services wrapped
+
+Geocoding · Routing · Isolines
+
+---
+
+## Geocoding
+
+```sql
+INSERT INTO {tablename} (the_geom)
+SELECT
+    cdb_geocode_street_point(
+        '651 Lombard Street',
+        'San Francisco',
+        'California',
+        'United States'
+    )
+```
+
+---
+
+## Routing
+
+```sql
+INSERT INTO {tablename} (duration, length, the_geom)
+SELECT duration, length, shape
+FROM
+    cdb_route_point_to_point(
+        'POINT(-3.70237112 40.41706163)'::geometry,
+        'POINT(-3.69909883 40.41236875)'::geometry,
+        'car'
+    )
+```
+
+---
+
+## Isolines
+
+```sql
+INSERT INTO {tablename} (the_geom) SELECT the_geom
+FROM cdb_isodistance(
+        'POINT(-3.70568 40.42028)'::geometry,
+        'walk',
+        ARRAY[500, 1000, 1500]::integer[]
+    )
+
+INSERT INTO {tablename} (the_geom) SELECT the_geom
+FROM cdb_isochrone(
+        'POINT(-3.70568 40.42028)'::geometry,
+        'car',
+        ARRAY[300, 600, 900]::integer[]
+    )
+```
+
+
+---
+
+## CARTO Builder: geocoding
+
+![](./imgs/geocoding-builder.gif)
+
+---
+
+## CARTO Builder: isochrones
+
+![](./imgs/aoi.gif)
+
+---
+
+## Use cases for DataServices API
+
+* Triggers (adding coords, routes, validations)
+* In line analysis with the Builder
+* Parametrized routes rendering (cab ride)
+
+---
+
+## Wrap up
+
+<ul>
+    <li>
+        CARTO wants to <strong>democratize</strong><br>
+        geospatial analysis
+    </li>
+    <li class="fragment">
+        This includes LBS, and <strong>being open</strong>
+        is a <strong>must</strong>
+    </li>
+    <li class="fragment">
+        <strong>Mapzen</strong> services exposed
+        as SQL functions<br>
+        fits perfectly with CARTO proposal</li>
+</ul>
 
 ---
 
