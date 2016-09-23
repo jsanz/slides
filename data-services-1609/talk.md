@@ -265,7 +265,7 @@ Thanks!!
 
 ## *SQL all the things*
 
-Jorge Sanz · [@xurxosanz](http://twitter.com/xurxosanz)
+Jorge Sanz · jorge@carto.com
 
 23rd of September 2016 · SoTM · Brussels
 
