@@ -5,7 +5,7 @@ Data Services API
 
 Jorge Sanz · [@xurxosanz](http://twitter.com/xurxosanz)
 
-23rd of September 2016
+23rd of September 2016 · SoTM · Brussels
 
 http://bit.ly/160923-dataservices
 
@@ -81,10 +81,10 @@ With CARTO we want **everybody** analyzing, visualizing and extracting valuable 
 
 ## CARTO and LBS previously
 
-* Our users demand LBS
-* CARTO basemaps and integration <br>with many others (XYZ, WMS,...)
-* Simple geocoding: country, place names, etc
-* Street level geocoding with HERE
+* Our users demand **LBS**
+* CARTO **basemaps** and integration <br>with many others (XYZ, WMS,...)
+* Simple own **geocoding**: country, place names, etc
+* Street level geocoding with **HERE**
 
 ---
 
@@ -96,12 +96,14 @@ With CARTO we want **everybody** analyzing, visualizing and extracting valuable 
 
 ## Focus on the platform
 
-* Moving logic from the editor<br> to the platform
-* New API?
+* Moving logic from the **editor**<br> to the **platform**
+* New HTTP API?
 
 ![](./imgs/finger.jpg) <!-- .element class="fragment" style="width:20%" -->
 
 ---
+<!-- .element data-background-color="#F24440" class="back-red"-->
+
 
 ## *SQL all the things*
 
@@ -116,12 +118,18 @@ With CARTO we want **everybody** analyzing, visualizing and extracting valuable 
 [>>](https://github.com/CartoDB/dataservices-api/blob/development/client/cdb_dataservices_client--0.11.1.sql#L335)
 
 ---
+<!-- .element class="slide-smaller-text" -->
 
 ## Data Services API
 
-* On top of the [CARTO Postgres extension](https://github.com/CartoDB/cartodb-postgresql/)
-* It's dependent of CARTO architecture
-  * Users accounting and configuration
+![](./imgs/architecture.png)<!-- .element style="width:85%" -->
+
+
+* Client/Server **separation**
+* ***Weak*** dependency on CARTO infrastructure
+  * CARTO redis database
+  * Not difficult to get rid of it
+* **Open** to add more LBS providers
 
 ---
 
@@ -129,6 +137,7 @@ With CARTO we want **everybody** analyzing, visualizing and extracting valuable 
 
 ![](./imgs/marx.jpg)
 ---
+<!-- .element data-background-color="#F24440" -->
 
 ![](./imgs/shaq.gif)
 ---
@@ -212,11 +221,23 @@ FROM cdb_isochrone(
 
 ---
 
-## Use cases for DataServices API
+## Use cases for <br>Data Services API
 
-* Triggers (adding coords, routes, validations)
-* In line analysis with the Builder
-* Parametrized routes rendering (cab ride)
+* **Triggers** (adding coords, routes, validations)
+* In line analysis with the **Builder**
+* **Parametrized** routes rendering (cab ride)
+
+---
+
+## DS API + Named Maps API
+
+<pre style="font-size:0.7em">
+https://your_account.carto.com/api/v1/map/named/routingtest/750/400.png?
+config={"postcode1":"'<strong>postcode_1</strong>'","postcode2":"'<strong>postcode_2</strong>'"}
+</pre>
+
+![](./imgs/routing.png)
+
 
 ---
 
@@ -234,7 +255,7 @@ FROM cdb_isochrone(
     <li class="fragment">
         <strong>Mapzen</strong> services exposed
         as SQL functions<br>
-        fits perfectly with CARTO proposal</li>
+        fits <strong>perfectly</strong> with CARTO proposal</li>
 </ul>
 
 ---
@@ -246,7 +267,7 @@ Thanks!!
 
 Jorge Sanz · [@xurxosanz](http://twitter.com/xurxosanz)
 
-23rd of September 2016
+23rd of September 2016 · SoTM · Brussels
 
 http://bit.ly/160923-dataservices
 

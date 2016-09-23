@@ -67,7 +67,9 @@ body {
   max-height: 95%; }
 
 .reveal strong, .reveal b {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #F24440;
+}
 
 .reveal em {
   font-style: italic; }
@@ -300,7 +302,7 @@ body {
 /*
 RED SLIDE
 */
-.reveal .back-red a{
+.reveal .back-red a,.reveal .back-red strong{
   color: #162945;
 }
 .reveal .back-red a:hover{
@@ -328,6 +330,10 @@ INVERT COLOR SECTIONS
 
 .reveal .invert-colors {
   background-color: rgba(255,255,255,.8);
+}
+
+.reveal .slide-smaller-text{
+  font-size: 0.8em;
 }
 
 
