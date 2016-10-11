@@ -5,6 +5,8 @@ Jorge Sanz · [jorge@carto.com](mailto:jorge@carto.com)
 
 October'16 - CartoCamp - Madrid
 
+http://bit.ly/161013-lds
+
 <img class="noborder" src="./imgs/logo_CARTO_negative_180.png" style="width:25%;">
 
 ---
@@ -267,6 +269,8 @@ Thanks!!
 ## Location Data Services
 
 Jorge Sanz · [jorge@carto.com](mailto:jorge@carto.com)
+
+http://bit.ly/161013-lds
 
 October'16 - CartoCamp - Madrid
 
