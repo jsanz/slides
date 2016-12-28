@@ -336,6 +336,10 @@ INVERT COLOR SECTIONS
   font-size: 0.8em;
 }
 
+.reveal code{
+  color: #cc9393;
+}
+
 
 /* CARTO Colors
 
