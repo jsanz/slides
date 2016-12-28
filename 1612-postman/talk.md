@@ -1,4 +1,4 @@
-Postman
+Postman training
 ===================================
 
 Jorge Sanz · jorge@carto.com
