@@ -115,7 +115,7 @@ Change the URL to use this variable and check if it works
 ---
 # CARTO collection
 
-* Download from [here](.CARTO Collection.postman_collection.json)
+* Download from [here](./CARTO Collection.postman_collection.json)
 * Covers SQL, Maps, Import and Enterprise API
 * Needs an [environment](./CARTO Collection.postman_environment.json) with many variables
 * Some tests to automatically set variables
