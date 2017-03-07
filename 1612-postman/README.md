@@ -1,8 +1,8 @@
-SQL all the things
+Postman Training
 ====================
 
-http://jsanz.github.io/slides/data-services-1609/#/
+http://jsanz.github.io/slides/1612-postman/
 
-Talk for the State of The Map conference, 23rd of September 2016 in Brussels, Belgium.
+Quick training on how to use [Postman](http://getpostman.com)
 
 
