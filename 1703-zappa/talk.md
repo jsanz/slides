@@ -1,7 +1,6 @@
-# Creating proxies for non estandar APIs <!-- .element style="font-size:2em"-->
+# Creating proxies for non standard APIs <!-- .element style="font-size:2em"-->
 
 ## With Python and AWS services
-
 
 Jorge Sanz · jorge@carto.com
 
@@ -49,7 +48,7 @@ $ zappa deploy
 # Use case: Flickr API proxy
 
 * [Blogpost](https://geomaticblog.net/2016/12/26/creating-a-collaborative-photo-map-from-flickr-to-carto-with-amazon-lambda/) with some context
-* Flickr provides a richful API
+* Flickr provides a rich API
 * No GeoJSON
 
 ---
@@ -61,7 +60,7 @@ https://github.com/jsanz/carto-lambda-examples/tree/master/flickr_to_json
 * Minimal [flask](http://flask.pocoo.org/) application with a single entry point (`/`)
 * It takes some defaults and any parameters passed and generates a valid Flickr API call
 * It parses the result to generate a valid GeoJSON
-* Less than 150 LOC + two config files:
+* Less than 150 LOC + two files:
   * `requirements.txt`: python dependencies
   * `zappa_settings.json`: zappa configuration
 
@@ -84,17 +83,13 @@ https://github.com/jsanz/carto-lambda-examples/tree/master/flickr_to_json
 Thanks!!
 ===================================
 
-## Creating proxies for non estandar APIs with AWS Lambda
+## Creating proxies for non standard APIs with AWS Lambda
 
 Jorge Sanz · jorge@carto.com
 
 2017-03-07
 
 <img class="noborder" src="../resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
-
-
-
-
 
 <!--
 RESOURCES
@@ -117,6 +112,4 @@ Prediction Blue
 
 Green
 #73C86B
-
-
 -->
