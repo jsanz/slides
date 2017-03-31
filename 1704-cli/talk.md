@@ -13,10 +13,6 @@ Jorge Sanz · jorge@carto.com
 * Terminals
 * Viewing and finding things
 * Handling data
-  * split
-  * jq
-  * csvkit
-  * ogr2ogr, ogrinfo
 
 ---
 
@@ -75,9 +71,12 @@ ___
 
 ### Piping and redirections
 
+TODO
 ___
 
 ### Customizing your prompt
+
+TODO
 
 ---
 
@@ -126,7 +125,7 @@ $ head -n10 populated_places.csv | \
 
 * [`awk` tutorial](https://www.tutorialspoint.com/awk/awk_quick_guide.htm) (randomly selected)
 
----
+___
 
 ### `sed`
 
@@ -145,6 +144,15 @@ $ cat /etc/hosts | \
   sed -e 's/[\ \t].*//g' # everything after a space or tab
 $ sed -n '2,10p' my.csv # print a range
 ```
+
+---
+
+## Handling data
+
+* split
+* jq
+* csvkit
+* ogr2ogr, ogrinfo
 
 ---
 
