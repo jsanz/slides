@@ -8,6 +8,15 @@ Jorge Sanz · jorge@carto.com
 
 ---
 
+## Why
+
+<img src="https://farm3.staticflickr.com/2925/33597152942_726ecafa61_z_d.jpg"
+  alt="Ramiro"
+  class="fragment"
+  style="max-width:30%;">
+
+___
+
 ## Agenda
 
 * Terminals
@@ -18,20 +27,23 @@ Jorge Sanz · jorge@carto.com
 
 ## Terminals
 
+* bash and zsh
 * Browsing your history
 * Moving
 * Scripting
 * Piping and redirections
 * Customizing your prompt
+
 ___
+
 
 ### bash versus zsh
 
 * bash provides more compatibility
-* zsh provides better user experience:
-  * browsing your history
-  * sharing history accross terminals
-  * better autocompletion
+* zsh provides better user experience
+   * browsing your history
+   * sharing history accross terminals
+   * better autocompletion
 * [Differences between bash and zsh](https://www.quora.com/What-is-the-difference-between-bash-and-zsh)
 ___
 
