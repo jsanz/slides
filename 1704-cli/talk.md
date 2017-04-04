@@ -8,7 +8,7 @@ http://bit.ly/170404-cli
 
 ---
 
-## Why
+# Why
 
 <img src="https://farm3.staticflickr.com/2925/33597152942_726ecafa61_z_d.jpg"
   alt="Ramiro"
@@ -17,7 +17,7 @@ http://bit.ly/170404-cli
 
 ___
 
-## Agenda
+# Agenda
 
 * Terminals
 * Viewing and finding things
@@ -25,7 +25,9 @@ ___
 
 ---
 
-## Terminals
+# Terminals
+
+![](https://itsfoss.com/wp-content/uploads/2015/12/Star-Wars-Linux-Terminal-5.png)
 ___
 
 ### `bash` versus `zsh`
@@ -89,8 +91,9 @@ ___
 
 ---
 
-## Viewing and finding things
+# Viewing and finding things
 
+![](imgs/cowsay.png)
 ___
 
 ### `head` and `tail`
@@ -187,7 +190,9 @@ $ ag hexbins
 
 ---
 
-## Handling data
+# Handling data
+
+![](imgs/figlet.png)
 
 ___
 
@@ -239,7 +244,7 @@ $ git pull-request -m "my new pull request"
 ```
 ---
 
-## Other stuff
+# Other stuff
 
 * csvkit, `csvcut`, `csvlook`
 * `pigz`
@@ -250,10 +255,7 @@ $ git pull-request -m "my new pull request"
 
 ---
 
-Thanks!!
-===================================
-
-## How I use the command line
+![](imgs/thanks.png)
 
 Jorge Sanz · jorge@carto.com · 2017-04-04
 
