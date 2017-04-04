@@ -27,13 +27,6 @@ ___
 
 ## Terminals
 
-* bash and zsh
-* Browsing your history
-* Moving
-* Scripting
-* Piping and redirections
-* Customizing your prompt
-
 ___
 
 
@@ -83,25 +76,23 @@ ___
 
 ### Piping and redirections
 
-TODO
+* Use the pipe `|` to chain commands<br/>
+`cat /etc/hosts | grep localhost`
+* Use redirections `>` to write the output into a file<br/>
+`cat /etc/hosts > myhosts`
+
 ___
 
 ### Customizing your prompt
 
-TODO
+* The prompt can provide context
+* I use [`liquidprompt`](https://github.com/nojhan/liquidprompt)
+
+![](imgs/liquid.png)
 
 ---
 
 ## Viewing and finding things
-
-* head and tail
-* find
-* awk
-* sed
-* grep
-* j (jump)
-* pygmentize
-* sag
 
 ___
 
@@ -129,13 +120,12 @@ ___
 
 * Programming language to process files
 * I've only used it to process tabular data
+* [`awk` tutorial](https://www.tutorialspoint.com/awk/awk_quick_guide.htm) (randomly selected)
 
 ```
 $ head -n10 populated_places.csv | \
   awk -F ","  '{print $1 "," $7 "," $8}'
 ```
-
-* [`awk` tutorial](https://www.tutorialspoint.com/awk/awk_quick_guide.htm) (randomly selected)
 
 ___
 
@@ -156,15 +146,109 @@ $ cat /etc/hosts | \
   sed -e 's/[\ \t].*//g' # everything after a space or tab
 $ sed -n '2,10p' my.csv # print a range
 ```
+___
+
+![](https://imgs.xkcd.com/comics/regular_expressions.png)
+
+___
+
+### j (autojump)
+
+* [`j`](https://github.com/wting/autojump) is a utility to move around your file system
+
+```sh
+$ sudo apt-get install autojump
+$ brew install autojump
+$ j carto-workshop
+$ jo desktop
+```
+
+___
+
+### pigmentize
+
+* Pretty-print source code files with `pygmentize myscript.py`
+* You can create an HTML output
+
+```sh
+$ alias ccat='pygmentize -g'
+$ ccat ~/src/sdks/carto-python/carto/auth.py
+```
+
+___
+
+### The [silver searcher](https://github.com/ggreer/the_silver_searcher)
+
+* Powerful source-code search utility
+
+```sh
+$ apt-get install silversearcher-ag
+$ brew install the_silver_searcher
+$ j carto-workshop
+$ ag hexbins
+```
 
 ---
 
 ## Handling data
 
-* split
-* jq
-* csvkit
-* ogr2ogr, ogrinfo
+___
+
+### split
+
+* Break CSV files into parts based on size, number of parts, number of lines, etc.
+
+```sh
+$ split -a2 --numeric-suffixes=01 \ #use numeric suffix
+  --additional-suffix=.csv -l800000 \ # 800K
+  gecat.csv "gecat_split_" # input and result
+```
+
+___
+
+### jq
+
+* JSON processor
+* Mostly to get information down
+* Also for refactoring
+
+```sh
+$ carto_named_template test_named_map | \ #get a template
+  jq ".template.layergroup.layers[].options.sql" | \ # process to get the SQL
+  sed -e "s/null//g" -e "s/\"//g" -e "s/\\\n/\n/g" | \ # remove nulls and "
+  pygmentize -l sql # colour!
+```
+___
+
+### ogr2ogr, ogrinfo
+
+```sh
+$ ogrinfo -summary mydataset mylayer
+$ ogr2ogr -f "GPKG" ne_10m_admin_0_countries.gpkg \
+     ne_10m_admin_0_countries.shp
+```
+___
+
+### [hub](https://hub.github.com/)
+
+* `git` extension from GitHub
+
+```sh
+$ alias git=hub
+$ git clone CartoDB/Support
+$ git browse -- issues
+$ # work on some stuff
+$ git pull-request -m "my new pull request"
+```
+---
+
+## Other stuff
+
+* csvkit, `csvcut`, `csvlook`
+* `pigz`
+* `tr`, `sort`, `uniq`, `fold`, `wc`
+* `json2csv`
+* Data Science at the Command line - Jeroen Janssens
 
 ---
 
