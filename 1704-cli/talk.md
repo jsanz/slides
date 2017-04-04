@@ -1,8 +1,8 @@
 # How I use the command line <!-- .element style="font-size:2em"-->
 
-Jorge Sanz · jorge@carto.com
+Jorge Sanz · jorge@carto.com · 2017-04-04
 
-2017-04-04
+http://bit.ly/170404-cli
 
 <img class="noborder" src="../resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
 
@@ -26,14 +26,12 @@ ___
 ---
 
 ## Terminals
-
 ___
 
+### `bash` versus `zsh`
 
-### bash versus zsh
-
-* bash provides more compatibility
-* zsh provides better user experience
+* `bash` provides more compatibility
+* `zsh` provides better user experience
    * browsing your history
    * sharing history accross terminals
    * better autocompletion
@@ -52,8 +50,8 @@ ___
 ### moving around
 
 * `CTL + L`: clean the screen
-* `CTL + S` and `CTL+Q`: stop and resume output
 * `CTL + A`, `CTL + E`: go to the begin/end of the line
+* `CTL + S` and `CTL+Q`: stop and resume output
 * More [Bash and zsh shortcuts](http://www.geekmind.net/2011/01/shortcuts-to-improve-your-bash-zsh.html)
 
 ___
@@ -71,7 +69,6 @@ while 1; do
   sleep 20
 done
 ```
-
 ___
 
 ### Piping and redirections
@@ -248,6 +245,7 @@ $ git pull-request -m "my new pull request"
 * `pigz`
 * `tr`, `sort`, `uniq`, `fold`, `wc`
 * `json2csv`
+* Learn the basics of how to use `vim`: moving, c&p at least
 * Data Science at the Command line - Jeroen Janssens
 
 ---
@@ -257,31 +255,8 @@ Thanks!!
 
 ## How I use the command line
 
-Jorge Sanz · jorge@carto.com
+Jorge Sanz · jorge@carto.com · 2017-04-04
 
-2017-04-04
+http://bit.ly/170404-cli
 
 <img class="noborder" src="../resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
-
-<!--
-RESOURCES
-
-COLORS:
-
-Location Red
-#F24440
-#FF918F
-
-Navy Blue
-#162945
-
-Purple
-#C6ACFC
-#C6ACFC
-
-Prediction Blue
-#1785FB
-
-Green
-#73C86B
--->
