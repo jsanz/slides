@@ -246,7 +246,7 @@ $ git pull-request -m "my new pull request"
 
 # Other stuff
 
-* csvkit, `csvcut`, `csvlook`
+* csvkit: `csvcut`, `csvlook`, ...
 * `pigz`
 * `tr`, `sort`, `uniq`, `fold`, `wc`
 * `json2csv`
