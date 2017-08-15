@@ -33,24 +33,24 @@ http://bit.ly/170816-carto-solutions
 * Convert that stack into a **product**
 * Offer it as a **freemium SaaS**
 * Enter the start-up life cycle
-* Released in late 2011
+* Released at late 2011
 
 ---
 
 ## 2011-2013
 
-* Pure product development
-* No specific sales role (except @jatorre)
-* By the end 2013 it’s a 9 people company
+* Pure product **development**
+* No specific **sales role** (except @jatorre)
+* By the end 2013 it’s a **9** people (male) company
 
 ---
 
 ## Solutions Engineering at these early years
 
-* Mostly done by the technical people
-* Without any formal process
-* First Solutions Engineers: @jatorre, @saleiva, @javisantana
-* Support is provided  by the Tech team (Teddy Bear)
+* Mostly done by the **technical people**
+* **First** Solutions Engineers: @jatorre, @saleiva, @javisantana
+* Without any formal **process**
+* **Support** is provided  by the Tech team (Teddy Bear)
 
 Note:
 
@@ -58,39 +58,39 @@ Note:
 
 ---
 
-## 2014 growing the product
+## 2014 growing 
 
-* Hiring new profiles, first sales reps and operations managers
-* Setting a full US team
-* First Enterprise clients
+* Hiring new profiles, first **sales reps** and **operations managers**
+* Setting a full **US team**
+* First **Enterprise** clients
 * First organization division:
-  * Technology: develop a B2C product
-  * Community: research, engage and support
-  * Sales: maintain current clients and get new ones
-  * Operations and Finance: keep us out of jail
-* By the end 2014 it’s a 30 people company
+  * **Technology**: develop a B2C product
+  * **Community**: research, engage and support
+  * **Sales**: maintain current clients and get new ones
+  * **Operations and Finance**: _keep us out of jail_
+* By the end 2014 it’s a **30** (23/7) people company
 
 
 ---
 
 ## 2014: Support team starts
 
-* Carla Iriberri is the hired as the first Support Engineer
-* First woman in the company
-* Inside the community team
+* **Carla Iriberri** is hired as the **first Support Engineer**
+  * First **woman** in the company
+* Inside the **Community** Team
 * Quickly needs help, end of 2014
-  * Michelle and Stephanie are hired in NYC
+  * **Michelle** and **Stephanie** are hired in NYC
 
 ---
 
 ## 2015: Solutions Engineering team starts
 
 * First half of 2015
-  * Two engineers in NYC (Chris and Andrew)
-  * Two engineers in Spain (Dani and me)
+  * Two engineers in NYC (**Chris** and **Andrew**)
+  * Two engineers in Spain (**Dani** and me)
 * Last quarter of 2015
-* Two new Support Engineers in Madrid: Oriol and Ernesto
-* another SE in Madrid: Abel
+  * Two new Support Engineers in Madrid: **Oriol** and **Ernesto**
+  * Another SE in Madrid: **Abel**
 
 ---
 
@@ -98,7 +98,7 @@ Note:
 
 * Technical selling
 * Integrations, prototypes
-* Level 2 of Support (weekly rotation to help Support)
+* Level 2 of Support: weekly rotation to help Support
 * Trainings for partners and enterprise users
 * Post-sales technical support for enterprise users
 * Anything else technology folks were too busy to do
@@ -108,19 +108,19 @@ Note:
 ## 2016: Company reorganization
 
 * Sales roles are better defined
-* Community team is split:
-  * A new Research & Data team is created
-  * Pure community roles go to Marketing
-  * Support is moved inside Solutions
-* Technology is reorganized into Product and Engineering
+* **Community** team is split:
+  * A new **Research & Data** team is created
+  * Pure community roles go to **Marketing**
+  * **Support** is moved inside **Solutions**
+* **Technology** is reorganized into **Product** and **Engineering**
 
 ---
 
 ## 2016: Solutions Engineering now also does Support
 
-* Three functional groups: technical sellers, engineering and support
-* Some of us multitask over different groups
-* Spread:
+* **Three** functional groups: **technical sellers**, **engineering** and **support**
+* Some of us **multitask** over different groups
+* We are a **distributed** team:
   * San Francisco, Denver, Philadelphia, NYC (2)
   * Madrid (3), Valencia, Valladolid
 
