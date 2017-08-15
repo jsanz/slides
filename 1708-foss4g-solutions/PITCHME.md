@@ -90,7 +90,7 @@ Note:
   * Two engineers in Spain (**Dani** and me)
 * Last quarter of 2015
   * Two new Support Engineers in Madrid: **Oriol** and **Ernesto**
-  * Another SE in Madrid: **Abel**
+  * Two more SE: **Abel** in Madrid, **David** in Denver
 * By the end of 2015 we are a **84** (64/20) people company
 
 ---
