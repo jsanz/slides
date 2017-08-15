@@ -60,14 +60,15 @@ Note:
 
 ## 2014 growing 
 
-* Hiring new profiles, first **sales reps** and **operations managers**
-* Setting a full **US team**
+* Hiring new profiles, first **sales reps**, **operations managers**, and full **US team**
 * First **Enterprise** clients
 * First organization division:
   * **Technology**: develop a B2C product
   * **Community**: research, engage and support
   * **Sales**: maintain current clients and get new ones
   * **Operations and Finance**: _keep us out of jail_
+* First two sales engineers: **Sander** and **Jorge**
+  They leave quickly ¯\_(ツ)_/¯
 * By the end 2014 it’s a **30** (23/7) people company
 
 
@@ -131,8 +132,8 @@ Note:
 
 ## 2016: Solutions Engineering now also does Support
 
-* Start doing Enterprise Support, on-call rotation
-* Improvement of processes, specially on the interactions with our Sales Representatives
+* Start doing Enterprise Support: **on-call rotation**
+* Improvement of **processes**, specially on the interactions with our Sales Representatives
 * The team does not change a lot
   * **Chris** leaves, **Ramiro** joins
 
