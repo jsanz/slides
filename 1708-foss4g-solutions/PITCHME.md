@@ -68,9 +68,8 @@ Note:
   * **Sales**: maintain current clients and get new ones
   * **Operations and Finance**: _keep us out of jail_
 * First two sales engineers: **Sander** and **Jorge**
-  They leave quickly ¯\_(ツ)_/¯
+  * They leave quickly ¯\_(ツ)_/¯
 * By the end 2014 it’s a **30** (23/7) people company
-
 
 ---
 
