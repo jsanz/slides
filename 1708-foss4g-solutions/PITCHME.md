@@ -4,7 +4,7 @@ Jorge Sanz · jorge@carto.com · 2017-08-16
 
 http://bit.ly/170816-carto-solutions
 
-<img class="noborder" src="../resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
+<img class="noborder" src="https://cdn.rawgit.com/jsanz/slides/gh-pages/resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
 
 ---
 
@@ -245,4 +245,4 @@ Jorge Sanz · jorge@carto.com · 2017-08-16
 
 http://bit.ly/170816-carto-solutions
 
-<img class="noborder" src="../resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
+<img class="noborder" src="https://cdn.rawgit.com/jsanz/slides/gh-pages/resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
