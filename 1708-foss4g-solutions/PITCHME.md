@@ -89,8 +89,9 @@ Note:
   * Two engineers in NYC (**Chris** and **Andrew**)
   * Two engineers in Spain (**Dani** and me)
 * Last quarter of 2015
-  * Two new Support Engineers in Madrid: **Oriol** and **Ernesto**
+  * Two new Support Engineers in Madrid: **Oriol** and **Ernesto**
   * Another SE in Madrid: **Abel**
+* By the end of 2015 we are a **84** (64/20) people company
 
 ---
 
@@ -113,6 +114,7 @@ Note:
   * Pure community roles go to **Marketing**
   * **Support** is moved inside **Solutions**
 * **Technology** is reorganized into **Product** and **Engineering**
+* By the end of 2016 we are a **105** (85/20) people company
 
 ---
 
@@ -132,98 +134,95 @@ Note:
 * Start doing Enterprise Support, on-call rotation
 * Improvement of processes, specially on the interactions with our Sales Representatives
 * The team does not change a lot
-  * Chris leaves, Ramiro joins
+  * **Chris** leaves, **Ramiro** joins
 
 ---
 
 ## 2017 Solutions gets into consultancy projects
 
-* Some accounts have very specific needs that partners cannot do
-* Solutions to the rescue; engineering evolves to a professional services division
+* Some accounts have **very specific needs** that partners cannot do
+* Solutions to the rescue; engineering evolves to a **professional services** division
 * New hires
-  * Professional Services: two full stack engineers: Alberto and Alejandra
-  * Support: Alexander
-  * Presales: Steve, Jimena and Rodrigo
+  * Professional Services: two full stack engineers: **Alberto** and **Alejandra**
+  * Support: **Alexander**
+  * Presales: **Steve**, **Jimena** and **Rodrigo**
 
 ---
 
 ## Responsibilties are settling
 
-* We are the glue between Product/Engineering and the rest of the teams
-* More focused roles and less jacks of all trades
-* Support can handle L1 and most of L2 tickets
-* Trainings are more formalized and content consolidated
-* Efforts to reduce noise and friction on communications
+* We are **the glue** between our product developers and the rest of the company
+* More **focused roles** and less jacks of all trades
+* Support can handle L1 and **most of L2** tickets
+* **Trainings** are more formalized and content consolidated
+* Efforts to reduce **noise** and **friction** on communications
 
 ---
 
 ## Responsibilties are settling
 
-* Madrid team is leading some community efforts:
-  * CartoCamp Madrid
-  * Participating in Geoinquietos Madrid
+* Madrid Solutions team is leading some **Community efforts**:
+  * **CartoCamp** Madrid
+  * Participating in **Geoinquietos** Madrid
   * Colaborations with other local groups and entities
-* Better post-sales coordination with the new Customer Success team
-
-
----
-
-## Current Solutions team
-
-* Locations:
-  * BR: Sao Paulo
-  * US: San Francisco, Denver, Philadelphia, Washington DC, NYC (2)
-  * CA: St John’s Newfoundland (til September)
-  * SP: Madrid (5), Valencia (2), Valladolid
-  * UK: London
-  * DC? [Apply!](https://boards.greenhouse.io/cartodb/jobs/660167)
+* Better **post-sales** coordination with the new **Customer Success** team
 
 ---
 
-## Current Solutions team
+## Current Solutions teamz: Locations
 
-* Backgrounds:
-  * Mostly with a geospatial background
-  * Some come with presales experience, others from consultancy
-  * Presales tend to be more seasoned engineers, while Support are younger (except me)
+* **Brazil**: Sao Paulo
+* **USA**: San Francisco, Denver, Philadelphia, Washington DC, NYC (2)
+  * Tech seller in DC? [Apply!](https://boards.greenhouse.io/cartodb/jobs/660167)  
+* **Canada**: St John’s Newfoundland (til September)
+* **Spain**: Madrid (5), Valencia (2), Valladolid
+* **UK**: London
+
+---
+
+## Current Solutions team: Backgrounds
+
+* Mostly with a **geospatial background**
+* Some come with **presales** experience, others from **consultancy**
+* Presales tend to be more **seasoned** engineers, while Support are **younger** (except me)
 
 ---
 
 ## How we do sales engineering?
 
-* Clear process for Sales Reps to ask for help
-* Only after qualification: don’t get into the opportunity too soon
+* **Clear process** for Sales Reps to ask for help
+* Only **after qualification**: don’t get into the opportunity too soon
 * An SE is assigned for the full opportunity process
-* Work closely with the Sals Rep., listen client recommendations, help on the best sales approach, asure CARTO is a good fit
+* **Work closely** with the Sals Rep., listen client recommendations, help on the best sales approach, asure CARTO is a good fit
 * Develop proofs of concept and tailored demos
 
 ---
 
 ## How we do support?
 
-* Strong asynchronous focus: no phone, no chat, only e-mail to attend even our own workmates
-* Synchronous communications (chat or phone) only for urgent stuff
-  * “Planes falling from sky”
-  * “Most of our MRR may be in jeopardy”
+* **Strong asynchronous** focus: no phone, no chat, only e-mail to attend even our own workmates
+* Synchronous communications (chat or phone) only for **urgent** stuff
+  * *Planes falling from sky*
+  * *Most of our MRR may be in jeopardy*
 * Internally we use:
-  * chat: slack
-  * audio/video: slack, google meet, goto meeting/webinar, join.me, uberconference and whatever fancies our clients and our hipster sales people (Skype for whatever)
+  * **Chat**: slack
+  * **Audio/video**: slack, google meet, goto meeting/webinar, whatever fancies our clients and our hipster sales people (*Skype for what?*)
 
 ---
 
 ## How we do support?
 
 * Inputs:
-  * Mostly attending our ticketing system
-  * But also GIS Stack Exchange carto tago
-  * And Google Group (but this is normally attended by Engineering folks)
-* Using GitHub Issues to pass tasks over timezones and communicate with our Engineering and Product ppl
+  * Mostly attending our **ticketing system**
+  * But also **GIS Stack Exchange** `carto` tag
+  * And **Google Group** (but this is normally attended by Engineering folks)
+* Using **GitHub Issues** to pass tasks between us over timezones and communicate with our developers
 
 ---
 
 ## How we do support?
 
-Recently Engineering has developed a new procedure called “Response Team” aka “Teddy Bear v2” where a group of engineers rotates every two weeks to focus only on helping to fix issues raised by us (and by proxy the full company).
+Recently Engineering has developed a new procedure called **Response Team** (sort of *Teddy Bear v2*) where a group of engineers rotates every two weeks to focus only on helping to **fix issues** raised by us (and by proxy the full company).
 
 ---
 
