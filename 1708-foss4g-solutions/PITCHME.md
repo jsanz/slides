@@ -134,7 +134,7 @@ Note:
 * Start doing Enterprise Support: **on-call rotation**
 * Improvement of **processes**, specially on the interactions with our Sales Representatives
 * The team does not change a lot
-  * **Chris** leaves, **Ramiro** joins
+  * **Chris** leaves, **Ramiro** joins, **Danny** joins
 
 ---
 
