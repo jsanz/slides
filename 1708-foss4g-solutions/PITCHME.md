@@ -1,4 +1,4 @@
-# Solutions Engineering at CARTO <!-- .element style="font-size:2em"-->
+# Solutions Engineering at CARTO <!-- .element style="font-size:2em;"-->
 
 Jorge Sanz · jorge@carto.com · 2017-08-16
 
@@ -10,30 +10,30 @@ http://bit.ly/170816-carto-solutions
 
 ## Agenda
 
-* CARTO: from consultancy to start-up
-* Evolution of the solutions engineering team
-* Solutions in 2017
+* **CARTO**: from consultancy to start-up
+* **Evolution** of the solutions engineering team
+* Solutions in **2017**
 
 ---
 
 ## Origins in consultancy
 
-* Consultancy firm started by @jatorre and @saleiva in 2008
-* Focus on biodiversity
-* Many projects with geospatial component
+* **Consultancy** firm started by @jatorre and @saleiva in 2008
+* Focus on **biodiversity**
+* Many projects with **geospatial** component
 * Some R&D funded projects
-* Using only FOSS4G software
-* Few people, fast and frictionless development
+* Using **only FOSS4G** software
+* Few people, **fast** and **frictionless** development
 
 ---
 
 ## CartoDB
 
-* Always the same geospatial stack (postgis + mapnik)
-* Convert that stack into a product
-* Ofer it as a freemium SaaS
-* Pivot into a Product company
+* Always the same **geospatial stack** (postgis + mapnik)
+* Convert that stack into a **product**
+* Offer it as a **freemium SaaS**
 * Enter the start-up life cycle
+* Released in late 2011
 
 ---
 
