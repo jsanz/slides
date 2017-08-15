@@ -97,12 +97,12 @@ Note:
 
 ## Solutions team duties
 
-* Technical selling
-* Integrations, prototypes
-* Level 2 of Support: weekly rotation to help Support
-* Trainings for partners and enterprise users
-* Post-sales technical support for enterprise users
-* Anything else technology folks were too busy to do
+* **Technical** selling
+* Integrations, **prototypes**
+* **Level 2** of Support: weekly rotation to help Support
+* **Trainings** for partners and enterprise users
+* **Post-sales** technical support for enterprise users
+* Anything else couldn't tackled by technology folks
 
 ---
 
