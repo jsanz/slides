@@ -6,7 +6,7 @@ http://bit.ly/170816-carto-solutions
 
 <img class="noborder" src="https://cdn.rawgit.com/jsanz/slides/gh-pages/resources/carto/logo_CARTO_negative_180.png" style="width:25%;">
 
----
+___
 
 ## Agenda
 
@@ -18,7 +18,7 @@ http://bit.ly/170816-carto-solutions
 
 ## Origins
 
-* **Consultancy** firm started by [@jatorre](https://twitter.com/jatorre)
+* **Consultancy** firm started<br/> by [@jatorre](https://twitter.com/jatorre)
   and [@saleiva](https://twitter.com/saleiva) in 2008
 
 ![](http://68.media.tumblr.com/tumblr_m6wgp19eXH1raf61oo1_500.jpg) <!-- .element: style="width:30%;" -->
@@ -44,7 +44,7 @@ ___
 
 ![](imgs/cartofant.png) <!-- .element: class="noborder" style="background-color:white;width:40%;" -->
 
-* Always the same **geospatial stack** (postgis + mapnik)
+* Always the same **geospatial stack**
 * Convert that stack into a **product**
 * Offer it as a **freemium SaaS**
 * Enter the start-up life cycle
@@ -60,7 +60,7 @@ ___
 
 * Pure product **development**
 * No specific **sales role** (except @jatorre)
-* By the end 2013 it’s a **9** people (male) company
+* By the end 2013, a **9** people (male) company
 
 ___
 
@@ -71,9 +71,11 @@ ___
 ## Solutions Engineering at these early years
 
 * Mostly done by the **technical people**
-* **First** Solutions Engineers: @jatorre, @saleiva, @javisantana
+* **First** Solutions Engineers:
+  * @jatorre, @saleiva, and @javisantana
 * Without any formal **process**
-* **Support** is provided  by the Tech team (Teddy Bear)
+* **Support** is provided  by the Tech team
+  * Teddy Bear
 
 ---
 
@@ -88,7 +90,7 @@ ___
   * **Operations and Finance**: _keep us out of jail_
 * First two sales engineers: **Sander** and **Jorge**
   * They leave quickly ¯\\\_(ツ)\_/¯
-* By the end 2014 it’s a **30** (23/7) people company
+* By the end 2014, a **30** (23/7) people company
 
 ___
 
@@ -100,11 +102,11 @@ ___
 
 ## 2014: Support team starts
 
-* **Carla Iriberri** is hired as the **first Support Engineer**
+* **Carla Iriberri** is our first **Support Engineer**
   * First **woman** in the company
 * Inside the **Community** Team
 * Quickly needs help, end of 2014
-  * **Michelle** and **Stephanie** are hired in NYC
+  * **Michelle** and **Stephanie** join from NYC
 ___
 
 | ![](https://pbs.twimg.com/profile_images/528514580150882304/79dcN9BP_400x400.jpeg) | ![](https://images.contentful.com/xts27qnup0jr/2HpHGJmJRYiggQYGUmcAGg/18933a7531dd627854f9371b935948bf/michellec.jpg)  | ![](https://images.contentful.com/xts27qnup0jr/4nucxOH7Q46gQQg2Y6ocCC/e267d418e7f48de20ea830c5319a4bd8/steph.jpg)  |
@@ -117,8 +119,8 @@ ___
 ## 2015: Solutions Engineering team starts
 
 * First half of 2015
-  * Two engineers in NYC (**Chris** and **Andrew**)
-  * Two engineers in Spain (**Dani** and me)
+  * Two engineers in NYC: **Chris**, **Andrew**
+  * Two engineers in Spain: **Dani**, and me
 ___
 
 |  ![](https://pbs.twimg.com/profile_images/3057855429/49cff02ea1ea88993d7edadd8b027982_400x400.jpeg) | ![](https://images.contentful.com/xts27qnup0jr/3dMKD6ZsJWaYm0uQE4MYsU/40b489f65a3e8424e1365bda80223386/andrewbt.jpg)   |  ![](https://images.contentful.com/xts27qnup0jr/6r3sW7MKpGMIsIM2mkyass/86e742c86e738d0fed1ffb2d79141237/dani.jpg) |
@@ -129,8 +131,10 @@ ___
 ## 2015: Solutions Engineering team starts
 
 * Last quarter of 2015
-  * Two new Support Engineers in Madrid: **Oriol** and **Ernesto**
-  * Two more SE: **Abel** in Madrid, **David** in Denver
+  * Two new Support Engineers in Madrid:
+     * **Oriol**, and **Ernesto**
+  * Two more SE:
+    * **Abel** in Madrid, **David** in Denver
 
 ___
 
@@ -146,7 +150,7 @@ ___
 
 ## 2015: Solutions Engineering team starts
 
-* By the end of 2015 we are a **84** (64/20) people company
+* By the end of 2015, **84** (64/20)
 
 ---
 
@@ -168,14 +172,15 @@ ___
   * A new **Research & Data** team is created
   * Pure community roles go to **Marketing**
   * **Support** is moved inside **Solutions**
-* **Technology** is reorganized into **Product** and **Engineering**
-* By the end of 2016 we are a **105** (85/20) people company
+* **Technology** is reorganized <br/>into **Product** and **Engineering**
+* By the end of 2016, **105** (85/20)
 
 ---
 
 ## 2016: Solutions Engineering now also does Support
 
-* **Three** functional groups: **technical sellers**, **engineering** and **support**
+* **Three** functional groups:
+  * **technical sellers**, **engineering** and **support**
 * Some of us **multitask** over different groups
 * We are a **distributed** team:
   * San Francisco, Denver, Philadelphia, NYC (2)
@@ -199,8 +204,8 @@ Ramiro
 
 ## 2017 Solutions gets into consultancy projects
 
-* Some accounts have **very specific needs** that partners cannot do
-* Solutions to the rescue; engineering evolves to a **professional services** division
+* Some accounts have **very specific needs**<br/> that partners cannot do
+* Solutions to the rescue; engineering evolves<br/>to a **professional services** division
 * New members:
   * Professional Services: **Alberto** and **Alejandra**
   * Support: **Alexander**
@@ -228,7 +233,7 @@ ___
 
 ## Responsibilities are settling
 
-* We are **the glue** between our product developers and the rest of the company
+* We are **the glue** between our product developers<br/> and the rest of the company
 * More **focused roles** and less jacks of all trades
 * Support can handle L1 and **most of L2** tickets
 * Better **trainings** procedures and content
@@ -238,7 +243,7 @@ ___
 
 ## Responsibilities are settling
 
-* Madrid Solutions team is leading some **Community efforts**:
+* Madrid Solutions team is leading<br/> some **Community efforts**:
   * **CartoCamp** Madrid
   * Participating in **Geoinquietos** Madrid
   * Colaborations with other local groups and entities
@@ -246,7 +251,7 @@ ___
 
 ---
 
-## Current Solutions team: Locations
+## Locations
 
 * **Brazil**: Sao Paulo
 * **USA**: San Francisco, Denver, Philadelphia, Washington DC, NYC (2)
@@ -257,21 +262,22 @@ ___
 
 ---
 
-## Current Solutions team: Backgrounds
+## Backgrounds
 
 * Mostly with a **geospatial background**
-* Some come with **pre-sales** experience, others from **consultancy**
-* Pre-sales tend to be more **seasoned** engineers, while Support are **younger** (except me)
+* Some come with **pre-sales** experience,<br/> others from **consultancy**
+* Pre-sales tend to be more **seasoned** engineers,<br/> while Support are **younger** (except me)
 
 ---
 
-## How we do sales engineering?
+## How we do sales eng.?
 
 * **Clear process** for Sales Reps to ask for help
-* Only **after qualification**: don’t get into the opportunity too soon
+* Only **after qualification**:
+  * don’t get into the opportunity too soon
 * An SE is assigned for the full opportunity process
 * **Work closely** with the Sales Rep., listen client recommendations, help on the best sales approach, assure CARTO is a good fit
-* Develop proofs of concept and tailored demos
+* **Develop** proofs of concept and tailored demos
 
 ---
 
@@ -280,7 +286,7 @@ ___
 * **Strong asynchronous** focus: no phone, no chat, only e-mail to attend even our own workmates
 * Synchronous communications (chat or phone) only for **urgent** stuff
   * *Planes falling from sky*
-  * *Most of our MRR may be in jeopardy*
+  * *Most of our MRR may be in jeopardy* (@santana)
 * Internally we use:
   * **Chat**: slack
   * **Audio/video**: slack, google meet, goto meeting/webinar, whatever fancies our clients and our hipster sales people (*Skype for what?*)
@@ -305,23 +311,11 @@ Recently Engineering has developed a new procedure called **Response Team** (sor
 
 ## Closing
 
-As we grew...
-
-* we needed more **procedures**
-* we needed to be mindful of our **communication channels**
-* we pursued to be more specific in **our roles**
-* we need to improve our **on-boarding**
-* we need to be more resilient to **team changes**
+![](imgs/graph-percent.png)
 
 ___
 
 ![](imgs/graph-department.png)
-
-https://carto.com/jobs
-
-___
-
-![](imgs/graph-percent.png)
 
 https://carto.com/jobs
 
@@ -346,6 +340,10 @@ https://carto.com/jobs
 ![](https://images.contentful.com/xts27qnup0jr/7heD74DFU42U2gU0CgOscm/e048ed3752e9b25c70bfe8e9c3b0d5af/steve.jpg)<!-- .element: style="width:125px;min-height:125px;" -->
 <img style="width:125px;min-height:125px;" src="https://53d2d688e71747517355-d33225344ebf46ad4b7a254d47620f4f.ssl.cf1.rackcdn.com/photos/40723-0-4.jpg"/>
 <img style="width:125px;min-height:125px;" src="https://53d2d688e71747517355-d33225344ebf46ad4b7a254d47620f4f.ssl.cf1.rackcdn.com/photos/40733-0-4.jpg"/>
+
+___
+
+<iframe src="https://docs.google.com/presentation/d/1nArljSCxUyoGLYgn7E3UnMsJuvNeOoNMVWALpUpKjT8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ___
 
