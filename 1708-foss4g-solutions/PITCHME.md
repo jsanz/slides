@@ -270,7 +270,7 @@ ___
 * **Clear process** for Sales Reps to ask for help
 * Only **after qualification**: don’t get into the opportunity too soon
 * An SE is assigned for the full opportunity process
-* **Work closely** with the Sals Rep., listen client recommendations, help on the best sales approach, asure CARTO is a good fit
+* **Work closely** with the Sales Rep., listen client recommendations, help on the best sales approach, asure CARTO is a good fit
 * Develop proofs of concept and tailored demos
 
 ---
