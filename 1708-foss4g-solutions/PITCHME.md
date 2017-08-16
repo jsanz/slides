@@ -204,7 +204,7 @@ Ramiro
 * New members:
   * Professional Services: **Alberto** and **Alejandra**
   * Support: **Alexander**
-  * Presales: **Danny**, **Steve**, **Jimena** and **Rodrigo**
+  * Pre-sales: **Danny**, **Steve**, **Jimena** and **Rodrigo**
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 ---
 
-## Responsibilties are settling
+## Responsibilities are settling
 
 * We are **the glue** between our product developers and the rest of the company
 * More **focused roles** and less jacks of all trades
@@ -236,7 +236,7 @@ ___
 
 ---
 
-## Responsibilties are settling
+## Responsibilities are settling
 
 * Madrid Solutions team is leading some **Community efforts**:
   * **CartoCamp** Madrid
@@ -246,7 +246,7 @@ ___
 
 ---
 
-## Current Solutions teamz: Locations
+## Current Solutions team: Locations
 
 * **Brazil**: Sao Paulo
 * **USA**: San Francisco, Denver, Philadelphia, Washington DC, NYC (2)
@@ -260,8 +260,8 @@ ___
 ## Current Solutions team: Backgrounds
 
 * Mostly with a **geospatial background**
-* Some come with **presales** experience, others from **consultancy**
-* Presales tend to be more **seasoned** engineers, while Support are **younger** (except me)
+* Some come with **pre-sales** experience, others from **consultancy**
+* Pre-sales tend to be more **seasoned** engineers, while Support are **younger** (except me)
 
 ---
 
@@ -270,7 +270,7 @@ ___
 * **Clear process** for Sales Reps to ask for help
 * Only **after qualification**: don’t get into the opportunity too soon
 * An SE is assigned for the full opportunity process
-* **Work closely** with the Sales Rep., listen client recommendations, help on the best sales approach, asure CARTO is a good fit
+* **Work closely** with the Sales Rep., listen client recommendations, help on the best sales approach, assure CARTO is a good fit
 * Develop proofs of concept and tailored demos
 
 ---
@@ -310,7 +310,7 @@ As we grew...
 * we needed more **procedures**
 * we needed to be mindful of our **communication channels**
 * we pursued to be more specific in **our roles**
-* we need to improve our **onboarding**
+* we need to improve our **on-boarding**
 * we need to be more resilient to **team changes**
 
 ___
