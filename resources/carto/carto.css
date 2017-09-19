@@ -299,6 +299,18 @@ body {
   background: rgba(45, 59, 66, 0.90);
 }
 
+
+/*
+
+CUSTOM FIGURE STYLES
+
+*/
+
+.reveal section img.no-border{
+  border: none;
+  background: none;
+}
+
 /*
 RED SLIDE
 */
