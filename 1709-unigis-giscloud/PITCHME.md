@@ -15,7 +15,7 @@ Note:
 
 * Presentación
 * Dónde trabajo y tal
-* Profe del master UNGIS
+* Profe del máster UNGIS
 
 ---
 <!-- .element data-background="imgs/clouds/kaushik-panchal-37070.jpg" class="light-background"-->
@@ -49,7 +49,7 @@ Llamamos *cloud computing* al conjunto de tecnologías que permiten acceder a re
 ## Por qué
 
 * **Adaptación** de recursos a necesidades reales
-* **Seguridad** y recuperación de backups<br/> (para PYMES sobre todo)
+* **Seguridad** y recuperación de back-ups<br/> (para PYMES sobre todo)
 * Facilidad de **actualización** de componentes
 * Facilidad de **acceso** a recursos
 * **Medio ambiente**
@@ -58,7 +58,7 @@ Note:
 
 * Con la nube podemos adaptar los recursos a nuestra disposición a nuestras necesidades actuales y a corto plazo, de manera que si nuestras condiciones cambian podemos ampliar o reducir esos recursos de forma ágil.
 
-* En las PYMES la entrada de las tecnologías en la nube ha facilitado el acceso a sistemas de *backup* y recuperación de datos antes solo disponibles a grandes corporaciones con departamentos de sistemas capaces de gestionar este tipo de situaciones.
+* En las PYMES la entrada de las tecnologías en la nube ha facilitado el acceso a sistemas de *back-up* y recuperación de datos antes solo disponibles a grandes corporaciones con departamentos de sistemas capaces de gestionar este tipo de situaciones.
 
 * En los servicios de *software* en la nube las actualizaciones (nuevas funcionalidades y también mejoras) se despliegan frecuentemente y quedan accesibles automáticamente. Por supuesto para nuevas versiones de APIs los desarrolladores tienen que migrar sus aplicaciones pero el ahorro de tiempo y costes es enorme.
 
@@ -79,7 +79,7 @@ Note:
 
 * **Privadas**: las grandes agencias, pero también las organizaciones y empresas medianas están adoptando internamente en sus propios sistemas de información las tecnologías de la nube, que despliegan en sus propios centros de datos y les permite escalar servicios y recursos de forma ágil.
 
-* **Públicas**: es la venta al por mayor de la computación. Grandes proveedores de servicios ponen toda su infraestructura al servicio del gran público desde los gobiertos y las grandes organizaciones a los emprendedores y estudiantes. Cualquiera puede abrir una cuenta en uno de estos proveedores y empezar a utilizar sus servicios inmediatamente.
+* **Públicas**: es la venta al por mayor de la computación. Grandes proveedores de servicios ponen toda su infraestructura al servicio del gran público desde los gobiernos y las grandes organizaciones a los emprendedores y estudiantes. Cualquiera puede abrir una cuenta en uno de estos proveedores y empezar a utilizar sus servicios inmediatamente.
 
 * **Híbridas**: a medio camino muchas organizaciones mantienen datos sensibles dentro de sus propios recursos y explotan los bajos costes de las nubes públicas para aquellos datos derivados o agregados que ya no son tan sensibles.
 
@@ -280,15 +280,15 @@ Podemos incluso escribir el código de nuestra función directamente en la web d
 * Los procesa y los sube a una tabla en **CARTO**
 * El mapa renderizará esos datos automáticamente
 * Ventajas:
-  * **Coste**: ~30 segundoss cada 10 minutos
+  * **Coste**: ~30 segundos cada 10 minutos
   * El **estado** se almacena en CARTO
   * **Monitorización** integrada
 
 Note:
 
-En el equipo de soluciones de CARTO solemos hacer mapas de tweets varias veces al año. Antes teníamos un servidor en el que desplegábamos una aplicación que teníamos que poner en marcha y monitorizar de forma muy manual.
+En el equipo de soluciones de CARTO solemos hacer mapas de *tweets* varias veces al año. Antes teníamos un servidor en el que desplegábamos una aplicación que teníamos que poner en marcha y monitorizar de forma muy manual.
 
-Desde hace un año más o menos venimos desplegando una función de Lambda que programamos para que se ejecute cada pocos minutos (5 o 10) y que se encarga de recoger los últimos tweets y subirlos a una tabla de CARTO. Usamos otra tabla para almacenar el estado de manera que entre una ejecución y la siguiente no es necesario mantener nada más.
+Desde hace un año más o menos venimos desplegando una función de Lambda que programamos para que se ejecute cada pocos minutos (5 o 10) y que se encarga de recoger los últimos *tweets* y subirlos a una tabla de CARTO. Usamos otra tabla para almacenar el estado de manera que entre una ejecución y la siguiente no es necesario mantener nada más.
 
 Esto nos ha permitido olvidarnos de un servidor y ciertamente descansar más porque estos mapas solían ser en fin de semana!
 
@@ -313,7 +313,7 @@ Note:
 
 Note:
 
-Otro ejemplo interesante es el desarrollo de la empresa de San Francisco Stamen. Su desarrollo es Open Source y se pueden consultar más detalles [en el siguiente enlace](https://hi.stamen.com/stamen-aws-lambda-tiler-blog-post-76fc1138a145) en el que explican los pasos necesarios para desplegar esta arquitectura, que es ciertamente compleja pero preparada para servir teselas de terreno a escala global.
+Otro ejemplo interesante es el desarrollo de la empresa de San Francisco Stamen. Su desarrollo es *Open Source* y se pueden consultar más detalles [en el siguiente enlace](https://hi.stamen.com/stamen-aws-lambda-tiler-blog-post-76fc1138a145) en el que explican los pasos necesarios para desplegar esta arquitectura, que es ciertamente compleja pero preparada para servir teselas de terreno a escala global.
 
 ---
 
@@ -411,7 +411,7 @@ Note:
 
 Si pensamos en lo que se podía hacer en un navegador web hace unos 5 o 6 años y lo que es posible hacer hoy en día... tal y como está ocurriendo con otros sectores como la ofimática, el rango de casos de uso para necesitar una aplicación de escritorio es cada vez más reducido. Es decir, es más factible dejar de lado los SIG de escritorio tradicionales y llevar a cabo todo tipo de procesos en las herramientas web que estos proveedores nos ofrecen.
 
-Del mismo modo es posible no solo utilizar estas estupendas aplicaciones web sino también sacar provecho de los kits de desarrollo que ofrecen para ir más allá de las interfaces que ofrecen para adaptarnos mejor a los requerimientos de nuestros casos de uso.
+Del mismo modo es posible no solo utilizar estas estupendas aplicaciones web sino también sacar provecho de los *kits* de desarrollo que ofrecen para ir más allá de las interfaces que ofrecen para adaptarnos mejor a los requerimientos de nuestros casos de uso.
 
 ---
 <!-- .element data-background="imgs/clouds/quino-al-178458.jpg" class="light-background"-->
