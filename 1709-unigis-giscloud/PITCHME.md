@@ -14,7 +14,7 @@
 Note:
 
 * Presentación
-* Dónde trabajo
+* Dónde trabajo y tal
 * Profe del master UNGIS
 
 ---
@@ -22,10 +22,10 @@ Note:
 
 ## Agenda
 
-* Qué es el *cloud computing*
-* Infraestructura
-* Plataforma
-* *Software*
+* Introducción *cloud computing*
+* Tipos de servicios, ejemplos geo
+* Software GIS  como Servicio
+* Conclusiones
 
 Note:
 
@@ -130,7 +130,7 @@ La *hype curve* es una figura acuñada por la consultora *Gartner* en la que ant
 
 ## 2011
 
-![](imgs/gartner-2011.jpg)
+![](imgs/gartner-2011.jpg)<!-- .element style="background:white;padding:25px" -->
 
 Note:
 
@@ -147,7 +147,7 @@ Si miramos la curva de Gartner de 2011 para la computación en la nube vemos có
 
 ## 2016
 
-![](imgs/gartner-2017.png)
+![](imgs/gartner-2017.png)<!-- .element style="background:white;padding:25px" -->
 
 Note:
 
@@ -327,7 +327,7 @@ Otro ejemplo interesante es el desarrollo de la empresa de San Francisco Stamen.
 ---
 <!-- .element data-background="imgs/clouds/dominik-kiss-341291.jpg" class="light-background"-->
 
-## Veamos algunos servicios
+## Proveedores de<br/> servicios GIS
 
 Note:
 
@@ -474,7 +474,3 @@ Como vemos, existe gran variedad de casos de uso y escenarios en el ámbito del 
 * ![](imgs/logo-github.png)<!-- .element class="logo" --> ![](imgs/logo-linkedin.png)<!-- .element class="logo" --> @jsanz
 
 [![](imgs//u-lecture_sig-en-la-nube.png) <!-- .element style="background:white;" -->](http://www.unigis.es/)
-
----
-
-# Créditos
