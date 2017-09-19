@@ -1,0 +1,23 @@
+.reveal section img.logo{
+    max-width: 50px;
+    max-height: 50px;
+    border: none;
+    background: none;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.reveal.cube .slides section.only-background:not(.stack):before,
+.reveal.cube .slides section.only-background:not(.stack):after{
+    content: none;
+}
+
+.reveal section img{
+    max-width: 90%;
+    max-height: 500px;
+}
+
+.reveal.cube .slides section.light-background:not(.stack):before{
+    background: rgba(22,41,69,0.5);
+}
