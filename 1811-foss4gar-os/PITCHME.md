@@ -1,24 +1,12 @@
-<!-- .element data-background=""-->
-
-# Desafíos de la apertura de código fuente
+## ![](../resources/carto/logo_CARTO_negative_180.png)<!-- .element class="noborder" style="height:2.2em;vertical-align:middle;" -->  ♥️ FOSS4G
 
 Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) <br/>
-Coordinador Soporte · <img 
-    class="noborder" 
-    src="/resources/carto/logo_CARTO_negative_180.png" 
-    style="height:1.8em;vertical-align:middle;"/> 
+Coordinador de Soporte
 
 Note:
 
-Pequeña presentación de quién soy
-
----
-
-## ![](/resources/carto/logo_CARTO_negative_180.png)<!-- .element class="noborder" style="height:2.2em;vertical-align:middle;" -->  ♥️ FOSS4G
-
-Note:
-
-En CARTO vivimos dentro del Open Source
+* Pequeña presentación de quién soy
+* En CARTO vivimos dentro del Open Source
 
 ---
 <!-- .element style="padding:0;" -->
@@ -80,20 +68,19 @@ Este es el mensaje en Twitter de un compañero del equipo de soluciones al descu
 ## ¿Por qué?
 
 <ul>
-<li class="fragment">**coherencia**<!-- .element class="purple"-->: todo nuestro stack **también lo es**</li>
+<li class="fragment">**coherencia**<!-- .element class="purple"--> con nuestro stack</li>
 
 <li class="fragment">**independencia**<!-- .element class="purple"--> y **confianza**<!-- .element class="purple"--> para clientes y partners</li>
 
 <li class="fragment">**conveniencia**<!-- .element class="purple"-->: 
     <ul>
     <li class="fragment">nos ayuda a **contribuir** a nuestro stack</li>
-    <li class="fragment">útil para atraer **talento**</li>
+    <li class="fragment">atraer **talento**</li>
     <li class="fragment">**marketing**</li>
     </ul>
 </li>
 
-<li class="fragment">Porque el <strong class="purple">mayor valor</strong>
-no se encuentra en el código sino en el **equipo**</li>
+<li class="fragment">Porque <strong class="purple">equipo</strong> >>> código</li>
 
 
 </ul>
@@ -110,3 +97,14 @@ Note:
   * Es una buena herramienta de marketing
 
 El modelo Open Source en empresas de *Software as a Service* está bien demostrado y resulta totalmente lógico. Es decir, el mayor valor en CARTO no reside en el código como tal, sino en la capacidad del equipo para ofrecer servicios sobre el mismo y la confianza de partners y clientes en que CARTO (Inc) es la mejor organización que los puede ofrecer.
+
+---
+
+# ¡GRACIAS!
+
+<tt>jorge @ </tt> <img 
+    class="noborder" 
+    src="../resources/carto/logo_CARTO_negative_180.png" 
+    style="height:2em;vertical-align:middle;"/> 
+
+[@xurxosanz](https://twitter.com/xurxosanz) <br/>
