@@ -1,4 +1,4 @@
-## ![](/slides/resources/carto/logo_CARTO_negative_180.png)<!-- .element class="noborder" style="height:2.2em;vertical-align:middle;" -->  ♥️ FOSS4G
+## ![](../resources/carto/logo_CARTO_negative_180.png)<!-- .element class="noborder" style="height:2.2em;vertical-align:middle;" -->  ♥️ FOSS4G
 
 Jorge Sanz · [@xurxosanz](https://twitter.com/xurxosanz) <br/>
 Coordinador de Soporte
@@ -102,9 +102,11 @@ El modelo Open Source en empresas de *Software as a Service* está bien demostra
 
 # ¡GRACIAS!
 
+[<tt class="purple">bit.ly/1811-foss4gar-carto</tt>](http://bit.ly/1811-foss4gar-carto)
+
 <tt>jorge @ </tt> <img 
     class="noborder" 
-    src="/slides/resources/carto/logo_CARTO_negative_180.png" 
+    src="../resources/carto/logo_CARTO_negative_180.png" 
     style="height:2em;vertical-align:middle;"/> 
 
 [@xurxosanz](https://twitter.com/xurxosanz) <br/>
