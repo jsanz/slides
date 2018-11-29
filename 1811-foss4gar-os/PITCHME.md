@@ -65,6 +65,28 @@ Este es el mensaje en Twitter de un compañero del equipo de soluciones al descu
 
 ---
 
+## ¿Cómo?
+
+<ul>
+<li> Donaciones, *crowdfounding*, anuncios
+<li class="fragment" data-fragment-index="3"> Licencia dual
+<li class="fragment" data-fragment-index="4"> Licencias de extensiones no abiertas
+<li class="fragment" data-fragment-index="5"> <span class="fragment highlight-red"  data-fragment-index="8">Servicios profesionales</span> 
+<li class="fragment" data-fragment-index="6">  <span class="fragment highlight-red"  data-fragment-index="8">Software as a Service</span>
+<li class="fragment" data-fragment-index="7"> Publicación retrasada, al final del desarrollo
+</ul>
+
+[🔗](https://en.wikipedia.org/wiki/Business_models_for_open-source_software)
+
+Note:
+
+En el mundo del Open Source hay muchos modelos de negocio para las empresas que quieren trabajar en abierto. Desde las que consiguen financiarse a partir de donaciones o anuncios en sus productos, las que tienen un núcleo abierto pero luego comercializan extensiones no abiertas que aumentan la funcionalidad para aquellos que las quieran pagar, aquellas que venden servicios profesionales sobre un producto abierto, aquellas que ofrecen su producto como un servicio (en la nube normalmente) para evitar a sus clientes los costes de infraestructura y mantenimiento, o aquellas que publican el código cuando ya no van a obtener un beneficio directo bien porque se ha abandonado ya el producto, bien liberando versiones anteriores.
+
+De todos estos modelos, en CARTO nos enfocamos por supuesto en el SaaS, pero también en parte en los servicios profesionales directamente, o en colaboración con partners.
+
+
+---
+
 ## ¿Por qué?
 
 <ul>
