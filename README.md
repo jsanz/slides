@@ -11,14 +11,9 @@ easier to fork and distribute every them. Check my
 
 All my slides and talk materials are available at http://jorgesanz.net/talks/
 
-You are free to re-use any content here, they are licensed under
-[Creative Commons Attribution Share Alike](http://creativecommons.org/licenses/by-sa/3.0/deed.es)
-
 Don't hesitate to contact me if you have any comment or question.
 
 Have a nice day!!
 
 Jorge Sanz<br/>
-[@xurxosanz](http://twitter.com/xurxosanz)<br/>
-http://www.prodevelop.es<br/>
 http://jorgesanz.net  
